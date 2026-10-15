@@ -13,10 +13,10 @@ chassis_center_x: 0.119305
 chassis_center_z: 0.115
 max_steering: 0.4363323129985824
 joint_steering_limit: 0.6
-max_speed: 0.6
+max_speed: 1.5
 steering_rate: 2.0943951023931953
-max_accel: 0.8
-max_decel: 1.2
+max_accel: 1.0
+max_decel: 1.5
 curvature_speed_gain: 0.8
 min_curve_speed: 0.18
 command_timeout: 0.3

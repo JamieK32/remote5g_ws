@@ -73,25 +73,25 @@ parameters:
     category: simulation_assumption
     reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
   max_speed:
-    value: 0.6
-    category: source_default
-    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
-    source: main/motion_control/config/motion_default.json
+    value: 1.5
+    category: simulation_assumption
+    reason: 用户于2026-10-15选择仿真直行目标速度上限1.5m/s；保留曲率限速，不代表实车已标定速度。
+    source: 用户确认的速度配置（1.5m/s、1.0m/s²、1.5m/s²）
   steering_rate:
     value: 2.0943951023931953
     category: source_default
     reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
     source: main/motion_control/config/motion_default.json
   max_accel:
-    value: 0.8
-    category: source_default
-    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
-    source: main/motion_control/config/motion_default.json
+    value: 1.0
+    category: simulation_assumption
+    reason: 用户于2026-10-15选择仿真目标速度斜坡加速度上限1.0m/s²；不是实体车加速度测量值。
+    source: 用户确认的速度配置（1.5m/s、1.0m/s²、1.5m/s²）
   max_decel:
-    value: 1.2
-    category: source_default
-    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
-    source: main/motion_control/config/motion_default.json
+    value: 1.5
+    category: simulation_assumption
+    reason: 用户于2026-10-15选择仿真目标速度斜坡减速度上限1.5m/s²；不是实体车制动能力测量值。
+    source: 用户确认的速度配置（1.5m/s、1.0m/s²、1.5m/s²）
   curvature_speed_gain:
     value: 0.8
     category: source_default

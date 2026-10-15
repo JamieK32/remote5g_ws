@@ -54,8 +54,8 @@ robot_state_publisher 根据实际 `/joint_states` 发布关节 TF 及固定 TF�
 | 前/后轮距 | 0.24/0.24m | simulation_assumption |
 | 车架质量/轮胎质量 | 3.0/0.18kg | simulation_assumption |
 | 中心转角/转角变化率 | 25° / 120°/s | source_default，未确认机械极限 |
-| 最高速度/加减速 | 0.6 / 0.8 / 1.2（SI） | source_default，软件初值 |
-| 曲率限速 | max(0.18,0.6/(1+0.8×abs(k))) | source_default；仍不超过输入目标速度 |
+| 最高速度/加减速 | 1.5 / 1.0 / 1.5（SI） | simulation_assumption，2026-10-15用户选定的仿真目标限制 |
+| 曲率限速 | max(0.18,1.5/(1+0.8×abs(k))) | 保留曲率限速公式；仍不超过输入目标速度 |
 | 命令租约/目标更新周期 | 0.3s墙钟 / 0.02s仿真时间 | 租约为参考默认值；50Hz目标/反馈为2026-10-15用户选择的仿真设计，不是厂商控制频率 |
 | Pan/Tilt 仿真限位 | ±π/2 / [-0.6,+0.8]rad | simulation_assumption，未由 PWM 推导 |
 
