@@ -1,0 +1,439 @@
+{
+  "base_link": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_footprint"
+    },
+    "child_frame_id": "base_link",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.055315
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "front_axle_beam": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "front_axle_beam",
+    "transform": {
+      "translation": {
+        "x": 0.23861,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "front_axle_post": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "front_axle_post",
+    "transform": {
+      "translation": {
+        "x": 0.23861,
+        "y": 0.0,
+        "z": 0.035
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "front_camera_link": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "front_camera_link",
+    "transform": {
+      "translation": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.18
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.22310636213174548,
+        "z": 0.0,
+        "w": 0.9747941070689432
+      }
+    }
+  },
+  "front_camera_optical_frame": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "front_camera_link"
+    },
+    "child_frame_id": "front_camera_optical_frame",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.5,
+        "y": -0.4999999999999999,
+        "z": 0.5,
+        "w": -0.5000000000000001
+      }
+    }
+  },
+  "gimbal_camera_link": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "gimbal_tilt_link"
+    },
+    "child_frame_id": "gimbal_camera_link",
+    "transform": {
+      "translation": {
+        "x": 0.012,
+        "y": 0.0,
+        "z": 0.02
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "gimbal_base": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "gimbal_base",
+    "transform": {
+      "translation": {
+        "x": 0.08,
+        "y": 0.0,
+        "z": 0.195
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "gimbal_camera_optical_frame": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "gimbal_camera_link"
+    },
+    "child_frame_id": "gimbal_camera_optical_frame",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.5,
+        "y": -0.4999999999999999,
+        "z": 0.5,
+        "w": -0.5000000000000001
+      }
+    }
+  },
+  "rear_axle_beam": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "rear_axle_beam",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "rear_axle_post": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "rear_axle_post",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.035
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "base_footprint": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 959000000
+      },
+      "frame_id": "odom"
+    },
+    "child_frame_id": "base_footprint",
+    "transform": {
+      "translation": {
+        "x": -40.50570326418166,
+        "y": -39.525001922046435,
+        "z": -0.00010495104842390968
+      },
+      "rotation": {
+        "x": -9.476125771918907e-07,
+        "y": -1.2274903475684877e-07,
+        "z": 0.9999999999965912,
+        "w": 2.4299411247838497e-06
+      }
+    }
+  },
+  "front_left_knuckle": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "front_left_knuckle",
+    "transform": {
+      "translation": {
+        "x": 0.23861,
+        "y": 0.12,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 4.0504885677110526e-05,
+        "w": 0.9999999991796771
+      }
+    }
+  },
+  "front_left_wheel": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "front_left_knuckle"
+    },
+    "child_frame_id": "front_left_wheel",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 3.396415988956383e-05,
+        "z": 0.0,
+        "w": 0.9999999994232178
+      }
+    }
+  },
+  "front_right_knuckle": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "front_right_knuckle",
+    "transform": {
+      "translation": {
+        "x": 0.23861,
+        "y": -0.12,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 3.177653573469908e-05,
+        "w": 0.9999999994951259
+      }
+    }
+  },
+  "front_right_wheel": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "front_right_knuckle"
+    },
+    "child_frame_id": "front_right_wheel",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 2.6326487088180576e-05,
+        "z": 0.0,
+        "w": 0.9999999996534579
+      }
+    }
+  },
+  "gimbal_pan_link": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "gimbal_base"
+    },
+    "child_frame_id": "gimbal_pan_link",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.008
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 1.7105449501278443e-06,
+        "w": 0.999999999998537
+      }
+    }
+  },
+  "gimbal_tilt_link": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "gimbal_pan_link"
+    },
+    "child_frame_id": "gimbal_tilt_link",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.032
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.002963680299682075,
+        "z": 0.0,
+        "w": 0.9999956082898971
+      }
+    }
+  },
+  "rear_left_wheel": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "rear_left_wheel",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": 0.12,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": -1.6923585420239155e-05,
+        "z": 0.0,
+        "w": 0.9999999998567961
+      }
+    }
+  },
+  "rear_right_wheel": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 908000000
+      },
+      "frame_id": "base_link"
+    },
+    "child_frame_id": "rear_right_wheel",
+    "transform": {
+      "translation": {
+        "x": 0.0,
+        "y": -0.12,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": -2.3241217358766406e-05,
+        "z": 0.0,
+        "w": 0.9999999997299229
+      }
+    }
+  }
+}

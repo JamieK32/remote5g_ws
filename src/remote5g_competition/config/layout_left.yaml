@@ -1,0 +1,4 @@
+start_side: left
+lane_change: left
+track_color: red
+obstacle_seed: 20251014

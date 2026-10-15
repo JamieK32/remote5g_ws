@@ -1,0 +1,238 @@
+workspace:
+  value: /home/jamiek/remote5g_ws
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+start_side:
+  value: left
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+track_color:
+  value: red
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+lane:
+  value: 3
+  category: simulation_assumption
+  source: Fig1未规定编号；选第3道以保留两侧相邻车道
+lane_change:
+  value: random
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+parking_target:
+  value: random
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+obstacle_seed:
+  value: 20251014
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+sign_seed:
+  value: 17
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+obstacle_mode:
+  value: random
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+obstacle_s:
+  value: 63.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+obstacle_lateral_offset:
+  value: 0.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+barrier_present:
+  value: true
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+cone_static:
+  value: false
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+tape_width:
+  value: 0.1
+  category: reference_document
+  source: Competition PDF page 4
+zone_length_ratio:
+  value: 1.5
+  category: reference_document
+  source: Competition PDF page 4
+marking_thickness:
+  value: 0.0006
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+marking_bottom_z:
+  value: 0.0007
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+barrier_width:
+  value: 0.8
+  category: reference_document
+  source: Competition PDF page 4
+barrier_height:
+  value: 0.5
+  category: reference_document
+  source: Competition PDF page 4
+barrier_thickness:
+  value: 0.02
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+barrier_gap:
+  value: 0.1
+  category: reference_document
+  source: Competition PDF page 4
+qr_size:
+  value: 0.1
+  category: reference_document
+  source: Competition PDF page 4
+qr_content:
+  value: REMOTE5G_SIM_QR_01
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+parking_qr_A:
+  value: REMOTE5G_SIM_PARK_A
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+parking_qr_B:
+  value: REMOTE5G_SIM_PARK_B
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+qr_pitch_deg:
+  value: 45.0
+  category: simulation_assumption
+  source: p4图3空间解释：展示面相对局部来车地面方向倾斜45度，不是world yaw=45
+qr_yaw_offset_deg:
+  value: 0.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+qr_center_height:
+  value: 0.135
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+stand_width:
+  value: 0.148
+  category: simulation_assumption
+  source: p4图4 A5类展示架照片；148mm为仿真假设，不是官方统一尺寸
+stand_panel_height:
+  value: 0.21
+  category: simulation_assumption
+  source: p4图4 A5类展示架照片；210mm为仿真假设
+stand_thickness:
+  value: 0.004
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+stand_mass:
+  value: 0.1
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+paper_long:
+  value: 0.297
+  category: reference_document
+  source: Competition PDF page 5
+paper_short:
+  value: 0.105
+  category: reference_document
+  source: Competition PDF page 5
+paper_gap:
+  value: 0.105
+  category: reference_document
+  source: Competition PDF page 5
+sign_width:
+  value: 0.21
+  category: reference_document
+  source: Competition PDF page 6
+sign_length:
+  value: 0.297
+  category: reference_document
+  source: Competition PDF page 6
+print_white_margin:
+  value: 0.002
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+cone_height:
+  value: 0.08
+  category: reference_document
+  source: Competition PDF page 5
+cone_diameter:
+  value: 0.078
+  category: reference_document
+  source: Competition PDF page 5
+cone_mass:
+  value: 0.035
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+cone_mu:
+  value: 0.8
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+cone_segments:
+  value: 32
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+guide_spacing:
+  value: 0.5
+  category: reference_document
+  source: Competition PDF page 5
+guide_start_gap:
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+  value: 0.2
+guide_block_length:
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+  value: 3.0
+guide_yellow_start_offset:
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+  value: 1.0
+guide_yellow_entry_length:
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+  value: 1.0
+guide_return_length:
+  value: 4.0
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+guide_straight_length:
+  value: 1.0
+  category: simulation_assumption
+  source: 'PDF p8–9 Fig11 + user four-row images: two original-lane straight coloured
+    rows, two adjacent-lane yellow return rows; distances are simulation assumptions'
+region2_top_straight_offset:
+  value: 4.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+region2_length_ratio:
+  value: 1.5
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+parking_end_margin:
+  value: 3.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+parking_sign_distance:
+  value: 2.0
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+contact_patch_length:
+  value: 0.02
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+vehicle_clearance_margin:
+  value: 0.04
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement
+vehicle_spawn:
+  value:
+    x: null
+    y: null
+    z: null
+    yaw: null
+  category: simulation_assumption
+  source: Configurable simulation choice; not a rule measurement

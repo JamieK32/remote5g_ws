@@ -1,0 +1,55 @@
+<sdf version="1.6">
+  <model name="comp_guide_outer_025">
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0 0 0.025 0 0 0</pose>
+        <mass>0.035</mass>
+        <inertia>
+          <ixx>3.1975416666666676e-05</ixx>
+          <iyy>3.1975416666666676e-05</iyy>
+          <izz>2.6617500000000004e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="cone">
+        <geometry>
+          <mesh>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/models/comp_cone_yellow/meshes/cone.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.85 0 1</ambient>
+          <diffuse>1 0.85 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+      </visual>
+      <collision name="cone">
+        <geometry>
+          <mesh>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/models/comp_cone_yellow/meshes/cone.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>100000</kp>
+              <kd>2</kd>
+              <max_vel>0.1</max_vel>
+              <min_depth>5e-05</min_depth>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <pose>14.04531068741364 41.144999999999996 0.001 0 0 3.141592653589793</pose>
+  </model>
+</sdf>

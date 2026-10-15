@@ -1,0 +1,462 @@
+COMMAND:
+ros2 bag record --help; ros2 bag play --help; ros2 bag info --help; ros2 topic echo --help; ros2 topic hz --help; ros2 node list --help; ros2 launch remote5g_sim sim.launch.py --show-args; ros2 launch remote5g_competition competition.launch.py --show-args
+
+EXIT_CODE: 0
+
+OUTPUT:
+usage: ros2 bag record [-h] [-a] [-e REGEX] [-x EXCLUDE]
+                       [--include-unpublished-topics]
+                       [--include-hidden-topics] [-o OUTPUT]
+                       [-s {my_test_plugin,sqlite3}] [-f {s,a}]
+                       [--no-discovery] [-p POLLING_INTERVAL]
+                       [-b MAX_BAG_SIZE] [-d MAX_BAG_DURATION]
+                       [--max-cache-size MAX_CACHE_SIZE]
+                       [--compression-mode {none,file,message}]
+                       [--compression-format {fake_comp,zstd}]
+                       [--compression-queue-size COMPRESSION_QUEUE_SIZE]
+                       [--compression-threads COMPRESSION_THREADS]
+                       [--snapshot-mode] [--ignore-leaf-topics]
+                       [--qos-profile-overrides-path QOS_PROFILE_OVERRIDES_PATH]
+                       [--storage-preset-profile STORAGE_PRESET_PROFILE]
+                       [--storage-config-file STORAGE_CONFIG_FILE]
+                       [--start-paused] [--use-sim-time]
+                       [--log-level {debug,info,warn,error,fatal}]
+                       [--node-name NODE_NAME]
+                       [topics ...]
+
+Record ROS data to a bag
+
+positional arguments:
+  topics                List of topics to record.
+
+options:
+  -h, --help            show this help message and exit
+  -a, --all             Record all topics. Required if no explicit topic list
+                        or regex filters.
+  -e REGEX, --regex REGEX
+                        Record only topics containing provided regular
+                        expression. Applies on top of topics list.
+  -x EXCLUDE, --exclude EXCLUDE
+                        Exclude topics containing provided regular expression.
+                        Works on top of --all, --regex, or topics list.
+  --include-unpublished-topics
+                        Discover and record topics which have no publisher.
+                        Subscriptions on such topics will be made with default
+                        QoS unless otherwise specified in a QoS overrides
+                        file.
+  --include-hidden-topics
+                        Discover and record hidden topics as well. These are
+                        topics used internally by ROS 2 implementation.
+  -o OUTPUT, --output OUTPUT
+                        destination of the bagfile to create, defaults to a
+                        timestamped folder in the current directory
+  -s {my_test_plugin,sqlite3}, --storage {my_test_plugin,sqlite3}
+                        storage identifier to be used, defaults to 'sqlite3'
+  -f {s,a}, --serialization-format {s,a}
+                        rmw serialization format in which the messages are
+                        saved, defaults to the rmw currently in use
+  --no-discovery        disables topic auto discovery during recording: only
+                        topics present at startup will be recorded
+  -p POLLING_INTERVAL, --polling-interval POLLING_INTERVAL
+                        time in ms to wait between querying available topics
+                        for recording. It has no effect if --no-discovery is
+                        enabled.
+  -b MAX_BAG_SIZE, --max-bag-size MAX_BAG_SIZE
+                        maximum size in bytes before the bagfile will be
+                        split. Default it is zero, recording written in single
+                        bagfile and splitting is disabled.
+  -d MAX_BAG_DURATION, --max-bag-duration MAX_BAG_DURATION
+                        maximum duration in seconds before the bagfile will be
+                        split. Default is zero, recording written in single
+                        bagfile and splitting is disabled. If both splitting
+                        by size and duration are enabled, the bag will split
+                        at whichever threshold is reached first.
+  --max-cache-size MAX_CACHE_SIZE
+                        maximum size (in bytes) of messages to hold in each
+                        buffer of cache. Default is 100 mebibytes. The cache
+                        is handled through double buffering, which means that
+                        in pessimistic case up to twice the parameter value of
+                        memory is needed. A rule of thumb is to cache an order
+                        of magitude corresponding to about one second of total
+                        recorded data volume. If the value specified is 0,
+                        then every message is directly written to disk.
+  --compression-mode {none,file,message}
+                        Determine whether to compress by file or message.
+                        Default is 'none'.
+  --compression-format {fake_comp,zstd}
+                        Specify the compression format/algorithm. Default is
+                        none.
+  --compression-queue-size COMPRESSION_QUEUE_SIZE
+                        Number of files or messages that may be queued for
+                        compression before being dropped. Default is 1.
+  --compression-threads COMPRESSION_THREADS
+                        Number of files or messages that may be compressed in
+                        parallel. Default is 0, which will be interpreted as
+                        the number of CPU cores.
+  --snapshot-mode       Enable snapshot mode. Messages will not be written to
+                        the bagfile until the "/rosbag2_recorder/snapshot"
+                        service is called.
+  --ignore-leaf-topics  Ignore topics without a publisher.
+  --qos-profile-overrides-path QOS_PROFILE_OVERRIDES_PATH
+                        Path to a yaml file defining overrides of the QoS
+                        profile for specific topics.
+  --storage-preset-profile STORAGE_PRESET_PROFILE
+                        Select a configuration preset for storage. This flag
+                        settings can still be overriden by corresponding
+                        settings in the config passed with --storage-config-
+                        file.
+  --storage-config-file STORAGE_CONFIG_FILE
+                        Path to a yaml file defining storage specific
+                        configurations. For the default storage plugin
+                        settings are specified through syntax:write: pragmas:
+                        ["<setting_name>" = <setting_value>]For a list of
+                        sqlite3 settings, refer to sqlite3 documentation
+  --start-paused        Start the recorder in a paused state.
+  --use-sim-time        Use simulation time for message timestamps by
+                        subscribing to the /clock topic. Until first /clock
+                        message is received, no messages will be written to
+                        bag.
+  --log-level {debug,info,warn,error,fatal}
+                        Logging level.
+  --node-name NODE_NAME
+                        Specify the recorder node name. Default is
+                        rosbag2_recorder.
+usage: ros2 bag play [-h]
+                     [-s {my_test_plugin,sqlite3,my_read_only_test_plugin}]
+                     [--read-ahead-queue-size READ_AHEAD_QUEUE_SIZE] [-r RATE]
+                     [--topics TOPICS [TOPICS ...]]
+                     [--qos-profile-overrides-path QOS_PROFILE_OVERRIDES_PATH]
+                     [-l] [--remap REMAP [REMAP ...]]
+                     [--storage-config-file STORAGE_CONFIG_FILE]
+                     [--clock [Hz]] [-d DELAY] [--disable-keyboard-controls]
+                     [-p] [--start-offset START_OFFSET]
+                     [--wait-for-all-acked TIMEOUT] [--disable-loan-message]
+                     [--log-level {debug,info,warn,error,fatal}]
+                     bag_path
+
+Play back ROS data from a bag
+
+positional arguments:
+  bag_path              Bag to open
+
+options:
+  -h, --help            show this help message and exit
+  -s {my_test_plugin,sqlite3,my_read_only_test_plugin}, --storage {my_test_plugin,sqlite3,my_read_only_test_plugin}
+                        Storage implementation of bag. By default attempts to
+                        detect automatically - use this argument to override.
+  --read-ahead-queue-size READ_AHEAD_QUEUE_SIZE
+                        size of message queue rosbag tries to hold in memory
+                        to help deterministic playback. Larger size will
+                        result in larger memory needs but might prevent delay
+                        of message playback.
+  -r RATE, --rate RATE  rate at which to play back messages. Valid range >
+                        0.0.
+  --topics TOPICS [TOPICS ...]
+                        topics to replay, separated by space. If none
+                        specified, all topics will be replayed.
+  --qos-profile-overrides-path QOS_PROFILE_OVERRIDES_PATH
+                        Path to a yaml file defining overrides of the QoS
+                        profile for specific topics.
+  -l, --loop            enables loop playback when playing a bagfile: it
+                        starts back at the beginning on reaching the end and
+                        plays indefinitely.
+  --remap REMAP [REMAP ...], -m REMAP [REMAP ...]
+                        list of topics to be remapped: in the form
+                        "old_topic1:=new_topic1 old_topic2:=new_topic2 etc."
+  --storage-config-file STORAGE_CONFIG_FILE
+                        Path to a yaml file defining storage specific
+                        configurations. For the default storage plugin
+                        settings are specified through syntax:read: pragmas:
+                        ["<setting_name>" = <setting_value>]Note that
+                        applicable settings are limited to read-only for ros2
+                        bag play.For a list of sqlite3 settings, refer to
+                        sqlite3 documentation
+  --clock [Hz]          Publish to /clock at a specific frequency in Hz, to
+                        act as a ROS Time Source. Value must be positive.
+                        Defaults to not publishing.
+  -d DELAY, --delay DELAY
+                        Sleep duration before play (each loop), in seconds.
+                        Negative durations invalid.
+  --disable-keyboard-controls
+                        disables keyboard controls for playback
+  -p, --start-paused    Start the playback player in a paused state.
+  --start-offset START_OFFSET
+                        Start the playback player this many seconds into the
+                        bag file.
+  --wait-for-all-acked TIMEOUT
+                        Wait until all published messages are acknowledged by
+                        all subscribers or until the timeout elapses in
+                        millisecond before play is terminated. Especially for
+                        the case of sending message with big size in a short
+                        time. Negative timeout is invalid. 0 means wait
+                        forever until all published messages are acknowledged
+                        by all subscribers. Note that this option is valid
+                        only if the publisher's QOS profile is RELIABLE.
+  --disable-loan-message
+                        Disable to publish as loaned message. By default, if
+                        loaned message can be used, messages are published as
+                        loaned message. It can help to reduce the number of
+                        data copies, so there is a greater benefit for sending
+                        big data.
+  --log-level {debug,info,warn,error,fatal}
+                        Logging level.
+usage: ros2 bag info [-h]
+                     [-s {my_test_plugin,sqlite3,my_read_only_test_plugin}]
+                     bag_path
+
+Print information about a bag to the screen
+
+positional arguments:
+  bag_path              Bag to open
+
+options:
+  -h, --help            show this help message and exit
+  -s {my_test_plugin,sqlite3,my_read_only_test_plugin}, --storage {my_test_plugin,sqlite3,my_read_only_test_plugin}
+                        Storage implementation of bag. By default attempts to
+                        detect automatically - use this argument to override.
+usage: ros2 topic echo [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon]
+                       [--qos-profile {unknown,system_default,sensor_data,services_default,parameters,parameter_events,action_status_default}]
+                       [--qos-depth N]
+                       [--qos-history {system_default,keep_last,keep_all,unknown}]
+                       [--qos-reliability {system_default,reliable,best_effort,unknown}]
+                       [--qos-durability {system_default,transient_local,volatile,unknown}]
+                       [--csv] [--field FIELD] [--full-length]
+                       [--truncate-length TRUNCATE_LENGTH] [--no-arr]
+                       [--no-str] [--flow-style] [--lost-messages]
+                       [--no-lost-messages] [--raw] [--filter FILTER_EXPR]
+                       [--once]
+                       topic_name [message_type]
+
+Output messages from a topic
+
+positional arguments:
+  topic_name            Name of the ROS topic to listen to (e.g. '/chatter')
+  message_type          Type of the ROS message (e.g. 'std_msgs/msg/String')
+
+options:
+  -h, --help            show this help message and exit
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+  --no-daemon           Do not spawn nor use an already running daemon
+  --qos-profile {unknown,system_default,sensor_data,services_default,parameters,parameter_events,action_status_default}
+                        Quality of service preset profile to subscribe with
+                        (default: sensor_data)
+  --qos-depth N         Queue size setting to subscribe with (overrides depth
+                        value of --qos-profile option)
+  --qos-history {system_default,keep_last,keep_all,unknown}
+                        History of samples setting to subscribe with
+                        (overrides history value of --qos-profile option,
+                        default: keep_last)
+  --qos-reliability {system_default,reliable,best_effort,unknown}
+                        Quality of service reliability setting to subscribe
+                        with (overrides reliability value of --qos-profile
+                        option, default: Automatically match existing
+                        publishers )
+  --qos-durability {system_default,transient_local,volatile,unknown}
+                        Quality of service durability setting to subscribe
+                        with (overrides durability value of --qos-profile
+                        option, default: Automatically match existing
+                        publishers )
+  --csv                 Output all recursive fields separated by commas (e.g.
+                        for plotting)
+  --field FIELD         Echo a selected field of a message. Use '.' to select
+                        sub-fields. For example, to echo the position field of
+                        a nav_msgs/msg/Odometry message: 'ros2 topic echo
+                        /odom --field pose.pose.position'
+  --full-length, -f     Output all elements for arrays, bytes, and string with
+                        a length > '--truncate-length', by default they are
+                        truncated after '--truncate-length' elements with
+                        '...''
+  --truncate-length TRUNCATE_LENGTH, -l TRUNCATE_LENGTH
+                        The length to truncate arrays, bytes, and string to
+                        (default: 128)
+  --no-arr              Don't print array fields of messages
+  --no-str              Don't print string fields of messages
+  --flow-style          Print collections in the block style (not available
+                        with csv format)
+  --lost-messages       DEPRECATED: Does nothing
+  --no-lost-messages    Don't report when a message is lost
+  --raw                 Echo the raw binary representation
+  --filter FILTER_EXPR  Python expression to filter messages that are printed.
+                        Expression can use Python builtins as well as m (the
+                        message).
+  --once                Print the first message received and then exit.
+usage: ros2 topic hz [-h] [--window WINDOW] [--filter EXPR] [--wall-time]
+                     [--spin-time SPIN_TIME] [-s]
+                     topic_name
+
+Print the average receiving rate to screen.
+
+note:
+  This rate reflects the receiving rate on subscription, which might be affected by platform resources and QoS configuration, and may not exactly match the publisher's rate.
+
+positional arguments:
+  topic_name            Name of the ROS topic to listen to (e.g. '/chatter')
+
+options:
+  -h, --help            show this help message and exit
+  --window WINDOW, -w WINDOW
+                        window size, in # of messages, for calculating rate
+                        (default: 10000)
+  --filter EXPR         only measure messages matching the specified Python
+                        expression
+  --wall-time           calculates rate using wall time which can be helpful
+                        when clock is not published during simulation
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+usage: ros2 node list [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon] [-a]
+                      [-c]
+
+Output a list of available nodes
+
+options:
+  -h, --help            show this help message and exit
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+  --no-daemon           Do not spawn nor use an already running daemon
+  -a, --all             Display all nodes even hidden ones
+  -c, --count-nodes     Only display the number of nodes discovered
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'scene':
+        no description given
+        (default: 'flat')
+
+    'gui':
+        no description given
+        (default: 'true')
+
+    'capture_dir':
+        no description given
+        (default: '')
+
+    'port':
+        no description given
+        (default: '11375')
+
+    'workspace':
+        no description given
+        (default: '/home/jamiek/remote5g_ws')
+
+    'config':
+        no description given
+        (default: '/home/jamiek/remote5g_ws/install/remote5g_sim/share/remote5g_sim/config/vehicle.yaml')
+
+    'front_width':
+        no description given
+        (default: '')
+
+    'front_height':
+        no description given
+        (default: '')
+
+    'gimbal_width':
+        no description given
+        (default: '')
+
+    'gimbal_height':
+        no description given
+        (default: '')
+
+    'x':
+        no description given
+        (default: '')
+
+    'y':
+        no description given
+        (default: '')
+
+    'yaw':
+        no description given
+        (default: '')
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'config':
+        no description given
+        (default: '/home/jamiek/remote5g_ws/install/remote5g_competition/share/remote5g_competition/config/competition.yaml')
+
+    'output':
+        no description given
+        (default: '/home/jamiek/remote5g_ws/reports/competition/current')
+
+    'start_side':
+        no description given
+        (default: '')
+
+    'track_color':
+        no description given
+        (default: '')
+
+    'lane_change':
+        no description given
+        (default: '')
+
+    'parking_target':
+        no description given
+        (default: '')
+
+    'obstacle_mode':
+        no description given
+        (default: '')
+
+    'obstacle_seed':
+        no description given
+        (default: '')
+
+    'sign_seed':
+        no description given
+        (default: '')
+
+    'barrier_present':
+        no description given
+        (default: 'true')
+
+    'cone_static':
+        no description given
+        (default: 'false')
+
+    'spawn_vehicle':
+        no description given
+        (default: 'true')
+
+    'gui':
+        no description given
+        (default: 'true')
+
+    'port':
+        no description given
+        (default: '11385')
+
+    'camera_width':
+        no description given
+        (default: '1280')
+
+    'camera_height':
+        no description given
+        (default: '720')
+
+    'capture_dir':
+        no description given
+        (default: '')
+
+    'vehicle_x':
+        no description given
+        (default: '')
+
+    'vehicle_y':
+        no description given
+        (default: '')
+
+    'vehicle_z':
+        no description given
+        (default: '')
+
+    'vehicle_yaw':
+        no description given
+        (default: '')

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="box" params="name mass xyz size color">
+    <link name="${name}">
+      <inertial><origin xyz="${xyz}"/><mass value="${mass}"/>
+        <inertia ixx="${mass*(size[1]**2+size[2]**2)/12}" iyy="${mass*(size[0]**2+size[2]**2)/12}" izz="${mass*(size[0]**2+size[1]**2)/12}" ixy="0" ixz="0" iyz="0"/>
+      </inertial>
+      <visual><origin xyz="${xyz}"/><geometry><box size="${size[0]} ${size[1]} ${size[2]}"/></geometry><material name="${name}_material"><color rgba="${color}"/></material></visual>
+      <collision><origin xyz="${xyz}"/><geometry><box size="${size[0]} ${size[1]} ${size[2]}"/></geometry></collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="fixed" params="name parent child xyz rpy:='0 0 0'">
+    <joint name="${name}" type="fixed"><parent link="${parent}"/><child link="${child}"/><origin xyz="${xyz}" rpy="${rpy}"/></joint>
+  </xacro:macro>
+</robot>

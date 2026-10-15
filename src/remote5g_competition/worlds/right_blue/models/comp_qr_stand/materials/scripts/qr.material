@@ -1,0 +1,9 @@
+material competition/comp_qr_stand/qr
+{
+ technique { pass { lighting off
+ cull_hardware none
+ cull_software none
+ texture_unit { texture comp_qr_stand_qr_f9e2c485.png
+ filtering none
+ } } }
+}

@@ -1,0 +1,61 @@
+workspace: /home/jamiek/remote5g_ws
+start_side: right
+track_color: red
+lane: 3
+lane_change: right
+parking_target: random
+obstacle_seed: 20251014
+sign_seed: 17
+obstacle_mode: random
+obstacle_s: 63.0
+obstacle_lateral_offset: 0.0
+barrier_present: true
+cone_static: false
+tape_width: 0.1
+zone_length_ratio: 1.5
+marking_thickness: 0.0006
+marking_bottom_z: 0.0007
+barrier_width: 0.8
+barrier_height: 0.5
+barrier_thickness: 0.02
+barrier_gap: 0.1
+qr_size: 0.1
+qr_content: REMOTE5G_SIM_QR_01
+parking_qr_A: REMOTE5G_SIM_PARK_A
+parking_qr_B: REMOTE5G_SIM_PARK_B
+qr_pitch_deg: 45.0
+qr_yaw_offset_deg: 0.0
+qr_center_height: 0.135
+stand_width: 0.148
+stand_panel_height: 0.21
+stand_thickness: 0.004
+stand_mass: 0.1
+paper_long: 0.297
+paper_short: 0.105
+paper_gap: 0.105
+sign_width: 0.21
+sign_length: 0.297
+print_white_margin: 0.002
+cone_height: 0.08
+cone_diameter: 0.078
+cone_mass: 0.035
+cone_mu: 0.8
+cone_segments: 32
+guide_spacing: 0.5
+guide_start_gap: 0.2
+guide_block_length: 3.0
+guide_yellow_start_offset: 1.0
+guide_yellow_entry_length: 1.0
+guide_return_length: 4.0
+guide_straight_length: 1.0
+region2_top_straight_offset: 4.0
+region2_length_ratio: 1.5
+parking_end_margin: 3.0
+parking_sign_distance: 2.0
+contact_patch_length: 0.02
+vehicle_clearance_margin: 0.04
+vehicle_spawn:
+  x: null
+  y: null
+  z: null
+  yaw: null

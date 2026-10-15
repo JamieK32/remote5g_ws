@@ -1,0 +1,9 @@
+material competition/comp_qr_parking_B/qr
+{
+ technique { pass { lighting off
+ cull_hardware none
+ cull_software none
+ texture_unit { texture comp_qr_parking_B_qr_7bc62027.png
+ filtering none
+ } } }
+}

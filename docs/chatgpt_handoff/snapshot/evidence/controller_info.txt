@@ -1,0 +1,32 @@
+COMMAND: ['ros2', 'node', 'info', '/xtnetrc_control']
+/xtnetrc_control
+  Subscribers:
+    /ackermann_cmd: ackermann_msgs/msg/AckermannDriveStamped
+    /clock: rosgraph_msgs/msg/Clock
+    /cmd_vel: geometry_msgs/msg/Twist
+    /gimbal/pan_cmd: std_msgs/msg/Float64
+    /gimbal/tilt_cmd: std_msgs/msg/Float64
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+  Publishers:
+    /diagnostics: diagnostic_msgs/msg/DiagnosticArray
+    /joint_states: sensor_msgs/msg/JointState
+    /odom: nav_msgs/msg/Odometry
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /tf: tf2_msgs/msg/TFMessage
+  Service Servers:
+    /gimbal/center: std_srvs/srv/Trigger
+    /xtnetrc_control/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /xtnetrc_control/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /xtnetrc_control/get_parameters: rcl_interfaces/srv/GetParameters
+    /xtnetrc_control/list_parameters: rcl_interfaces/srv/ListParameters
+    /xtnetrc_control/set_parameters: rcl_interfaces/srv/SetParameters
+    /xtnetrc_control/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+
+EXIT_CODE: 0

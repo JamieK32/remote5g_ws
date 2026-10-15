@@ -1,0 +1,13 @@
+COMMAND: ['ros2', 'topic', 'hz', '/odom']
+average rate: 19.864
+	min: 0.049s max: 0.052s std dev: 0.00061s window: 21
+average rate: 19.842
+	min: 0.049s max: 0.052s std dev: 0.00054s window: 41
+average rate: 19.832
+	min: 0.049s max: 0.052s std dev: 0.00056s window: 61
+average rate: 19.830
+	min: 0.049s max: 0.052s std dev: 0.00058s window: 81
+average rate: 19.824
+	min: 0.049s max: 0.052s std dev: 0.00061s window: 101
+
+EXIT_CODE: 124

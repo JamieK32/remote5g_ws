@@ -1,0 +1,463 @@
+{
+  "snapshot_date": "2026-10-15 Asia/Shanghai",
+  "project": "/home/jamiek/remote5g_ws",
+  "scope": "Initial read-only audit followed by user-authorized 30fps / 50Hz configuration and publisher update; geometry, worlds and race algorithms unchanged",
+  "verified": [
+    "ROS2 Humble package resolution",
+    "competition launch with real gzclient captures",
+    "flat launch and physical small Ackermann motion",
+    "installed teleop tool real PTY movement and stop",
+    "two RGB images and CameraInfo",
+    "odom/joints/diagnostics/TF/clock",
+    "get actual vehicle state and center gimbal service",
+    "short ros2 bag record/info/play and subscriber reception",
+    "RViz OpenGL and rqt_image_view startup"
+  ],
+  "unverified": [
+    "doctor report timed out",
+    "complete RViz/rqt GUI interactions and saved configuration",
+    "clean-machine build",
+    "full race algorithms",
+    "hardware/5G/audio",
+    "headless rendering without WSLg"
+  ],
+  "original_files_checked": 986,
+  "original_files_changed": [
+    "src/remote5g_sim/README.md",
+    "src/remote5g_sim/launch/sim.launch.py",
+    "src/remote5g_sim/scripts/drive.py",
+    "src/remote5g_sim/config/parameter_sources.yaml",
+    "src/remote5g_sim/config/vehicle.yaml",
+    "src/remote5g_competition/launch/competition.launch.py",
+    "README.md"
+  ],
+  "audit_ros_domain": 95,
+  "audit_gazebo_port": 11405,
+  "playback_ros_domain": 96,
+  "all_owned_runtime_groups_stopped": true,
+  "checks": {
+    "competition_probe": {
+      "exit_code": 0,
+      "command": [
+        "/usr/bin/python3",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition"
+      ],
+      "file": "evidence/competition_probe.txt",
+      "status": "PASS"
+    },
+    "node_list": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "node",
+        "list",
+        "--no-daemon"
+      ],
+      "file": "evidence/node_list.txt",
+      "status": "PASS"
+    },
+    "topic_list": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "topic",
+        "list",
+        "-t",
+        "--no-daemon"
+      ],
+      "file": "evidence/topic_list.txt",
+      "status": "PASS"
+    },
+    "service_list": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "service",
+        "list",
+        "-t"
+      ],
+      "file": "evidence/service_list.txt",
+      "status": "PASS"
+    },
+    "action_list": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "action",
+        "list",
+        "-t"
+      ],
+      "file": "evidence/action_list.txt",
+      "status": "PASS"
+    },
+    "odom_echo": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "topic",
+        "echo",
+        "/odom",
+        "--once"
+      ],
+      "file": "evidence/odom_echo.txt",
+      "status": "PASS"
+    },
+    "clock_echo": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "topic",
+        "echo",
+        "/clock",
+        "--qos-reliability",
+        "best_effort",
+        "--once"
+      ],
+      "file": "evidence/clock_echo.txt",
+      "status": "PASS"
+    },
+    "image_qos": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "topic",
+        "info",
+        "/camera/front/image_raw",
+        "--verbose"
+      ],
+      "file": "evidence/image_qos.txt",
+      "status": "PASS"
+    },
+    "controller_info": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "node",
+        "info",
+        "/xtnetrc_control"
+      ],
+      "file": "evidence/controller_info.txt",
+      "status": "PASS"
+    },
+    "param_controller": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "param",
+        "dump",
+        "/xtnetrc_control"
+      ],
+      "file": "evidence/param_controller.txt",
+      "status": "PASS"
+    },
+    "param_rsp": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "param",
+        "dump",
+        "/robot_state_publisher"
+      ],
+      "file": "evidence/param_rsp.txt",
+      "status": "PASS"
+    },
+    "interface_ackermann": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "interface",
+        "show",
+        "ackermann_msgs/msg/AckermannDriveStamped"
+      ],
+      "file": "evidence/interface_ackermann.txt",
+      "status": "PASS"
+    },
+    "interface_twist": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "interface",
+        "show",
+        "geometry_msgs/msg/Twist"
+      ],
+      "file": "evidence/interface_twist.txt",
+      "status": "PASS"
+    },
+    "gimbal_center": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "service",
+        "call",
+        "/gimbal/center",
+        "std_srvs/srv/Trigger",
+        "{}"
+      ],
+      "file": "evidence/gimbal_center.txt",
+      "status": "PASS"
+    },
+    "tf_echo": {
+      "exit_code": 124,
+      "command": [
+        "ros2",
+        "run",
+        "tf2_ros",
+        "tf2_echo",
+        "odom",
+        "front_camera_optical_frame"
+      ],
+      "file": "evidence/tf_echo.txt",
+      "status": "VERIFIED_STREAM_BOUNDED_STOP"
+    },
+    "odom_hz": {
+      "exit_code": 124,
+      "command": [
+        "ros2",
+        "topic",
+        "hz",
+        "/odom"
+      ],
+      "file": "evidence/odom_hz.txt",
+      "status": "VERIFIED_STREAM_BOUNDED_STOP"
+    },
+    "bag_info": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "bag",
+        "info",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag"
+      ],
+      "file": "evidence/bag_info.txt",
+      "status": "PASS"
+    },
+    "rviz_start": {
+      "exit_code": 124,
+      "command": [
+        "rviz2",
+        "-f",
+        "odom",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "file": "evidence/rviz_start.txt",
+      "status": "STARTUP_ONLY_BOUNDED_STOP"
+    },
+    "rqt_image_start": {
+      "exit_code": 124,
+      "command": [
+        "ros2",
+        "run",
+        "rqt_image_view",
+        "rqt_image_view",
+        "/camera/front/image_raw"
+      ],
+      "file": "evidence/rqt_image_start.txt",
+      "status": "STARTUP_ONLY_BOUNDED_STOP"
+    },
+    "flat_probe": {
+      "exit_code": 0,
+      "command": [
+        "/usr/bin/python3",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/flat",
+        "--motion"
+      ],
+      "file": "evidence/flat_probe.txt",
+      "status": "PASS"
+    },
+    "bag_play": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "bag",
+        "play",
+        "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag",
+        "--topics",
+        "/odom",
+        "/joint_states",
+        "/tf",
+        "/tf_static",
+        "--clock",
+        "20"
+      ],
+      "file": "evidence/bag_play.txt",
+      "status": "PASS"
+    },
+    "daemon_stop": {
+      "exit_code": 0,
+      "command": [
+        "ros2",
+        "daemon",
+        "stop"
+      ],
+      "file": "evidence/daemon_stop.txt",
+      "status": "PASS"
+    }
+  },
+  "frequency_revision": {
+    "date": "2026-10-15",
+    "authorization": "User explicitly requested front RGB 30fps, speed/steering targets 50Hz and updated ChatGPT handoff",
+    "authorized_changed_files": [
+      "src/remote5g_sim/config/vehicle.yaml",
+      "src/remote5g_sim/config/parameter_sources.yaml",
+      "src/remote5g_sim/scripts/drive.py",
+      "src/remote5g_sim/launch/sim.launch.py",
+      "src/remote5g_competition/launch/competition.launch.py",
+      "src/remote5g_sim/README.md"
+    ],
+    "front_camera_target_fps": 30.0,
+    "gimbal_camera_target_fps": 15.0,
+    "control_period_sim_seconds": 0.02,
+    "drive_command_wall_hz": 50.0,
+    "robot_state_publisher_max_hz": 50.0,
+    "path_tracking_algorithm": "NOT_IMPLEMENTED",
+    "manufacturer_control_frequency": "NOT_SPECIFIED",
+    "current_running_user_instance": "Existing user launch was left running with its previously loaded configuration; restart required",
+    "results": {
+      "flat": {
+        "status": "PASS",
+        "rates": {
+          "/odom": {
+            "samples": 386,
+            "wall_hz": 48.260454040036606,
+            "simulation_hz": 48.50699256646088
+          },
+          "/joint_states": {
+            "samples": 387,
+            "wall_hz": 48.27027312250961,
+            "simulation_hz": 48.51074525574966
+          },
+          "/camera/front/image_raw": {
+            "samples": 239,
+            "wall_hz": 29.827785618935582,
+            "simulation_hz": 29.993698802772524
+          },
+          "/camera/front/camera_info": {
+            "samples": 239,
+            "wall_hz": 29.87258553407309,
+            "simulation_hz": 29.993698802772524
+          },
+          "/camera/gimbal/image_raw": {
+            "samples": 119,
+            "wall_hz": 14.92463732856307,
+            "simulation_hz": 15.00127129417747
+          },
+          "/camera/gimbal/camera_info": {
+            "samples": 120,
+            "wall_hz": 14.924732361075716,
+            "simulation_hz": 15.002521432173475
+          },
+          "tf:base_footprint": {
+            "samples": 387,
+            "wall_hz": 48.27058163473899,
+            "simulation_hz": 48.51074525574966
+          },
+          "tf:front_left_knuckle": {
+            "samples": 387,
+            "wall_hz": 48.26968945371178,
+            "simulation_hz": 48.51074525574966
+          }
+        },
+        "robot_state_publisher_max_hz": 50.0,
+        "front_resolution": [
+          640,
+          480
+        ],
+        "frame_id": "front_camera_optical_frame",
+        "rates_basis": "wall arrival and unique simulation stamps are reported separately; no hard real-time guarantee",
+        "normal_stop": {
+          "status": "PASS",
+          "command_wall_hz": 50.236218802635065,
+          "messages": 205,
+          "stopped_vx_mps": 0.0004894428518445776,
+          "displacement_m": 0.3753695075288505,
+          "process_exit_code": 0,
+          "interrupted": false
+        },
+        "ctrl_c_stop": {
+          "status": "PASS",
+          "command_wall_hz": 49.89748971006704,
+          "messages": 46,
+          "stopped_vx_mps": 3.553291012300014e-05,
+          "displacement_m": 0.07624815192651785,
+          "process_exit_code": 0,
+          "interrupted": true
+        }
+      },
+      "competition": {
+        "status": "PASS",
+        "rates": {
+          "/odom": {
+            "samples": 315,
+            "wall_hz": 39.38616340711166,
+            "simulation_hz": 48.818407960199
+          },
+          "/joint_states": {
+            "samples": 315,
+            "wall_hz": 39.38687677691536,
+            "simulation_hz": 48.818407960199
+          },
+          "/camera/front/image_raw": {
+            "samples": 193,
+            "wall_hz": 24.258455504004736,
+            "simulation_hz": 29.995313232307453
+          },
+          "/camera/front/camera_info": {
+            "samples": 194,
+            "wall_hz": 24.38571852880898,
+            "simulation_hz": 30.151538822059056
+          },
+          "/camera/gimbal/image_raw": {
+            "samples": 96,
+            "wall_hz": 12.183906049467982,
+            "simulation_hz": 14.99605367008682
+          },
+          "/camera/gimbal/camera_info": {
+            "samples": 97,
+            "wall_hz": 12.312546840253166,
+            "simulation_hz": 15.153906866614049
+          },
+          "tf:base_footprint": {
+            "samples": 302,
+            "wall_hz": 39.084569522976565,
+            "simulation_hz": 48.85570524265541
+          },
+          "tf:front_left_knuckle": {
+            "samples": 314,
+            "wall_hz": 39.36478635452394,
+            "simulation_hz": 48.82233660895336
+          }
+        },
+        "robot_state_publisher_max_hz": 50.0,
+        "front_resolution": [
+          1280,
+          720
+        ],
+        "frame_id": "front_camera_optical_frame",
+        "rates_basis": "wall arrival and unique simulation stamps are reported separately; no hard real-time guarantee"
+      }
+    }
+  },
+  "repository_setup": {
+    "date": "2026-10-15",
+    "repository_name_requested": "remote5g_ws",
+    "visibility_requested": "private",
+    "local_branch": "main",
+    "remote_status": "pending_github_authorization",
+    "remote_created": false,
+    "additional_baseline_changes": [
+      "README.md"
+    ],
+    "new_repository_files": [
+      ".gitignore",
+      ".git/"
+    ],
+    "author_source": "Existing Windows Git user configuration; repository-local settings only",
+    "source_changes": "Git exclusions and current root README only; model/control source preserved",
+    "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded"
+  },
+  "initial_runtime_evidence": "runtime/competition and runtime/flat are the original pre-update audit"
+}

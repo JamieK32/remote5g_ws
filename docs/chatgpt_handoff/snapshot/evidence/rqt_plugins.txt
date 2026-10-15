@@ -1,0 +1,42 @@
+COMMAND:
+rqt --list-plugins; ros2 pkg executables teleop_twist_keyboard; ros2 pkg executables rqt_image_view; ros2 pkg executables rqt_reconfigure; rviz2 --help
+
+EXIT_CODE: 0
+
+OUTPUT:
+rqt_action.action_plugin.ActionPlugin
+rqt_bag.bag.Bag
+rqt_console.console.Console
+rqt_graph.ros_graph.RosGraph
+rqt_image_view/ImageView
+rqt_msg.messages.Messages
+rqt_plot.plot.Plot
+rqt_publisher.publisher.Publisher
+rqt_py_console.py_console.PyConsole
+rqt_reconfigure.param_plugin.ParamPlugin
+rqt_service_caller.service_caller.ServiceCaller
+rqt_shell.shell.Shell
+rqt_srv.services.Services
+rqt_topic.topic.Topic
+teleop_twist_keyboard teleop_twist_keyboard
+rqt_image_view image_publisher
+rqt_image_view rqt_image_view
+rqt_reconfigure rqt_reconfigure
+Usage: rviz2 [options]
+3D visualization tool for ROS2
+
+Options:
+  -h, --help                                         Displays help on
+                                                     commandline options.
+  --help-all                                         Displays help including Qt
+                                                     specific options.
+  -t, --display-title-format <"{NAMESPACE} - {CONFIG A display title format
+  _PATH}/{CONFIG_FILENAME} - RViz2" >                like 
+  -d, --display-config <display_config>              A display config file
+                                                     (.rviz) to load
+  -f, --fixed-frame <fixed_frame>                    Set the fixed frame
+  -l, --ogre-log                                     Enable the Ogre.log file
+                                                     (output in cwd) and console
+                                                     output.
+  -s, --splash-screen <splash_path>                  A custom splash-screen
+                                                     image to display

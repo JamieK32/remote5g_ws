@@ -1,0 +1,5 @@
+COMMAND: ['ros2', 'run', 'rqt_image_view', 'rqt_image_view', '/camera/front/image_raw']
+Dropped Escape call with ulEscapeCode : 0x03007703
+[INFO] [1792046947.304941502] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+
+EXIT_CODE: 124

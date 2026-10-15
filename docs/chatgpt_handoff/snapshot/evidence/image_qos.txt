@@ -1,0 +1,23 @@
+COMMAND: ['ros2', 'topic', 'info', '/camera/front/image_raw', '--verbose']
+Type: sensor_msgs/msg/Image
+
+Publisher count: 1
+
+Node name: front_camera_ros
+Node namespace: /camera/front
+Topic type: sensor_msgs/msg/Image
+Endpoint type: PUBLISHER
+GID: 01.0f.36.3a.a7.46.2b.9e.00.00.00.00.00.00.4b.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): UNKNOWN
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 0
+
+
+EXIT_CODE: 0

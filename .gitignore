@@ -1,0 +1,57 @@
+# ROS 2 build outputs
+/build/
+/install/
+/log/
+
+# Local and generated files
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+/data/*
+!/data/.gitkeep
+/artifacts/*
+!/artifacts/.gitkeep
+
+# Generated reports and delivery archives
+/reports/
+/deliverables/
+
+# Editor indexes (keep small project settings)
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/extensions.json
+*.vc.db
+*.vc.db-shm
+*.vc.db-wal
+
+# Handoff runtime artifacts; retain readable summaries
+/docs/chatgpt_handoff/snapshot/runtime/**
+!/docs/chatgpt_handoff/snapshot/runtime/competition/
+!/docs/chatgpt_handoff/snapshot/runtime/flat/
+!/docs/chatgpt_handoff/snapshot/runtime/competition/runtime.json
+!/docs/chatgpt_handoff/snapshot/runtime/flat/runtime.json
+/docs/chatgpt_handoff/*.zip
+/docs/chatgpt_handoff/*.zip.sha256
+
+# Local recordings and OS metadata
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+*.bag
+*.bag.active
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Credentials and private key material
+.git-credentials
+.netrc
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519

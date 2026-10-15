@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <model name="wa_400m_track_red">
+    <static>true</static>
+    <link name="track">
+      <collision name="flat_drivable_surface">
+        <pose>0 0 -0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>188 104 0.2</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.9</mu>
+              <mu2>0.9</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="surround">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/surround.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.37 0.39 0.36 1</ambient>
+          <diffuse>0.37 0.39 0.36 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="track">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/track.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.55 0.105 0.075 1</ambient>
+          <diffuse>0.55 0.105 0.075 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="infield">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/infield.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.15 0.32 0.12 1</ambient>
+          <diffuse>0.15 0.32 0.12 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="markings">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/markings.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="kerb">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/kerb.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.9 0.9 0.9 1</ambient>
+          <diffuse>0.9 0.9 0.9 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+        </material>
+      </visual>
+      <collision name="inner_kerb">
+        <geometry>
+          <mesh>
+            <uri>model://wa_400m_track_red/meshes/kerb.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

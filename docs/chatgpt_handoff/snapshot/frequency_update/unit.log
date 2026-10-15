@@ -1,0 +1,447 @@
+Starting >>> remote5g_sim
+UpdateCTestConfiguration  from :/home/jamiek/remote5g_ws/build/remote5g_sim/CTestConfiguration.ini
+Parse Config file:/home/jamiek/remote5g_ws/build/remote5g_sim/CTestConfiguration.ini
+   Site: DESKTOP-T4C78IK
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261015-1147 - Experimental
+UpdateCTestConfiguration  from :/home/jamiek/remote5g_ws/build/remote5g_sim/CTestConfiguration.ini
+Parse Config file:/home/jamiek/remote5g_ws/build/remote5g_sim/CTestConfiguration.ini
+Test project /home/jamiek/remote5g_ws/build/remote5g_sim
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: control_math
+
+1: Test command: /home/jamiek/remote5g_ws/build/remote5g_sim/control_math_test
+1: Test timeout computed to be: 10
+1: Geometry, reverse Twist, zero-speed rejection, NaN/Inf and ramp checks passed
+1/1 Test #1: control_math .....................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+Finished <<< remote5g_sim [0.14s]
+Starting >>> remote5g_competition
+UpdateCTestConfiguration  from :/home/jamiek/remote5g_ws/build/remote5g_competition/CTestConfiguration.ini
+Parse Config file:/home/jamiek/remote5g_ws/build/remote5g_competition/CTestConfiguration.ini
+   Site: DESKTOP-T4C78IK
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261015-1147 - Experimental
+UpdateCTestConfiguration  from :/home/jamiek/remote5g_ws/build/remote5g_competition/CTestConfiguration.ini
+Parse Config file:/home/jamiek/remote5g_ws/build/remote5g_competition/CTestConfiguration.ini
+Test project /home/jamiek/remote5g_ws/build/remote5g_competition
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: geometry
+
+1: Test command: /usr/bin/python3 "/home/jamiek/remote5g_ws/src/remote5g_competition/test/test_geometry.py"
+1: Test timeout computed to be: 45
+1: {
+1:   "status": "GEOMETRY_PASS",
+1:   "configurations": [
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "red",
+1:       "side": "left",
+1:       "change": "left"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "red",
+1:       "side": "left",
+1:       "change": "right"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "red",
+1:       "side": "right",
+1:       "change": "left"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "red",
+1:       "side": "right",
+1:       "change": "right"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "blue",
+1:       "side": "left",
+1:       "change": "left"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "blue",
+1:       "side": "left",
+1:       "change": "right"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "blue",
+1:       "side": "right",
+1:       "change": "left"
+1:     },
+1:     {
+1:       "status": "GEOMETRY_PASS",
+1:       "model_instances": 53,
+1:       "clear_lane_width": 1.1700000000000017,
+1:       "zone_length": 1.7550000000000026,
+1:       "crosswalk_papers": 5,
+1:       "paper_gap": 0.105,
+1:       "qr_textures": {
+1:         "comp_qr_stand": {
+1:           "decoded": "REMOTE5G_SIM_QR_01",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_A": {
+1:           "decoded": "REMOTE5G_SIM_PARK_A",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         },
+1:         "comp_qr_parking_B": {
+1:           "decoded": "REMOTE5G_SIM_PARK_B",
+1:           "pixels": [
+1:             660,
+1:             660
+1:           ]
+1:         }
+1:       },
+1:       "guide_row_count": 4,
+1:       "guide_sign_gap_m": 1.3994999999999607,
+1:       "bend_obstacle_count": 1,
+1:       "guide_spacing_min_max": [
+1:         0.49916574464037883,
+1:         0.5
+1:       ],
+1:       "vehicle_width_envelope": 0.34333701648202003,
+1:       "corridor_width_min_conservative": 0.730514763881587,
+1:       "required_corridor_width_conservative": 0.7048737475090916,
+1:       "max_curve_curvature": 0.4078236220596661,
+1:       "vehicle_max_curvature": 1.9542670389128645,
+1:       "min_vehicle_radius": 0.5117007963027858,
+1:       "autonomous_driving": "NOT_TESTED",
+1:       "color": "blue",
+1:       "side": "right",
+1:       "change": "right"
+1:     }
+1:   ],
+1:   "parking_footprint_counterexample": "PASS"
+1: }
+1/1 Test #1: geometry .........................   Passed    4.25 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   4.25 sec
+Finished <<< remote5g_competition [4.42s]
+
+Summary: 2 packages finished [6.39s]

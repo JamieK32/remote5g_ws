@@ -1,0 +1,35 @@
+<sdf version="1.6">
+  <model name="comp_qr_parking_B">
+    <static>true</static>
+    <link name="body">
+      <inertial>
+        <pose>0 0 0.04 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.001</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="qr">
+        <pose>0 0 0.0021999999999999997 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/materials/scripts</uri>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/materials/textures</uri>
+            <name>competition/comp_qr_parking_B/qr</name>
+          </script>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+    </link>
+  </model>
+</sdf>

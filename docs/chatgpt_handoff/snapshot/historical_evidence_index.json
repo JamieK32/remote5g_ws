@@ -1,0 +1,24 @@
+[
+  {
+    "source": "reports/competition/revised/matrix_results.json",
+    "sha256": "5a37b471d6d1cdd08f20ab09c2adaef9b64dbacaf15f96a8ceade5f62a031f42",
+    "classification": "HISTORICAL_NOT_RERUN",
+    "case_statuses": {
+      "left_red": "PASS",
+      "left_blue": "PASS",
+      "right_red": "PASS",
+      "right_blue": "PASS",
+      "props_only": "PASS"
+    }
+  },
+  {
+    "source": "docs/GAZEBO_TEST_REPORT.md",
+    "sha256": "e5c274e502edbb7a60bae3513f1ed7f9865034ef0cd927845e0f7bcc472aee89",
+    "classification": "HISTORICAL_NOT_RERUN"
+  },
+  {
+    "source": "reports/competition/revised_unit_test.log",
+    "sha256": "ae0b9661e386f3e1be28d42fc778d6792876fb6f005680ddb6a41292a6753a57",
+    "classification": "HISTORICAL_NOT_RERUN"
+  }
+]

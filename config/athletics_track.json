@@ -1,0 +1,60 @@
+{
+  "units": "metres",
+  "sdf_version": "1.6",
+  "inner_radius_m": 36.5,
+  "straight_length_m": 84.39,
+  "lanes": 8,
+  "lane_width_m": 1.22,
+  "line_width_m": 0.05,
+  "outer_radius_m": 46.26,
+  "oval_bounds_m": [
+    176.91,
+    92.52
+  ],
+  "lane_1_measurement_offset_m": 0.3,
+  "lane_1_measurement_length_m": 400.00121930420875,
+  "lane_1_centerline_length_m": 401.94900674943443,
+  "arc_segments_per_semicircle": 1024,
+  "max_outer_arc_chord_error_m": 5.442712427106588e-05,
+  "kerb_width_m": 0.05,
+  "kerb_height_m": 0.05,
+  "surface_collision_z_m": 0,
+  "visual_surface_z_m": 0,
+  "visual_partition": "non-overlapping triangulated regions",
+  "depth_bias": 0,
+  "friction_mu": 0.9,
+  "sprint_apron_x_m": [
+    -70.805,
+    59.195
+  ],
+  "colors_rgba": {
+    "red": [
+      0.55,
+      0.105,
+      0.075,
+      1
+    ],
+    "blue": [
+      0.035,
+      0.3,
+      0.56,
+      1
+    ]
+  },
+  "source": {
+    "file": "World-Athletics-Track-and-Field-Facilities-Manual-2019-Edition.pdf",
+    "section": "2.2.1.1",
+    "printed_pages": [
+      29,
+      30,
+      31
+    ],
+    "pdf_pages": [
+      27,
+      28,
+      29
+    ]
+  },
+  "scope": "Standard oval and sprint apron only. No full athletics event markings or robot competition props. Colors and friction are simulation choices.",
+  "model_revision": "1.1"
+}

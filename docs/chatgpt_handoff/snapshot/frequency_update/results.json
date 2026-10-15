@@ -1,0 +1,124 @@
+{
+  "flat": {
+    "status": "PASS",
+    "rates": {
+      "/odom": {
+        "samples": 386,
+        "wall_hz": 48.260454040036606,
+        "simulation_hz": 48.50699256646088
+      },
+      "/joint_states": {
+        "samples": 387,
+        "wall_hz": 48.27027312250961,
+        "simulation_hz": 48.51074525574966
+      },
+      "/camera/front/image_raw": {
+        "samples": 239,
+        "wall_hz": 29.827785618935582,
+        "simulation_hz": 29.993698802772524
+      },
+      "/camera/front/camera_info": {
+        "samples": 239,
+        "wall_hz": 29.87258553407309,
+        "simulation_hz": 29.993698802772524
+      },
+      "/camera/gimbal/image_raw": {
+        "samples": 119,
+        "wall_hz": 14.92463732856307,
+        "simulation_hz": 15.00127129417747
+      },
+      "/camera/gimbal/camera_info": {
+        "samples": 120,
+        "wall_hz": 14.924732361075716,
+        "simulation_hz": 15.002521432173475
+      },
+      "tf:base_footprint": {
+        "samples": 387,
+        "wall_hz": 48.27058163473899,
+        "simulation_hz": 48.51074525574966
+      },
+      "tf:front_left_knuckle": {
+        "samples": 387,
+        "wall_hz": 48.26968945371178,
+        "simulation_hz": 48.51074525574966
+      }
+    },
+    "robot_state_publisher_max_hz": 50.0,
+    "front_resolution": [
+      640,
+      480
+    ],
+    "frame_id": "front_camera_optical_frame",
+    "rates_basis": "wall arrival and unique simulation stamps are reported separately; no hard real-time guarantee",
+    "normal_stop": {
+      "status": "PASS",
+      "command_wall_hz": 50.236218802635065,
+      "messages": 205,
+      "stopped_vx_mps": 0.0004894428518445776,
+      "displacement_m": 0.3753695075288505,
+      "process_exit_code": 0,
+      "interrupted": false
+    },
+    "ctrl_c_stop": {
+      "status": "PASS",
+      "command_wall_hz": 49.89748971006704,
+      "messages": 46,
+      "stopped_vx_mps": 3.553291012300014e-05,
+      "displacement_m": 0.07624815192651785,
+      "process_exit_code": 0,
+      "interrupted": true
+    }
+  },
+  "competition": {
+    "status": "PASS",
+    "rates": {
+      "/odom": {
+        "samples": 315,
+        "wall_hz": 39.38616340711166,
+        "simulation_hz": 48.818407960199
+      },
+      "/joint_states": {
+        "samples": 315,
+        "wall_hz": 39.38687677691536,
+        "simulation_hz": 48.818407960199
+      },
+      "/camera/front/image_raw": {
+        "samples": 193,
+        "wall_hz": 24.258455504004736,
+        "simulation_hz": 29.995313232307453
+      },
+      "/camera/front/camera_info": {
+        "samples": 194,
+        "wall_hz": 24.38571852880898,
+        "simulation_hz": 30.151538822059056
+      },
+      "/camera/gimbal/image_raw": {
+        "samples": 96,
+        "wall_hz": 12.183906049467982,
+        "simulation_hz": 14.99605367008682
+      },
+      "/camera/gimbal/camera_info": {
+        "samples": 97,
+        "wall_hz": 12.312546840253166,
+        "simulation_hz": 15.153906866614049
+      },
+      "tf:base_footprint": {
+        "samples": 302,
+        "wall_hz": 39.084569522976565,
+        "simulation_hz": 48.85570524265541
+      },
+      "tf:front_left_knuckle": {
+        "samples": 314,
+        "wall_hz": 39.36478635452394,
+        "simulation_hz": 48.82233660895336
+      }
+    },
+    "robot_state_publisher_max_hz": 50.0,
+    "front_resolution": [
+      1280,
+      720
+    ],
+    "frame_id": "front_camera_optical_frame",
+    "rates_basis": "wall arrival and unique simulation stamps are reported separately; no hard real-time guarantee"
+  }
+}

@@ -1,0 +1,9 @@
+material competition/comp_sign_B_red/sign
+{
+ technique { pass { lighting off
+ cull_hardware none
+ cull_software none
+ texture_unit { texture comp_sign_B_red_sign_89c2c4be.png
+ filtering none
+ } } }
+}

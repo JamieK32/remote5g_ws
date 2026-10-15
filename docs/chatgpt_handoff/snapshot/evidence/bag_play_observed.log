@@ -1,0 +1,8 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792047184.103892387] [rosbag2_storage]: Opened database '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag/sample_bag_0.db3' for READ_ONLY.
+[INFO] [1792047184.104011970] [rosbag2_player]: Set rate to 1
+[INFO] [1792047184.111672375] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1792047184.111703560] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1792047184.111709231] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1792047184.111713814] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1792047184.111717531] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1792047184.112168394] [rosbag2_storage]: Opened database '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag/sample_bag_0.db3' for READ_ONLY.

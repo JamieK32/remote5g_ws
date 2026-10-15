@@ -1,0 +1,17 @@
+COMMAND: ['ros2', 'interface', 'show', 'ackermann_msgs/msg/AckermannDriveStamped']
+## Time stamped drive command for robots with Ackermann steering.
+#  $Id$
+
+std_msgs/Header header
+	builtin_interfaces/Time stamp
+		int32 sec
+		uint32 nanosec
+	string frame_id
+AckermannDrive  drive
+	float32 steering_angle          #
+	float32 steering_angle_velocity #
+	float32 speed                   #
+	float32 acceleration            #
+	float32 jerk                    #
+
+EXIT_CODE: 0

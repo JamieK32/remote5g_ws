@@ -1,0 +1,281 @@
+reference_repository: https://github.com/kxkxkxa767/stupid_car
+reference_commit: bec5112ea11dca1516251327ce3ad35e3f5a6647
+drive_topology:
+  category: simulation_assumption
+  value: front steering, rear axle open differential, one common torque input
+  reason: 资料四轮差速驱动含义不确定；源码只有单电调输入，不能证明实际驱动桥布局。
+parameters:
+  wheelbase:
+    value: 0.23861
+    category: measured
+    reason: 明确标记 measured；2023 实车轴心到轴心卡尺记录。
+    source: main/motion_control/config/motion_default.json
+  front_track:
+    value: 0.24
+    category: simulation_assumption
+    reason: 轮中心距 240mm；加轮宽得 289.52mm 外宽，保留胎/车体转向间隙；真实轮距待测。
+  rear_track:
+    value: 0.24
+    category: simulation_assumption
+    reason: 轮中心距 240mm；加轮宽得 289.52mm 外宽，保留胎/车体转向间隙；真实轮距待测。
+  wheel_radius:
+    value: 0.055315
+    category: measured
+    reason: 无负载外径 110.63mm / 2；来源为仓库测量记录，原卡尺照片本次不可独立检查；负载半径待测。
+    source: reference/05_XT-NetRC车辆规格/XT-NetRC车辆规格与控制建模.md
+  wheel_width:
+    value: 0.04952
+    category: measured
+    reason: 卡尺记录 49.52mm；不是本次新测量。
+    source: reference/05_XT-NetRC车辆规格/XT-NetRC车辆规格与控制建模.md
+  wheel_mass:
+    value: 0.18
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  knuckle_mass:
+    value: 0.06
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  chassis_length:
+    value: 0.41
+    category: reference_document
+    reason: 410×190×105mm 为底盘参考盒尺寸，不是整车包络。
+    source: 用户任务/比赛规则及 reference/05_XT-NetRC车辆规格/XT-NetRC车辆规格与控制建模.md
+  chassis_width:
+    value: 0.19
+    category: reference_document
+    reason: 410×190×105mm 为底盘参考盒尺寸，不是整车包络。
+    source: 用户任务/比赛规则及 reference/05_XT-NetRC车辆规格/XT-NetRC车辆规格与控制建模.md
+  chassis_height:
+    value: 0.105
+    category: reference_document
+    reason: 410×190×105mm 为底盘参考盒尺寸，不是整车包络。
+    source: 用户任务/比赛规则及 reference/05_XT-NetRC车辆规格/XT-NetRC车辆规格与控制建模.md
+  chassis_mass:
+    value: 3.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  chassis_center_x:
+    value: 0.119305
+    category: simulation_assumption
+    reason: 参考原点为后轴中心；将底盘盒及其质心放在半轴距处。
+  chassis_center_z:
+    value: 0.115
+    category: simulation_assumption
+    reason: 质心/底盘盒中心在轴心上方 115mm；底盘盒底部高于轮顶，避免无证据外形造成轮胎自穿插；高度需实车建模替换。
+  max_steering:
+    value: 0.4363323129985824
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  joint_steering_limit:
+    value: 0.6
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  max_speed:
+    value: 0.6
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  steering_rate:
+    value: 2.0943951023931953
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  max_accel:
+    value: 0.8
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  max_decel:
+    value: 1.2
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  curvature_speed_gain:
+    value: 0.8
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  min_curve_speed:
+    value: 0.18
+    category: source_default
+    reason: 软件初值；25°/0.6m/s 未经机械极限或电调/里程计标定；角速度 120°/s 转为弧度。
+    source: main/motion_control/config/motion_default.json
+  command_timeout:
+    value: 0.3
+    category: source_default
+    reason: 300ms 命令租约；本实现用单调墙钟，暂停/慢仿真也过期。
+    source: main/hardware/include/xtnetrc_hardware/vehicle.hpp
+  control_period:
+    value: 0.02
+    category: simulation_assumption
+    reason: 用户于2026-10-15选择20ms / 50Hz速度转角目标及状态反馈；是仿真控制设计值，不是厂商公布的控制频率。物理扭矩反馈仍每步执行。
+    source: 用户授权的50Hz控制配置；原20Hz参考main/car_runtime/src/app.cpp:110
+  steering_kp:
+    value: 8.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  steering_kd:
+    value: 0.15
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  steering_torque:
+    value: 1.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  drive_kp:
+    value: 1.5
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  drive_torque:
+    value: 0.6
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  wheel_damping:
+    value: 0.0005
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  mu:
+    value: 1.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  contact_kp:
+    value: 1000000.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  contact_kd:
+    value: 10.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  pan_limit:
+    value: 1.5707963267948966
+    category: simulation_assumption
+    reason: 仿真弧度限位，与 PWM 28–122/58–122 无映射关系；正 Pan 左看，正 Tilt 抬头。
+  tilt_min:
+    value: -0.6
+    category: simulation_assumption
+    reason: 仿真弧度限位，与 PWM 28–122/58–122 无映射关系；正 Pan 左看，正 Tilt 抬头。
+  tilt_max:
+    value: 0.8
+    category: simulation_assumption
+    reason: 仿真弧度限位，与 PWM 28–122/58–122 无映射关系；正 Pan 左看，正 Tilt 抬头。
+  gimbal_rate:
+    value: 1.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_kp:
+    value: 1.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_kd:
+    value: 0.03
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_torque:
+    value: 0.15
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_mass:
+    value: 0.04
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  camera_mass:
+    value: 0.05
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_x:
+    value: 0.3
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_y:
+    value: 0.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_z:
+    value: 0.18
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_pitch:
+    value: 0.45
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_width:
+    value: 640
+    category: source_default
+    reason: XWF 算法兼容 640×480；不复用其真实外参/历史内参。
+    source: main/camera_calibration/output/ground_projection.json
+  front_height:
+    value: 480
+    category: source_default
+    reason: XWF 算法兼容 640×480；不复用其真实外参/历史内参。
+    source: main/camera_calibration/output/ground_projection.json
+  front_hfov:
+    value: 1.3962634015954636
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  front_rate:
+    value: 30.0
+    category: reference_document
+    reason: 用户提供的XT-NetRC产品介绍中摄像头I标注1280×720-30帧；采用30fps作为前置仿真采集目标。仍需确认实车摄像头身份、实际支持模式及接收性能。
+    source: 2026-10-15用户粘贴的XT-NetRC产品参数；非本地实车模式枚举
+  gimbal_x:
+    value: 0.08
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_y:
+    value: 0.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_z:
+    value: 0.195
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_width:
+    value: 640
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_height:
+    value: 480
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_hfov:
+    value: 1.2217304763960306
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  gimbal_camera_rate:
+    value: 15.0
+    category: simulation_assumption
+    reason: Gazebo 初始模型/执行器/传感器参数，待实测替换；不代表已核实实车数据。
+  axle_beam_mass:
+    value: 0.04
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_beam_length:
+    value: 0.02
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_beam_width:
+    value: 0.22
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_beam_height:
+    value: 0.014
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_post_mass:
+    value: 0.03
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_post_length:
+    value: 0.02
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_post_width:
+    value: 0.02
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。
+  axle_post_height:
+    value: 0.07
+    category: simulation_assumption
+    reason: 简化刚性轮轴横梁/立柱几何与质量，使车架和轮轴连接可见；无真实悬挂/传动CAD依据。

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/check_frequency_update.py", line 84, in <module>
+    for t in ('/odom','/joint_states','tf:base_footprint'):assert 44<rates[t]['simulation_hz']<=51,(t,rates[t])
+AssertionError: ('/odom', {'samples': 208, 'wall_hz': 26.11956835815969, 'simulation_hz': 26.73382409918636})

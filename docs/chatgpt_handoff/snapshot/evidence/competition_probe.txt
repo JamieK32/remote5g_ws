@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition']
+PASS ['/gazebo', '/gazebo/competition_state', '/camera/front/front_camera_ros', '/camera/gimbal/gimbal_camera_ros', '/xtnetrc_control', '/robot_state_publisher'] None None
+
+EXIT_CODE: 0

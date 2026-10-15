@@ -1,0 +1,16 @@
+COMMAND:
+python3 -c "import importlib.util;print({x:bool(importlib.util.find_spec(x)) for x in ['qrcode','zxingcpp','fitz']})"; test -d /home/jamiek/.cache/remote5g_scene_libs && ls /home/jamiek/.cache/remote5g_scene_libs | head -25
+
+EXIT_CODE: 0
+
+OUTPUT:
+{'qrcode': False, 'zxingcpp': False, 'fitz': False}
+bin
+fitz
+pip.pyz
+pymupdf
+pymupdf-1.26.7.dist-info
+qrcode
+qrcode-8.2.dist-info
+zxing_cpp-2.3.0.dist-info
+zxingcpp.cpython-310-x86_64-linux-gnu.so

@@ -1,0 +1,9 @@
+COMMAND: ['ros2', 'node', 'list', '--no-daemon']
+/camera/front/front_camera_ros
+/camera/gimbal/gimbal_camera_ros
+/gazebo
+/gazebo/competition_state
+/robot_state_publisher
+/xtnetrc_control
+
+EXIT_CODE: 0

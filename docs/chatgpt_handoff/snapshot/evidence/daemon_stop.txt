@@ -1,0 +1,4 @@
+COMMAND: ['ros2', 'daemon', 'stop']
+The daemon has been stopped
+
+EXIT_CODE: 0

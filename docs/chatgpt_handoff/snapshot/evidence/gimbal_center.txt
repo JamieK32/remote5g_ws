@@ -1,0 +1,8 @@
+COMMAND: ['ros2', 'service', 'call', '/gimbal/center', 'std_srvs/srv/Trigger', '{}']
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='Center targets set in radians')
+
+
+EXIT_CODE: 0

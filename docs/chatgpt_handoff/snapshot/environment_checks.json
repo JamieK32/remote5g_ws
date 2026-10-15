@@ -1,0 +1,42 @@
+{
+  "system": {
+    "exit_code": 0,
+    "file": "evidence/system.txt"
+  },
+  "versions": {
+    "exit_code": 0,
+    "file": "evidence/versions.txt"
+  },
+  "ros_tools": {
+    "exit_code": 124,
+    "file": "evidence/ros_tools.txt"
+  },
+  "packages": {
+    "exit_code": 0,
+    "file": "evidence/packages.txt"
+  },
+  "installed_tools": {
+    "exit_code": 0,
+    "file": "evidence/installed_tools.txt"
+  },
+  "tool_help": {
+    "exit_code": 0,
+    "file": "evidence/tool_help.txt"
+  },
+  "rqt_plugins": {
+    "exit_code": 0,
+    "file": "evidence/rqt_plugins.txt"
+  },
+  "python_modules": {
+    "exit_code": 0,
+    "file": "evidence/python_modules.txt"
+  },
+  "git": {
+    "exit_code": 128,
+    "file": "evidence/git.txt"
+  },
+  "isolated_dependency_cache": {
+    "exit_code": 0,
+    "file": "evidence/isolated_dependency_cache.txt"
+  }
+}

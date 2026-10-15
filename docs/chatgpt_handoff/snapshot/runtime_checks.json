@@ -1,0 +1,240 @@
+{
+  "competition_probe": {
+    "exit_code": 0,
+    "command": [
+      "/usr/bin/python3",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition"
+    ],
+    "file": "evidence/competition_probe.txt"
+  },
+  "node_list": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "node",
+      "list",
+      "--no-daemon"
+    ],
+    "file": "evidence/node_list.txt"
+  },
+  "topic_list": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "topic",
+      "list",
+      "-t",
+      "--no-daemon"
+    ],
+    "file": "evidence/topic_list.txt"
+  },
+  "service_list": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "service",
+      "list",
+      "-t"
+    ],
+    "file": "evidence/service_list.txt"
+  },
+  "action_list": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "action",
+      "list",
+      "-t"
+    ],
+    "file": "evidence/action_list.txt"
+  },
+  "odom_echo": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "topic",
+      "echo",
+      "/odom",
+      "--once"
+    ],
+    "file": "evidence/odom_echo.txt"
+  },
+  "clock_echo": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "topic",
+      "echo",
+      "/clock",
+      "--qos-reliability",
+      "best_effort",
+      "--once"
+    ],
+    "file": "evidence/clock_echo.txt"
+  },
+  "image_qos": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "topic",
+      "info",
+      "/camera/front/image_raw",
+      "--verbose"
+    ],
+    "file": "evidence/image_qos.txt"
+  },
+  "controller_info": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "node",
+      "info",
+      "/xtnetrc_control"
+    ],
+    "file": "evidence/controller_info.txt"
+  },
+  "param_controller": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "param",
+      "dump",
+      "/xtnetrc_control"
+    ],
+    "file": "evidence/param_controller.txt"
+  },
+  "param_rsp": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "param",
+      "dump",
+      "/robot_state_publisher"
+    ],
+    "file": "evidence/param_rsp.txt"
+  },
+  "interface_ackermann": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "interface",
+      "show",
+      "ackermann_msgs/msg/AckermannDriveStamped"
+    ],
+    "file": "evidence/interface_ackermann.txt"
+  },
+  "interface_twist": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "interface",
+      "show",
+      "geometry_msgs/msg/Twist"
+    ],
+    "file": "evidence/interface_twist.txt"
+  },
+  "gimbal_center": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "service",
+      "call",
+      "/gimbal/center",
+      "std_srvs/srv/Trigger",
+      "{}"
+    ],
+    "file": "evidence/gimbal_center.txt"
+  },
+  "tf_echo": {
+    "exit_code": 124,
+    "command": [
+      "ros2",
+      "run",
+      "tf2_ros",
+      "tf2_echo",
+      "odom",
+      "front_camera_optical_frame"
+    ],
+    "file": "evidence/tf_echo.txt"
+  },
+  "odom_hz": {
+    "exit_code": 124,
+    "command": [
+      "ros2",
+      "topic",
+      "hz",
+      "/odom"
+    ],
+    "file": "evidence/odom_hz.txt"
+  },
+  "bag_info": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "bag",
+      "info",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag"
+    ],
+    "file": "evidence/bag_info.txt"
+  },
+  "rviz_start": {
+    "exit_code": 124,
+    "command": [
+      "rviz2",
+      "-f",
+      "odom",
+      "--ros-args",
+      "-p",
+      "use_sim_time:=true"
+    ],
+    "file": "evidence/rviz_start.txt"
+  },
+  "rqt_image_start": {
+    "exit_code": 124,
+    "command": [
+      "ros2",
+      "run",
+      "rqt_image_view",
+      "rqt_image_view",
+      "/camera/front/image_raw"
+    ],
+    "file": "evidence/rqt_image_start.txt"
+  },
+  "flat_probe": {
+    "exit_code": 0,
+    "command": [
+      "/usr/bin/python3",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/flat",
+      "--motion"
+    ],
+    "file": "evidence/flat_probe.txt"
+  },
+  "bag_play": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "bag",
+      "play",
+      "/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag",
+      "--topics",
+      "/odom",
+      "/joint_states",
+      "/tf",
+      "/tf_static",
+      "--clock",
+      "20"
+    ],
+    "file": "evidence/bag_play.txt"
+  },
+  "daemon_stop": {
+    "exit_code": 0,
+    "command": [
+      "ros2",
+      "daemon",
+      "stop"
+    ],
+    "file": "evidence/daemon_stop.txt"
+  }
+}

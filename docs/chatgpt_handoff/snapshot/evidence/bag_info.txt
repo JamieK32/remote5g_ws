@@ -1,0 +1,17 @@
+COMMAND: ['ros2', 'bag', 'info', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag']
+
+Files:             sample_bag_0.db3
+Bag size:          303.1 KiB
+Storage id:        sqlite3
+Duration:          5.500000000s
+Start:             Jan  1 1970 08:00:28.600000000 (28.600000000)
+End:               Jan  1 1970 08:00:34.100000000 (34.100000000)
+Messages:          501
+Topic information: Topic: /tf_static | Type: tf2_msgs/msg/TFMessage | Count: 1 | Serialization Format: cdr
+                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 111 | Serialization Format: cdr
+                   Topic: /joint_states | Type: sensor_msgs/msg/JointState | Count: 111 | Serialization Format: cdr
+                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 222 | Serialization Format: cdr
+                   Topic: /clock | Type: rosgraph_msgs/msg/Clock | Count: 56 | Serialization Format: cdr
+
+
+EXIT_CODE: 0

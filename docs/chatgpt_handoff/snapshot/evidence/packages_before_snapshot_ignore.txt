@@ -1,0 +1,24 @@
+COMMAND:
+colcon list; ros2 pkg executables remote5g_sim; ros2 pkg executables remote5g_competition; ros2 pkg prefix remote5g_sim; ros2 pkg prefix remote5g_competition
+
+EXIT_CODE: 0
+
+OUTPUT:
+remote5g_competition	docs/chatgpt_handoff/snapshot/source/src/remote5g_competition	(ros.ament_cmake)
+remote5g_competition	src/remote5g_competition	(ros.ament_cmake)
+remote5g_sim	docs/chatgpt_handoff/snapshot/source/src/remote5g_sim	(ros.ament_cmake)
+remote5g_sim	src/remote5g_sim	(ros.ament_cmake)
+remote5g_sim drive.py
+remote5g_sim inspect_cameras.py
+remote5g_sim model_check.py
+remote5g_sim regression.py
+remote5g_sim smoke.py
+remote5g_competition generate_layout.py
+remote5g_competition integration.py
+remote5g_competition manage_props.py
+remote5g_competition parking_check.py
+remote5g_competition run_matrix.py
+remote5g_competition scene_core.py
+remote5g_competition validate_layout.py
+/home/jamiek/remote5g_ws/install/remote5g_sim
+/home/jamiek/remote5g_ws/install/remote5g_competition

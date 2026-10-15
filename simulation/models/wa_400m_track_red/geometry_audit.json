@@ -1,0 +1,14 @@
+{
+  "max_pairwise_overlap_m2": 0.0,
+  "coverage_error_m2": 7.275957614183426e-12,
+  "region_areas_m2": {
+    "track": 4095.3523491265228,
+    "infield": 10325.952306509818,
+    "markings": 197.6169757465468,
+    "surround": 4913.180427952157
+  },
+  "kerb_footprint_area_m2": 19.897940664946873,
+  "visual_surface_z_m": 0.0,
+  "overlay_layers": 0,
+  "depth_bias": 0
+}

@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/probe_runtime.py', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/flat', '--motion']
+PASS ['/_ros2cli_daemon_95_eb9cc3d06db44fa6ad833c678298a986', '/gazebo', '/gazebo/gazebo_state', '/camera/front/front_camera_ros', '/camera/gimbal/gimbal_camera_ros', '/xtnetrc_control', '/robot_state_publisher'] 0.09405644556594603 0.11784494683068675
+
+EXIT_CODE: 0

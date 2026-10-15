@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot name="xtnetrc" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="config" default="$(find remote5g_sim)/config/vehicle.yaml"/>
+  <xacro:arg name="front_width" default="640"/><xacro:arg name="front_height" default="480"/>
+  <xacro:arg name="gimbal_width" default="640"/><xacro:arg name="gimbal_height" default="480"/>
+  <xacro:property name="p" value="${xacro.load_yaml('$(arg config)')}"/>
+  <xacro:include filename="common.xacro"/><xacro:include filename="wheels.xacro"/><xacro:include filename="cameras.xacro"/>
+  <link name="base_footprint"><inertial><mass value="0.001"/><inertia ixx="0.000001" iyy="0.000001" izz="0.000001" ixy="0" ixz="0" iyz="0"/></inertial></link>
+  <xacro:box name="base_link" mass="${p['chassis_mass']}" xyz="${p['chassis_center_x']} 0 ${p['chassis_center_z']}" size="${[p['chassis_length'],p['chassis_width'],p['chassis_height']]}" color="0.1 0.35 0.75 1"/>
+  <xacro:fixed name="base_joint" parent="base_footprint" child="base_link" xyz="0 0 ${p['wheel_radius']}"/>
+  <gazebo reference="base_joint"><preserveFixedJoint>true</preserveFixedJoint></gazebo>
+  <gazebo reference="base_link"><material>Gazebo/Blue</material></gazebo>
+  <xacro:box name="rear_axle_beam" mass="${p['axle_beam_mass']}" xyz="0 0 0" size="${[p['axle_beam_length'],p['axle_beam_width'],p['axle_beam_height']]}" color="0.5 0.5 0.5 1"/>
+  <xacro:fixed name="rear_axle_beam_mount" parent="base_link" child="rear_axle_beam" xyz="0 0 0"/>
+  <xacro:box name="rear_axle_post" mass="${p['axle_post_mass']}" xyz="0 0 0" size="${[p['axle_post_length'],p['axle_post_width'],p['axle_post_height']]}" color="0.5 0.5 0.5 1"/>
+  <xacro:fixed name="rear_axle_post_mount" parent="base_link" child="rear_axle_post" xyz="0 0 ${p['axle_post_height']/2}"/>
+  <xacro:box name="front_axle_beam" mass="${p['axle_beam_mass']}" xyz="0 0 0" size="${[p['axle_beam_length'],p['axle_beam_width'],p['axle_beam_height']]}" color="0.5 0.5 0.5 1"/>
+  <xacro:fixed name="front_axle_beam_mount" parent="base_link" child="front_axle_beam" xyz="${p['wheelbase']} 0 0"/>
+  <xacro:box name="front_axle_post" mass="${p['axle_post_mass']}" xyz="0 0 0" size="${[p['axle_post_length'],p['axle_post_width'],p['axle_post_height']]}" color="0.5 0.5 0.5 1"/>
+  <xacro:fixed name="front_axle_post_mount" parent="base_link" child="front_axle_post" xyz="${p['wheelbase']} 0 ${p['axle_post_height']/2}"/>
+  <xacro:front side="left" y="${p['front_track']/2}"/><xacro:front side="right" y="${-p['front_track']/2}"/>
+  <xacro:wheel name="rear_left" parent="base_link" xyz="0 ${p['rear_track']/2} 0"/>
+  <xacro:wheel name="rear_right" parent="base_link" xyz="0 ${-p['rear_track']/2} 0"/>
+  <xacro:camera name="front" parent="base_link" xyz="${p['front_x']} ${p['front_y']} ${p['front_z']}" rpy="0 ${p['front_pitch']} 0" width="$(arg front_width)" height="$(arg front_height)" hfov="${p['front_hfov']}" rate="${p['front_rate']}"/>
+  <xacro:box name="gimbal_base" mass="${p['gimbal_mass']}" xyz="0 0 0" size="${[0.04,0.04,0.015]}" color="0.3 0.3 0.3 1"/>
+  <xacro:fixed name="gimbal_mount" parent="base_link" child="gimbal_base" xyz="${p['gimbal_x']} ${p['gimbal_y']} ${p['gimbal_z']}"/>
+  <xacro:box name="gimbal_pan_link" mass="${p['gimbal_mass']}" xyz="0 0 0.012" size="${[0.025,0.025,0.025]}" color="0.6 0.6 0.6 1"/>
+  <xacro:gimbal_axis name="gimbal_pan_joint" parent="gimbal_base" child="gimbal_pan_link" xyz="0 0 0.008" axis="0 0 1" lower="${-p['pan_limit']}" upper="${p['pan_limit']}"/>
+  <xacro:box name="gimbal_tilt_link" mass="${p['gimbal_mass']}" xyz="0 0 0" size="${[0.03,0.06,0.015]}" color="0.6 0.6 0.6 1"/>
+  <xacro:gimbal_axis name="gimbal_tilt_joint" parent="gimbal_pan_link" child="gimbal_tilt_link" xyz="0 0 0.032" axis="0 -1 0" lower="${p['tilt_min']}" upper="${p['tilt_max']}"/>
+  <xacro:camera name="gimbal" parent="gimbal_tilt_link" xyz="0.012 0 0.02" rpy="0 0 0" width="$(arg gimbal_width)" height="$(arg gimbal_height)" hfov="${p['gimbal_hfov']}" rate="${p['gimbal_camera_rate']}"/>
+  <gazebo><plugin name="xtnetrc_control" filename="libremote5g_vehicle.so"><ros><namespace>/</namespace></ros>
+    <wheelbase>${p['wheelbase']}</wheelbase>
+    <front_track>${p['front_track']}</front_track>
+    <wheel_radius>${p['wheel_radius']}</wheel_radius>
+    <max_steering>${p['max_steering']}</max_steering>
+    <joint_steering_limit>${p['joint_steering_limit']}</joint_steering_limit>
+    <max_speed>${p['max_speed']}</max_speed>
+    <steering_rate>${p['steering_rate']}</steering_rate>
+    <max_accel>${p['max_accel']}</max_accel>
+    <max_decel>${p['max_decel']}</max_decel>
+    <curvature_speed_gain>${p['curvature_speed_gain']}</curvature_speed_gain>
+    <min_curve_speed>${p['min_curve_speed']}</min_curve_speed>
+    <command_timeout>${p['command_timeout']}</command_timeout>
+    <control_period>${p['control_period']}</control_period>
+    <steering_kp>${p['steering_kp']}</steering_kp>
+    <steering_kd>${p['steering_kd']}</steering_kd>
+    <steering_torque>${p['steering_torque']}</steering_torque>
+    <drive_kp>${p['drive_kp']}</drive_kp>
+    <drive_torque>${p['drive_torque']}</drive_torque>
+    <pan_limit>${p['pan_limit']}</pan_limit>
+    <tilt_min>${p['tilt_min']}</tilt_min>
+    <tilt_max>${p['tilt_max']}</tilt_max>
+    <gimbal_rate>${p['gimbal_rate']}</gimbal_rate>
+    <gimbal_kp>${p['gimbal_kp']}</gimbal_kp>
+    <gimbal_kd>${p['gimbal_kd']}</gimbal_kd>
+    <gimbal_torque>${p['gimbal_torque']}</gimbal_torque>
+  </plugin></gazebo>
+</robot>

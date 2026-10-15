@@ -1,0 +1,27 @@
+COMMAND:
+python3 --version; cmake --version; g++ --version; gazebo --version; colcon version-check --help
+
+EXIT_CODE: 0
+
+OUTPUT:
+Python 3.10.12
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+usage: colcon version-check [-h]
+
+Compare local package versions with PyPI.
+
+options:
+  -h, --help  show this help message and exit

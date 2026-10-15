@@ -1,0 +1,1378 @@
+{
+  "config": {
+    "workspace": "/home/jamiek/remote5g_ws",
+    "start_side": "right",
+    "track_color": "blue",
+    "lane": 3,
+    "lane_change": "right",
+    "parking_target": "random",
+    "obstacle_seed": 20251014,
+    "sign_seed": 17,
+    "obstacle_mode": "random",
+    "obstacle_s": 63.0,
+    "obstacle_lateral_offset": 0.0,
+    "barrier_present": true,
+    "cone_static": false,
+    "tape_width": 0.1,
+    "zone_length_ratio": 1.5,
+    "marking_thickness": 0.0006,
+    "marking_bottom_z": 0.0007,
+    "barrier_width": 0.8,
+    "barrier_height": 0.5,
+    "barrier_thickness": 0.02,
+    "barrier_gap": 0.1,
+    "qr_size": 0.1,
+    "qr_content": "REMOTE5G_SIM_QR_01",
+    "parking_qr_A": "REMOTE5G_SIM_PARK_A",
+    "parking_qr_B": "REMOTE5G_SIM_PARK_B",
+    "qr_pitch_deg": 45.0,
+    "qr_yaw_offset_deg": 0.0,
+    "qr_center_height": 0.135,
+    "stand_width": 0.148,
+    "stand_panel_height": 0.21,
+    "stand_thickness": 0.004,
+    "stand_mass": 0.1,
+    "paper_long": 0.297,
+    "paper_short": 0.105,
+    "paper_gap": 0.105,
+    "sign_width": 0.21,
+    "sign_length": 0.297,
+    "print_white_margin": 0.002,
+    "cone_height": 0.08,
+    "cone_diameter": 0.078,
+    "cone_mass": 0.035,
+    "cone_mu": 0.8,
+    "cone_segments": 32,
+    "guide_spacing": 0.5,
+    "guide_start_gap": 0.2,
+    "guide_block_length": 3.0,
+    "guide_yellow_start_offset": 1.0,
+    "guide_yellow_entry_length": 1.0,
+    "guide_return_length": 4.0,
+    "guide_straight_length": 1.0,
+    "region2_top_straight_offset": 4.0,
+    "region2_length_ratio": 1.5,
+    "parking_end_margin": 3.0,
+    "parking_sign_distance": 2.0,
+    "contact_patch_length": 0.02,
+    "vehicle_clearance_margin": 0.04,
+    "vehicle_spawn": {
+      "x": null,
+      "y": null,
+      "z": null,
+      "yaw": null
+    }
+  },
+  "resolved_lane_change": "right",
+  "resolved_parking_target": "B",
+  "route": {
+    "half_straight": 42.195,
+    "radius": 39.525,
+    "clear_lane_width": 1.1700000000000017,
+    "nominal_lane_width": 1.22,
+    "inner_boundary_radius": 38.94,
+    "outer_boundary_radius": 40.11,
+    "route_length": 211.5614496331366,
+    "side": "right",
+    "lane": 3
+  },
+  "spawn_pose": {
+    "x": 40.505695,
+    "y": -39.525,
+    "z": 0.006,
+    "yaw": 0.0,
+    "s": 1.3106950000000026,
+    "source": "route_derived"
+  },
+  "parking": {
+    "x": -38.31750000000002,
+    "y": 39.525,
+    "yaw": 3.141592653589793,
+    "length": 1.5550000000000026,
+    "width": 1.1700000000000017,
+    "slots": {
+      "A": [
+        0.05,
+        0.5850000000000009
+      ],
+      "B": [
+        -0.5850000000000009,
+        -0.05
+      ]
+    }
+  },
+  "obstacle": {
+    "seed": 20251014,
+    "s": 29.831784115638243,
+    "d": -0.3908353709934638
+  },
+  "region2": {
+    "start_s": 131.17144963313658,
+    "end_s": 132.92644963313657,
+    "crosswalk_s": 131.42994963313657,
+    "sign_s": 131.7269496331366,
+    "qr_s": 132.79272063967397,
+    "qr_upper_projection_s": 132.82644963313658,
+    "stop_reference_s": 130.98144963313655
+  },
+  "guide": {
+    "pattern": "four_boundaries_dual_bypass_return",
+    "start_s": 133.12644963313656,
+    "length": 7.0,
+    "offset": -1.22,
+    "rows": [
+      {
+        "side": "inner",
+        "color": "red",
+        "start_s": 133.12644963313656,
+        "end_s": 136.12644963313656,
+        "s": [
+          133.12644963313656,
+          133.62644963313656,
+          134.12644963313656,
+          134.62644963313656,
+          135.12644963313656,
+          135.62644963313656,
+          136.12644963313656
+        ],
+        "d": [
+          0.5850000000000009,
+          0.5850000000000009,
+          0.5850000000000009,
+          0.5850000000000009,
+          0.5850000000000009,
+          0.5850000000000009,
+          0.5850000000000009
+        ],
+        "arc_distances": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ]
+      },
+      {
+        "side": "outer",
+        "color": "red",
+        "start_s": 133.12644963313656,
+        "end_s": 136.12644963313656,
+        "s": [
+          133.12644963313656,
+          133.62644963313656,
+          134.12644963313656,
+          134.62644963313656,
+          135.12644963313656,
+          135.62644963313656,
+          136.12644963313656
+        ],
+        "d": [
+          -0.5850000000000009,
+          -0.5850000000000009,
+          -0.5850000000000009,
+          -0.5850000000000009,
+          -0.5850000000000009,
+          -0.5850000000000009,
+          -0.5850000000000009
+        ],
+        "arc_distances": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ]
+      },
+      {
+        "side": "yellow_left",
+        "color": "yellow",
+        "start_s": 134.12644963313656,
+        "end_s": 140.12644963313656,
+        "s": [
+          134.12644963313656,
+          134.62644963313656,
+          135.12644963313656,
+          135.62579488939423,
+          136.1142431207366,
+          136.57675969481707,
+          137.01718555418768,
+          137.45267474653758,
+          137.90241107348325,
+          138.37871577941655,
+          138.87486093612327,
+          139.37483434573682,
+          139.87483434573682
+        ],
+        "d": [
+          1.8050000000000008,
+          1.8050000000000008,
+          1.8049999999841184,
+          1.7854877441158934,
+          1.6826054525352214,
+          1.493881795817104,
+          1.257361165452744,
+          1.0117226926137761,
+          0.7937679461166369,
+          0.6440181231274008,
+          0.5877565278174884,
+          0.5850000000000009,
+          0.5850000000000009
+        ],
+        "arc_distances": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0
+        ]
+      },
+      {
+        "side": "yellow_right",
+        "color": "yellow",
+        "start_s": 134.12644963313656,
+        "end_s": 140.12644963313656,
+        "s": [
+          134.12644963313656,
+          134.62644963313656,
+          135.12644963313656,
+          135.62579488939423,
+          136.1142431207366,
+          136.57675969481707,
+          137.01718555418768,
+          137.45267474653758,
+          137.90241107348325,
+          138.37871577941655,
+          138.87486093612327,
+          139.37483434573682,
+          139.87483434573682
+        ],
+        "d": [
+          -1.8050000000000008,
+          -1.8050000000000008,
+          -1.8049999999841184,
+          -1.7854877441158934,
+          -1.6826054525352214,
+          -1.493881795817104,
+          -1.257361165452744,
+          -1.0117226926137761,
+          -0.7937679461166369,
+          -0.6440181231274008,
+          -0.5877565278174884,
+          -0.5850000000000009,
+          -0.5850000000000009
+        ],
+        "arc_distances": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0
+        ]
+      }
+    ]
+  },
+  "coordinates": [
+    {
+      "model_name": "comp_start_zone",
+      "model_type": "comp_start_zone",
+      "x": 40.072500000000005,
+      "y": -39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 0.0,
+      "s": 0.8775000000000013,
+      "d": 0,
+      "dimensions": {
+        "zone_length": 1.7550000000000026,
+        "lane_width": 1.1700000000000017,
+        "yellow_width": 0.1
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_start_zone.sdf"
+    },
+    {
+      "model_name": "comp_start_barrier",
+      "model_type": "comp_start_barrier",
+      "x": 41.06,
+      "y": -39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 0.0,
+      "s": 1.8650000000000027,
+      "d": 0,
+      "dimensions": {
+        "width": 0.8,
+        "height": 0.5,
+        "thickness": 0.02
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_start_barrier.sdf"
+    },
+    {
+      "model_name": "comp_region2",
+      "model_type": "comp_region2",
+      "x": 37.3175,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 132.04894963313657,
+      "d": 0,
+      "dimensions": {
+        "zone_length": 1.7550000000000026,
+        "lane_width": 1.1700000000000017,
+        "yellow_width": 0.1
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "PDF fig3 annotated yellow region interpreted after crosswalk; its exact extent is an assumption",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_region2.sdf"
+    },
+    {
+      "model_name": "comp_crosswalk",
+      "model_type": "comp_crosswalk",
+      "x": 37.9365,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 131.42994963313657,
+      "d": 0,
+      "dimensions": {
+        "paper_long": 0.297,
+        "paper_short": 0.105,
+        "gap": 0.105
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_crosswalk.sdf"
+    },
+    {
+      "model_name": "comp_lane_change_sign",
+      "model_type": "comp_sign_right_blue",
+      "x": 37.63949999999998,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 131.7269496331366,
+      "d": 0,
+      "dimensions": {
+        "A4_short": 0.21,
+        "A4_long": 0.297
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_lane_change_sign.sdf"
+    },
+    {
+      "model_name": "comp_task2_qr",
+      "model_type": "comp_qr_stand",
+      "x": 36.5737289934626,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 132.79272063967397,
+      "d": 0,
+      "dimensions": {
+        "qr_width": 0.1,
+        "qr_height": 0.1,
+        "stand_panel_width": 0.148
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "Fig3 interpretation: following task2 crosswalk/sign, leaning display 45deg; upper edge aligned inner yellow edge",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_task2_qr.sdf"
+    },
+    {
+      "model_name": "comp_parking_zone",
+      "model_type": "comp_parking_zone",
+      "x": -38.31750000000002,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 207.6839496331366,
+      "d": 0,
+      "dimensions": {
+        "zone_length": 1.7550000000000026,
+        "lane_width": 1.1700000000000017,
+        "yellow_width": 0.1
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_zone.sdf"
+    },
+    {
+      "model_name": "comp_parking_instruction",
+      "model_type": "comp_sign_B_blue",
+      "x": -35.44000000000002,
+      "y": 39.525,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 204.8064496331366,
+      "d": 0,
+      "dimensions": {
+        "A4_short": 0.21,
+        "A4_long": 0.297
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_instruction.sdf"
+    },
+    {
+      "model_name": "comp_parking_label_A",
+      "model_type": "comp_sign_A_blue",
+      "x": -37.840000000000025,
+      "y": 39.207499999999996,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 207.2064496331366,
+      "d": 0.31750000000000045,
+      "dimensions": {
+        "A4_short": 0.21,
+        "A4_long": 0.297
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_label_A.sdf"
+    },
+    {
+      "model_name": "comp_parking_qr_A",
+      "model_type": "comp_qr_parking_A",
+      "x": -38.965000000000025,
+      "y": 39.207499999999996,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 208.3314496331366,
+      "d": 0.31750000000000045,
+      "dimensions": {
+        "qr_width": 0.1,
+        "qr_height": 0.1,
+        "stand_panel_width": 0
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_qr_A.sdf"
+    },
+    {
+      "model_name": "comp_parking_label_B",
+      "model_type": "comp_sign_B_blue",
+      "x": -37.840000000000025,
+      "y": 39.8425,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 207.2064496331366,
+      "d": -0.31750000000000045,
+      "dimensions": {
+        "A4_short": 0.21,
+        "A4_long": 0.297
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_label_B.sdf"
+    },
+    {
+      "model_name": "comp_parking_qr_B",
+      "model_type": "comp_qr_parking_B",
+      "x": -38.965000000000025,
+      "y": 39.8425,
+      "z": 0,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 208.3314496331366,
+      "d": -0.31750000000000045,
+      "dimensions": {
+        "qr_width": 0.1,
+        "qr_height": 0.1,
+        "stand_panel_width": 0
+      },
+      "collision_enabled": false,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_parking_qr_B.sdf"
+    },
+    {
+      "model_name": "comp_obstacle",
+      "model_type": "comp_cone_red",
+      "x": 67.25827611599146,
+      "y": -31.066156886519202,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 0.6788560181059644,
+      "s": 29.831784115638243,
+      "d": -0.3908353709934638,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "rule dimension, configurable simulation station",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_obstacle.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_000",
+      "model_type": "comp_cone_red",
+      "x": 36.240000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 133.12644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_000.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_001",
+      "model_type": "comp_cone_red",
+      "x": 35.740000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 133.62644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_001.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_002",
+      "model_type": "comp_cone_red",
+      "x": 35.240000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.12644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_002.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_003",
+      "model_type": "comp_cone_red",
+      "x": 34.740000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.62644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_003.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_004",
+      "model_type": "comp_cone_red",
+      "x": 34.240000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.12644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_004.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_005",
+      "model_type": "comp_cone_red",
+      "x": 33.740000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.62644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_005.sdf"
+    },
+    {
+      "model_name": "comp_guide_inner_006",
+      "model_type": "comp_cone_red",
+      "x": 33.240000000000016,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.12644963313656,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_006.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_000",
+      "model_type": "comp_cone_red",
+      "x": 36.240000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 133.12644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_000.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_001",
+      "model_type": "comp_cone_red",
+      "x": 35.740000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 133.62644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_001.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_002",
+      "model_type": "comp_cone_red",
+      "x": 35.240000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.12644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_002.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_003",
+      "model_type": "comp_cone_red",
+      "x": 34.740000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.62644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_003.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_004",
+      "model_type": "comp_cone_red",
+      "x": 34.240000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.12644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_004.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_005",
+      "model_type": "comp_cone_red",
+      "x": 33.740000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.62644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_005.sdf"
+    },
+    {
+      "model_name": "comp_guide_outer_006",
+      "model_type": "comp_cone_red",
+      "x": 33.240000000000016,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.12644963313656,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_006.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_000",
+      "model_type": "comp_cone_yellow",
+      "x": 35.240000000000016,
+      "y": 37.72,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.12644963313656,
+      "d": 1.8050000000000008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_000.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_001",
+      "model_type": "comp_cone_yellow",
+      "x": 34.740000000000016,
+      "y": 37.72,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.62644963313656,
+      "d": 1.8050000000000008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_001.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_002",
+      "model_type": "comp_cone_yellow",
+      "x": 34.240000000000016,
+      "y": 37.72000000001588,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.12644963313656,
+      "d": 1.8049999999841184,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_002.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_003",
+      "model_type": "comp_cone_yellow",
+      "x": 33.74065474374235,
+      "y": 37.73951225588411,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.62579488939423,
+      "d": 1.7854877441158934,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_003.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_004",
+      "model_type": "comp_cone_yellow",
+      "x": 33.25220651239997,
+      "y": 37.84239454746478,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.1142431207366,
+      "d": 1.6826054525352214,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_004.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_005",
+      "model_type": "comp_cone_yellow",
+      "x": 32.789689938319505,
+      "y": 38.031118204182896,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.57675969481707,
+      "d": 1.493881795817104,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_005.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_006",
+      "model_type": "comp_cone_yellow",
+      "x": 32.3492640789489,
+      "y": 38.267638834547256,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.01718555418768,
+      "d": 1.257361165452744,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_006.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_007",
+      "model_type": "comp_cone_yellow",
+      "x": 31.913774886598993,
+      "y": 38.513277307386225,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.45267474653758,
+      "d": 1.0117226926137761,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_007.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_008",
+      "model_type": "comp_cone_yellow",
+      "x": 31.464038559653325,
+      "y": 38.73123205388336,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.90241107348325,
+      "d": 0.7937679461166369,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_008.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_009",
+      "model_type": "comp_cone_yellow",
+      "x": 30.987733853720023,
+      "y": 38.880981876872596,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 138.37871577941655,
+      "d": 0.6440181231274008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_009.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_010",
+      "model_type": "comp_cone_yellow",
+      "x": 30.491588697013306,
+      "y": 38.93724347218251,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 138.87486093612327,
+      "d": 0.5877565278174884,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_010.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_011",
+      "model_type": "comp_cone_yellow",
+      "x": 29.99161528739976,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 139.37483434573682,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_011.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_left_012",
+      "model_type": "comp_cone_yellow",
+      "x": 29.49161528739976,
+      "y": 38.94,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 139.87483434573682,
+      "d": 0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_012.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_000",
+      "model_type": "comp_cone_yellow",
+      "x": 35.240000000000016,
+      "y": 41.33,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.12644963313656,
+      "d": -1.8050000000000008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_000.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_001",
+      "model_type": "comp_cone_yellow",
+      "x": 34.740000000000016,
+      "y": 41.33,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 134.62644963313656,
+      "d": -1.8050000000000008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_001.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_002",
+      "model_type": "comp_cone_yellow",
+      "x": 34.240000000000016,
+      "y": 41.32999999998412,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.12644963313656,
+      "d": -1.8049999999841184,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_002.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_003",
+      "model_type": "comp_cone_yellow",
+      "x": 33.74065474374235,
+      "y": 41.31048774411589,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 135.62579488939423,
+      "d": -1.7854877441158934,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_003.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_004",
+      "model_type": "comp_cone_yellow",
+      "x": 33.25220651239997,
+      "y": 41.20760545253522,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.1142431207366,
+      "d": -1.6826054525352214,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_004.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_005",
+      "model_type": "comp_cone_yellow",
+      "x": 32.789689938319505,
+      "y": 41.0188817958171,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 136.57675969481707,
+      "d": -1.493881795817104,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_005.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_006",
+      "model_type": "comp_cone_yellow",
+      "x": 32.3492640789489,
+      "y": 40.78236116545274,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.01718555418768,
+      "d": -1.257361165452744,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_006.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_007",
+      "model_type": "comp_cone_yellow",
+      "x": 31.913774886598993,
+      "y": 40.53672269261377,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.45267474653758,
+      "d": -1.0117226926137761,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_007.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_008",
+      "model_type": "comp_cone_yellow",
+      "x": 31.464038559653325,
+      "y": 40.31876794611664,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 137.90241107348325,
+      "d": -0.7937679461166369,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_008.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_009",
+      "model_type": "comp_cone_yellow",
+      "x": 30.987733853720023,
+      "y": 40.1690181231274,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 138.37871577941655,
+      "d": -0.6440181231274008,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_009.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_010",
+      "model_type": "comp_cone_yellow",
+      "x": 30.491588697013306,
+      "y": 40.11275652781749,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 138.87486093612327,
+      "d": -0.5877565278174884,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_010.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_011",
+      "model_type": "comp_cone_yellow",
+      "x": 29.99161528739976,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 139.37483434573682,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_011.sdf"
+    },
+    {
+      "model_name": "comp_guide_yellow_right_012",
+      "model_type": "comp_cone_yellow",
+      "x": 29.49161528739976,
+      "y": 40.11,
+      "z": 0.001,
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 3.141592653589793,
+      "s": 139.87483434573682,
+      "d": -0.5850000000000009,
+      "dimensions": {
+        "height": 0.08,
+        "diameter": 0.078
+      },
+      "collision_enabled": true,
+      "source_or_assumption": "PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent",
+      "sdf": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_012.sdf"
+    }
+  ],
+  "world": "/home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/competition.world",
+  "vehicle_config": {
+    "wheelbase": 0.23861,
+    "front_track": 0.24,
+    "rear_track": 0.24,
+    "wheel_radius": 0.055315,
+    "wheel_width": 0.04952,
+    "wheel_mass": 0.18,
+    "knuckle_mass": 0.06,
+    "chassis_length": 0.41,
+    "chassis_width": 0.19,
+    "chassis_height": 0.105,
+    "chassis_mass": 3.0,
+    "chassis_center_x": 0.119305,
+    "chassis_center_z": 0.115,
+    "max_steering": 0.4363323129985824,
+    "joint_steering_limit": 0.6,
+    "max_speed": 0.6,
+    "steering_rate": 2.0943951023931953,
+    "max_accel": 0.8,
+    "max_decel": 1.2,
+    "curvature_speed_gain": 0.8,
+    "min_curve_speed": 0.18,
+    "command_timeout": 0.3,
+    "control_period": 0.05,
+    "steering_kp": 8.0,
+    "steering_kd": 0.15,
+    "steering_torque": 1.0,
+    "drive_kp": 1.5,
+    "drive_torque": 0.6,
+    "wheel_damping": 0.0005,
+    "mu": 1.0,
+    "contact_kp": 1000000.0,
+    "contact_kd": 10.0,
+    "pan_limit": 1.5707963267948966,
+    "tilt_min": -0.6,
+    "tilt_max": 0.8,
+    "gimbal_rate": 1.0,
+    "gimbal_kp": 1.0,
+    "gimbal_kd": 0.03,
+    "gimbal_torque": 0.15,
+    "gimbal_mass": 0.04,
+    "camera_mass": 0.05,
+    "front_x": 0.3,
+    "front_y": 0.0,
+    "front_z": 0.18,
+    "front_pitch": 0.45,
+    "front_width": 640,
+    "front_height": 480,
+    "front_hfov": 1.3962634015954636,
+    "front_rate": 15.0,
+    "gimbal_x": 0.08,
+    "gimbal_y": 0.0,
+    "gimbal_z": 0.195,
+    "gimbal_width": 640,
+    "gimbal_height": 480,
+    "gimbal_hfov": 1.2217304763960306,
+    "gimbal_camera_rate": 15.0,
+    "axle_beam_mass": 0.04,
+    "axle_beam_length": 0.02,
+    "axle_beam_width": 0.22,
+    "axle_beam_height": 0.014,
+    "axle_post_mass": 0.03,
+    "axle_post_length": 0.02,
+    "axle_post_width": 0.02,
+    "axle_post_height": 0.07
+  }
+}

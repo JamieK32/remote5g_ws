@@ -1,0 +1,3946 @@
+{
+  "src/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "src/remote5g_sim/README.md": {
+    "size": 13297,
+    "sha256": "30f931d9de764c9f8afd956b3022d25f071a8fd142d4d02600ffcc759926df0f"
+  },
+  "src/remote5g_sim/package.xml": {
+    "size": 1249,
+    "sha256": "5ee508a5fce554d77ad88f93522d65507e4d1a5f0339f3f99e2a42eebcc79738"
+  },
+  "src/remote5g_sim/LICENSE": {
+    "size": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "src/remote5g_sim/CMakeLists.txt": {
+    "size": 1874,
+    "sha256": "21ee5fff2e7299b161124f43e14e508d79f16d4d60ad1d62c7ac2e18ca2d5847"
+  },
+  "src/remote5g_sim/test/smoke.py": {
+    "size": 4082,
+    "sha256": "8f43c2451382f2552c2b6cec88d0ea6269167b96e494b433b5e568ea29325979"
+  },
+  "src/remote5g_sim/test/control_math_test.cpp": {
+    "size": 956,
+    "sha256": "0256ecb7dd74d27f5c32adc6a46a4c6880e86067d8dd8d338c71b23a1c9148ad"
+  },
+  "src/remote5g_sim/test/regression.py": {
+    "size": 16624,
+    "sha256": "e5cd0c3734bbb0ae7428b2ab55e86425ddcd85c93e3c0d07840c0236e343a9a5"
+  },
+  "src/remote5g_sim/test/model_check.py": {
+    "size": 2203,
+    "sha256": "194f25e92590779f1ae21b72064ef39c104150caebda5770587ba043331fb3b9"
+  },
+  "src/remote5g_sim/launch/sim.launch.py": {
+    "size": 3798,
+    "sha256": "8dae5ae4eddc86295da9e130c23a669d1bc7fc24edfe3f346922e44822bc627d"
+  },
+  "src/remote5g_sim/urdf/cameras.xacro": {
+    "size": 1792,
+    "sha256": "c65c4f6ca7884ec039924e5a859220ed3cfb924d573ad8521b8ee33185fb5418"
+  },
+  "src/remote5g_sim/urdf/car.xacro": {
+    "size": 5459,
+    "sha256": "6df825ff1cd88c7b9aa1063092442fe972d700f800887d5ab6bcc873990489d5"
+  },
+  "src/remote5g_sim/urdf/common.xacro": {
+    "size": 969,
+    "sha256": "a69460d9f4df7b70fe5e877e85c119442719a9d427e00d8c46d8d394ce52a966"
+  },
+  "src/remote5g_sim/urdf/wheels.xacro": {
+    "size": 2126,
+    "sha256": "7cb79d6b555a0562bf3944303a381fa1962120994b294846e1d357de04238ccd"
+  },
+  "src/remote5g_sim/src/vehicle_plugin.cpp": {
+    "size": 12525,
+    "sha256": "d4c448ec63cd262de561711f71c60035112d8debce523f537dd46fc48d5ce3bb"
+  },
+  "src/remote5g_sim/src/gui_capture.cpp": {
+    "size": 1677,
+    "sha256": "6b2708c0506ce050f4053b81a6ab87dbeb8c4dd4cbb780e9f87d0eb25f2a44e0"
+  },
+  "src/remote5g_sim/include/remote5g_sim/control_math.hpp": {
+    "size": 1081,
+    "sha256": "2eadc15a5802ad9623ee8fdc205065f9ace92c00d331fee9e94078423bef5a58"
+  },
+  "src/remote5g_sim/scripts/inspect_cameras.py": {
+    "size": 1808,
+    "sha256": "f0f53693258b20059a9f0dee2435814c049688e72afaaf6d77eab4657c639053"
+  },
+  "src/remote5g_sim/scripts/drive.py": {
+    "size": 1638,
+    "sha256": "49d7a246f52a454fdbc20829ed1ac5211bbf6b359a9c87dec96a1b38749448a5"
+  },
+  "src/remote5g_sim/config/parameter_sources.yaml": {
+    "size": 12980,
+    "sha256": "ad95aefecd6d5f47c904b91fda528f0c7a032bd4de31b6a447645960e1623304"
+  },
+  "src/remote5g_sim/config/hardware_reference_NOT_LOADED.yaml": {
+    "size": 378,
+    "sha256": "4ccf9f67b8798dad9103ed19b1e7279fd7a7e131f50999d2683272f03cffdd38"
+  },
+  "src/remote5g_sim/config/vehicle.yaml": {
+    "size": 1273,
+    "sha256": "3df0179a0f0bbcd64e85758ffbd3c3c102c671d47fe1c78328be90c34d1d1f58"
+  },
+  "src/remote5g_sim/docs/reference_manifest.json": {
+    "size": 6322,
+    "sha256": "9f1c14aff51396beb6f7fa92556d529e873ed7a47881f96f8b7bc31d26ae5b99"
+  },
+  "src/remote5g_sim/docs/REFERENCE_REVIEW.md": {
+    "size": 3168,
+    "sha256": "1002d72fcf7e4d95c7a057292b258ee4e33137f6573b325fa24f98b79202d989"
+  },
+  "src/remote5g_sim/worlds/flat.world": {
+    "size": 2080,
+    "sha256": "1510c7ac2a8e6b3e30340f0228d3f331dc074aaa4a010dd91b8a5394e8b87ab3"
+  },
+  "src/remote5g_competition/README.md": {
+    "size": 1166,
+    "sha256": "de90545b9849e9dd4c05de4fa97927399db92cdda1b15ec7e829b0e284b3bbae"
+  },
+  "src/remote5g_competition/package.xml": {
+    "size": 1142,
+    "sha256": "24f09657ed459dc04a2a2269af58ac6c49bbbc71796b5470899a55debb10e3d9"
+  },
+  "src/remote5g_competition/LICENSE": {
+    "size": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "src/remote5g_competition/CMakeLists.txt": {
+    "size": 1251,
+    "sha256": "1c1221b0a812973d3cd4f1facec198127970778c7fd938e9b3976f2677e44386"
+  },
+  "src/remote5g_competition/test/run_matrix.py": {
+    "size": 4586,
+    "sha256": "959b76ee28ccb9f0c515cdf7344f4687dbf349a2fa3195207b9912653db063ee"
+  },
+  "src/remote5g_competition/test/integration.py": {
+    "size": 13248,
+    "sha256": "0fe67ee21e278a6bcbd644033d31b3c7fa423ddb99fda3b4554f8418b3072414"
+  },
+  "src/remote5g_competition/test/write_report.py": {
+    "size": 8211,
+    "sha256": "ccaf86ccc85bd2e36097f9bb99cd7467b7e7f8944d5678b7b2b40a43a160d293"
+  },
+  "src/remote5g_competition/test/test_geometry.py": {
+    "size": 2367,
+    "sha256": "32a1155c4c7615dd3a6d840a5758118aa4f3d6436efaf5c74b2bd4765726033e"
+  },
+  "src/remote5g_competition/test/cli_smoke.py": {
+    "size": 3626,
+    "sha256": "a9439b427520ddb3286c48e29042871423d8f2e8423619d74e0d58e747d5b162"
+  },
+  "src/remote5g_competition/launch/competition.launch.py": {
+    "size": 3891,
+    "sha256": "ec5a54e8eba8ce9e73997d8d8b065ab2823ef49ab28e59af1f6bd5111d1efed9"
+  },
+  "src/remote5g_competition/src/gui_capture.cpp": {
+    "size": 2936,
+    "sha256": "09e8d1489421e144a2db87a3f3113f6aac65c579e350c0377679d8e73123d7ee"
+  },
+  "src/remote5g_competition/models/comp_start_barrier/model.sdf": {
+    "size": 1020,
+    "sha256": "f9d9fc0b642f1e1309635d15f206fd73cf13d91041b1fc2ac7f691bfd6f95daf"
+  },
+  "src/remote5g_competition/models/comp_start_barrier/model.config": {
+    "size": 217,
+    "sha256": "f7bc16e30d3f1fc6ad38b058d0b147f692af34c9cc1d21a00212da7176964dbf"
+  },
+  "src/remote5g_competition/models/comp_cone_red/model.sdf": {
+    "size": 1491,
+    "sha256": "01f44efd8a065e2c8cbff6f051e4fe7d20599a7caf9faabba11ef49d4284015b"
+  },
+  "src/remote5g_competition/models/comp_cone_red/model.config": {
+    "size": 212,
+    "sha256": "44aa3cb4c4414a10a8a81f4ddd52e1493edff0bafdec6b9084694fad8dc7cd00"
+  },
+  "src/remote5g_competition/models/comp_cone_red/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/model.sdf": {
+    "size": 1159,
+    "sha256": "c24b80723e7467784ab3ffbddc367ae20a8e081e6538b003c41f255cccc7426d"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/model.config": {
+    "size": 217,
+    "sha256": "8ffc4f82d16088e5ef31b2fea6eed85965be78dbbb4c89356960968465c579f0"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/materials/textures/comp_sign_left_red_sign_4237d435.png": {
+    "size": 13607,
+    "sha256": "a71fa3b01c4616d037efb03e4e418d4e7750e2f6dc4b9295f31bf67307ef8e58"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/materials/textures/sign.png": {
+    "size": 13387,
+    "sha256": "3aa0ebc739ba29f960a1fcea2642552a8df444f34751bbc1f5f000e0a686a0ff"
+  },
+  "src/remote5g_competition/models/comp_sign_left_red/materials/scripts/sign.material": {
+    "size": 206,
+    "sha256": "0fce120e5da5941a8ecc4043a8b39e7e2413d18cc3cc56c09a8d491b4805d377"
+  },
+  "src/remote5g_competition/models/comp_cone_blue/model.sdf": {
+    "size": 1494,
+    "sha256": "26aac2b693ce7ce812313d2a15a0425c64734c4cd39ec469be229d19f1954a2a"
+  },
+  "src/remote5g_competition/models/comp_cone_blue/model.config": {
+    "size": 213,
+    "sha256": "ecf50cf77b029df711f422159fdbedad69d18113ff33ea0172316ba5059c0a2f"
+  },
+  "src/remote5g_competition/models/comp_cone_blue/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/models/comp_start_zone/model.sdf": {
+    "size": 1273,
+    "sha256": "07a0768edd6d9a623c8b76090adbd93c8e19f773844e4255bca656d18064abfe"
+  },
+  "src/remote5g_competition/models/comp_start_zone/model.config": {
+    "size": 214,
+    "sha256": "1b2654f6e40f8a37adeacaca8fabadb7de8d1c730ae36cfa0691180512db2b61"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/model.sdf": {
+    "size": 1141,
+    "sha256": "0931a83202e3ccde895380e2d9ddd507de67e8754bf5cf69c6c2616c196f70b9"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/model.config": {
+    "size": 214,
+    "sha256": "8664fc823e41afcfcd2bc96664a8b69d904ece1416e700bf85ff93cb913db230"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/materials/textures/comp_sign_A_red_sign_53200d66.png": {
+    "size": 15539,
+    "sha256": "7528bbc1eebe2190d4e6667e53e65b20b6b0d71985d633caccf52d517637a9eb"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/materials/textures/sign.png": {
+    "size": 14983,
+    "sha256": "782cb5dca86813521bfd143204b6e2241535a128fe6ff648dd8efe93b283dadb"
+  },
+  "src/remote5g_competition/models/comp_sign_A_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "9921f1501ef92a49e456d67a62dcbe101112b1c76512811d68f05909f28cac71"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/model.sdf": {
+    "size": 1165,
+    "sha256": "858d3b0b59dfd9faaafb3cd6e4f1133235be934f834b60502bc8c581f3ed890a"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/model.config": {
+    "size": 218,
+    "sha256": "8abab348bae5900372d4fafd3816e095864d28d0242cca44d31613f3cccf6883"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/meshes/comp_sign_right_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/materials/textures/comp_sign_right_red_sign_e5a59239.png": {
+    "size": 13440,
+    "sha256": "15ec2cda84396204cba57898bc56ae0e6fabf59f8273c309518830659a644f8f"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/materials/textures/sign.png": {
+    "size": 13000,
+    "sha256": "731fb70f327b25d83327d30ff23773522471fac59cfc850021b692e079bd9dac"
+  },
+  "src/remote5g_competition/models/comp_sign_right_red/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "d5defe9e625c466f2a56e366f67339314a48e8b140361ff9cd7be1e58dcaab53"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/model.sdf": {
+    "size": 1141,
+    "sha256": "07e76ed5681d16795907770660ea55ed504e32afd818874487d00cbf78f55ff0"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/model.config": {
+    "size": 214,
+    "sha256": "58953cc0de035b214b8b998d17b7634379dd0776a200d9b269a8a472882a7ff0"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/materials/textures/comp_sign_B_red_sign_89c2c4be.png": {
+    "size": 13230,
+    "sha256": "398d73d85ed0b2b3b7a589923643045c6a4f2d7035fffcd68d43488f01cedeaa"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/materials/textures/sign.png": {
+    "size": 12750,
+    "sha256": "d1ea2db13474de3c2f6c1c3a1adf933fd4a10b3b06f32dfbbcd58a34bf3a8cd8"
+  },
+  "src/remote5g_competition/models/comp_sign_B_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "b62cad8a2012c331aaf4de061592b7cd17f05cb7173f75036f79c56a2bdfb079"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/model.sdf": {
+    "size": 1147,
+    "sha256": "bd9b01f4913ea5e261cb1641142468a03d3278c1f53c509e9e5a02ed060d8b03"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/code.png": {
+    "size": 788,
+    "sha256": "1caa0fa9e4e4fecb3e886ffbc52e012874f306614cacc481b30c151e8b99bb04"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/model.config": {
+    "size": 216,
+    "sha256": "49b0ca2b863eaa33ebb50bfd64b6881135cb86819e08a39c6002334cebc6b61f"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/materials/textures/qr.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/materials/textures/comp_qr_parking_A_qr_f6c47831.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_A/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93df8b64f3f13ba7bb810bdd6018dfed8e6f61b2e31541bd4a3a1a4e137437b9"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/model.sdf": {
+    "size": 1147,
+    "sha256": "456bd95097a9e1add2772afe8139cc20f82539f3c8bd563ba993c1543dbfa527"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/code.png": {
+    "size": 758,
+    "sha256": "da49c8008a6daa2829689b3d57b77ba5fb00f442d0075d12ddcf1ef896f389dd"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/model.config": {
+    "size": 216,
+    "sha256": "6d394ff36f67073491074447c4a197ec425b1c07d4712adac15b1b0535eb91ad"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/materials/textures/comp_qr_parking_B_qr_7bc62027.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/models/comp_qr_parking_B/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93e6966ceaa05a519843b0e2aa57ee731e287e119143ce5d3b5db4d032c21868"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/model.sdf": {
+    "size": 1147,
+    "sha256": "8c22fac3fd6ceaee3e74bd5f73fa9063c1703399e0825f143c769f982be5fe36"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/model.config": {
+    "size": 215,
+    "sha256": "7ea330a5cd7bbe2ef96876d1bc88727c1e4067ed33ef91ca8f8790544811643f"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/meshes/comp_sign_A_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/materials/textures/comp_sign_A_blue_sign_785ef58c.png": {
+    "size": 15798,
+    "sha256": "6ac043086fcf540a5f589e345fddd39b3efec41292c7cb768257b045356cc880"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/materials/textures/sign.png": {
+    "size": 15021,
+    "sha256": "9d1a80b66ac7bace7ba3021683cf613a3eb95d821646d054e40a89e737310b63"
+  },
+  "src/remote5g_competition/models/comp_sign_A_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "193ab450177e72da03867028097f657fa4c5a9c4425dbe29be5359fc8c400753"
+  },
+  "src/remote5g_competition/models/comp_cone_yellow/model.sdf": {
+    "size": 1494,
+    "sha256": "113860c85c7c8a6edafa263a2f7965215e6d2e753224fc9a4719a0d656d39d34"
+  },
+  "src/remote5g_competition/models/comp_cone_yellow/model.config": {
+    "size": 215,
+    "sha256": "6c0a3a2fa2c83508c35e5191ecafa6ca43e6bbffac4cd54fc3d9f3774bf0114f"
+  },
+  "src/remote5g_competition/models/comp_cone_yellow/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/models/comp_crosswalk/model.sdf": {
+    "size": 2399,
+    "sha256": "64c2e69e82ee8ecd2b0ff938321b9e01f17e58c624969d8818602e11f4092de0"
+  },
+  "src/remote5g_competition/models/comp_crosswalk/model.config": {
+    "size": 213,
+    "sha256": "c98103e5913a558066196c55514948f7abf48d539c3a5b6c7bf5b6e5f50ea476"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/model.sdf": {
+    "size": 1147,
+    "sha256": "fd7d63cbf2303a777213e946468477d2729aa593935180d0b6fba6d22c8b0b7b"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/model.config": {
+    "size": 215,
+    "sha256": "ad255b1d6636dba5407ce373026d12f333f86436bb1114a047dba525e0dd3edf"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/meshes/comp_sign_B_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/materials/textures/comp_sign_B_blue_sign_fd6007bc.png": {
+    "size": 13550,
+    "sha256": "3edcae8e535484973e4df2e3b0efd8e8f842e03aab470f87aa71aac892c172c7"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/materials/textures/sign.png": {
+    "size": 13070,
+    "sha256": "b7c90c03009f4c515436861ea4e690e0065c65f34f7e2b2753183ce377e24043"
+  },
+  "src/remote5g_competition/models/comp_sign_B_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "cdda55e78d1d0b564536972434531a7816d5ffe81e1dc6521dede01ba41a99df"
+  },
+  "src/remote5g_competition/models/comp_parking_zone/model.sdf": {
+    "size": 1693,
+    "sha256": "eed9d10ad396cd27a3638a7a0ca1cb86b4fbea9203c6f00eff89f4237cb3bb1a"
+  },
+  "src/remote5g_competition/models/comp_parking_zone/model.config": {
+    "size": 216,
+    "sha256": "a48fd1f795fe193157f9ace6eff9c9d12a4488b6990c13c105d96f151fb6ae3b"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/model.sdf": {
+    "size": 1165,
+    "sha256": "253c4f38df4bc29b7c2aa60d04ee6b2bfe825cfd77dcce06426df0eca0cbde1a"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/model.config": {
+    "size": 218,
+    "sha256": "829b1259c8b612499181ae484a5240f3fcbada7eb598144a77a0d34cc516f044"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/meshes/comp_sign_left_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/materials/textures/comp_sign_left_blue_sign_b5de8e85.png": {
+    "size": 13723,
+    "sha256": "dab8175b20e461a4e9427b792d2620ad30a0d5f04cd61d530ba598f8089e1f7c"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/materials/textures/sign.png": {
+    "size": 13473,
+    "sha256": "a0c7e13efdc54e5d281c35ae9d2cdc6aa840b0f464ecbab77428a7dc6ae6de9b"
+  },
+  "src/remote5g_competition/models/comp_sign_left_blue/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "454db604296f7b0c574a4ee5197861d27bc1c92c40c8d6ee0c17933b429277c8"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/model.sdf": {
+    "size": 3747,
+    "sha256": "15da9f8ec3395afe39a13424a044a537cbd72e0841ad52a91e72a835a4ce617c"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/code.png": {
+    "size": 793,
+    "sha256": "b66c35e0699975ca859bfe0192800e55207946957cb87cd1da9f330208e56e35"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/model.config": {
+    "size": 212,
+    "sha256": "31cf6ef6acb631f6dc956abc4aeeec3fe82dbc772f54b9d7be4be3bd833c4021"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/materials/textures/comp_qr_stand_qr_f9e2c485.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/models/comp_qr_stand/materials/scripts/qr.material": {
+    "size": 192,
+    "sha256": "72ccc1f1e98d8ab16ffd5b422c1763b366c3dccdc314dbcfc32da98da419ad44"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/model.sdf": {
+    "size": 1171,
+    "sha256": "c92d0c0fdcb0c4da18e80218fd6797996280d5274cea092d8e76c793a08e10d5"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/model.config": {
+    "size": 219,
+    "sha256": "09fed20b9973bbbe964fcf5e4487d943be7d9e2b417a310191dc7301bc3dd3c4"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/meshes/comp_sign_right_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/materials/textures/comp_sign_right_blue_sign_11472468.png": {
+    "size": 14028,
+    "sha256": "ac3b7e7c734cb487042eafd2c67a6228b3a9b00992a0a30f438d66586a9ebc53"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/materials/textures/sign.png": {
+    "size": 13591,
+    "sha256": "9e210c4043d7c11abb15ad908c2402579745385672eb89e974152114a7dd6e7c"
+  },
+  "src/remote5g_competition/models/comp_sign_right_blue/materials/scripts/sign.material": {
+    "size": 210,
+    "sha256": "99657d63b434bd4243d7e537568cf2cd8786dec6b52fc12190cee46cfc8b8087"
+  },
+  "src/remote5g_competition/models/comp_region2/model.sdf": {
+    "size": 1270,
+    "sha256": "651b638ee603e26dc400621d78604e8733485cb71d99228108f5221b16531870"
+  },
+  "src/remote5g_competition/models/comp_region2/model.config": {
+    "size": 211,
+    "sha256": "23bab0dd09d97ef92950b04ad24a8e82aa488db0b88c9df9bb14a144cc75add3"
+  },
+  "src/remote5g_competition/materials/source_signs/right_blue.jpeg": {
+    "size": 4087,
+    "sha256": "9c854a71f8f840415a793c0e22c9c4ad46124d4ca0677cb7e09424a18180c6f5"
+  },
+  "src/remote5g_competition/materials/source_signs/A_red.jpeg": {
+    "size": 4242,
+    "sha256": "6ff1148d461470834541a6e89807cc873b6c3fcdb0b4d85c29ca91ad0c411be6"
+  },
+  "src/remote5g_competition/materials/source_signs/A_blue.jpeg": {
+    "size": 3991,
+    "sha256": "5e9a2cfdf13ccb13ff4feac1c01dbac05dff3c818ab203a93f38b37a3e49ffdf"
+  },
+  "src/remote5g_competition/materials/source_signs/B_blue.jpeg": {
+    "size": 3783,
+    "sha256": "39411de19fb926acfad9664e460213206bd69ad05327ff7e52a67529a8873f9f"
+  },
+  "src/remote5g_competition/materials/source_signs/B_red.jpeg": {
+    "size": 3894,
+    "sha256": "3f5df3d0665c9f2381eca8cc2367279bcc08887a263efd451b29668bff6dd9ca"
+  },
+  "src/remote5g_competition/materials/source_signs/left_blue.jpeg": {
+    "size": 3654,
+    "sha256": "3957de903fedc4bc9d397946dc3931b0ef0d013ade1ba1a11967534dc1396823"
+  },
+  "src/remote5g_competition/materials/source_signs/right_red.jpeg": {
+    "size": 4113,
+    "sha256": "7b2a7dc81a0780179b457daa55c9b1fc6ac3bf1438564e5957fc74fb8b2e85ae"
+  },
+  "src/remote5g_competition/materials/source_signs/left_red.jpeg": {
+    "size": 3732,
+    "sha256": "ebfe4454c2041e27d0e8df4f69f67af236f6c879ff2da31215ce7b054560b7b7"
+  },
+  "src/remote5g_competition/scripts/manage_props.py": {
+    "size": 2150,
+    "sha256": "4ad25e0c7f7b20c93ff229c40aa1bf34c270700a3458afe5a5f19c9b5eb65e16"
+  },
+  "src/remote5g_competition/scripts/validate_layout.py": {
+    "size": 8146,
+    "sha256": "cd3f5ec33c783883d6ae4f5e5d32272855c48111fc208221df64c51ca69d6b32"
+  },
+  "src/remote5g_competition/scripts/scene_core.py": {
+    "size": 26527,
+    "sha256": "65712bfa3da8fc2aa346136e484eef08b7a2e549ca5c3cd88027d8d70a629600"
+  },
+  "src/remote5g_competition/scripts/bootstrap_deps.sh": {
+    "size": 426,
+    "sha256": "4bcaaf3ae99598cb35b842664f466cbb16fc1976224ee3187da88aa8b1c689d4"
+  },
+  "src/remote5g_competition/scripts/generate_layout.py": {
+    "size": 1154,
+    "sha256": "107d6cfc1adeb49116dd176bbcb1f652cce1954be4cfc0862d6f371acd75834a"
+  },
+  "src/remote5g_competition/scripts/parking_check.py": {
+    "size": 1099,
+    "sha256": "28d7fbf0d699513535f9f7fc862f0cc6550284f9278578d8f983a1ec232642c8"
+  },
+  "src/remote5g_competition/config/layout_left.yaml": {
+    "size": 76,
+    "sha256": "fc5a3b11866f09df08e3a920ac849e5ee11e96e23a9b17932057bb1bb58ea79b"
+  },
+  "src/remote5g_competition/config/competition.yaml": {
+    "size": 1306,
+    "sha256": "f262a806fcaaa80faf1edd271aa850db94fd44ed3cf8b8cd8e0cae818189d014"
+  },
+  "src/remote5g_competition/config/parameter_sources.yaml": {
+    "size": 7695,
+    "sha256": "955f3b6071902f870ec68df73ed69a9004d62cbb2009f2a9f591f048fd67458e"
+  },
+  "src/remote5g_competition/config/layout_right.yaml": {
+    "size": 79,
+    "sha256": "db55a0a96cb3eb963b3ac63e2679458ae342971e72ff6633cddcfd4551d9f1a6"
+  },
+  "src/remote5g_competition/docs/SCENE_TEST_REPORT.md": {
+    "size": 6620,
+    "sha256": "c35360f69968f607e84fda82c9ef4fac538caed378ec356b6840405e5a3ae4ea"
+  },
+  "src/remote5g_competition/docs/pdf_source_manifest.json": {
+    "size": 3135,
+    "sha256": "b5b3e0a91dca63d1056cfb9f4dfdfd841890f4a228a80b2b7833950bfd06e14c"
+  },
+  "src/remote5g_competition/docs/COMPETITION_SCENE.md": {
+    "size": 8659,
+    "sha256": "80ba9ccc67d973f79498063ef5a2e59e2f7a5e4e84c02b14fec3a4abc1c6d065"
+  },
+  "src/remote5g_competition/docs/MODEL_DIMENSIONS.md": {
+    "size": 3690,
+    "sha256": "c102beb2090682dc738fc87389ad508b870f6becc176f5f3db528949a5399bf4"
+  },
+  "src/remote5g_competition/worlds/right_red/layout.json": {
+    "size": 43471,
+    "sha256": "0bb931ed3e1f9bba94e66e5ae35db9e231b569f3f6e298ccbea52b1f4ad2f0b8"
+  },
+  "src/remote5g_competition/worlds/right_red/resolved.yaml": {
+    "size": 1305,
+    "sha256": "88d647de6eab1270599b826d08a200394d08d0da41bb34c88684f0e5fad27ade"
+  },
+  "src/remote5g_competition/worlds/right_red/competition.world": {
+    "size": 90817,
+    "sha256": "e566ffc23ba22dd70057cb7f0fbf11108e5a2e1808237cf86ce91bf42aa48b7c"
+  },
+  "src/remote5g_competition/worlds/right_red/coordinates.csv": {
+    "size": 14161,
+    "sha256": "c77bf52112b623302f5287649d381a174d0886f9c5e91df65fb693bebe744bf5"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_region2.sdf": {
+    "size": 1326,
+    "sha256": "4775516ea97e23c93589de871793cd8f3b0faa52e2e4325a1df6fbac562412d9"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_002.sdf": {
+    "size": 1620,
+    "sha256": "9c01286a88e98b6f12da40db135702cc3dacb09dae43f2aa8e01277c1c2ab6d5"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_022.sdf": {
+    "size": 1614,
+    "sha256": "c0c288c03cc6ea6495f1a5b87b4652067d2b8f6612ee93292181cc9c1cf97124"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_007.sdf": {
+    "size": 1617,
+    "sha256": "8264f6b8b9cde4c710a604aed19f003eb56b706036ac5b66afdc46b9cbf8fb92"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_qr_A.sdf": {
+    "size": 1278,
+    "sha256": "cf2ab7be01dc345da78caf464a736de4419fd59c3106241e2eaa47e270af1215"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_zone.sdf": {
+    "size": 1760,
+    "sha256": "ef64070467be1bbf26f2f9dcbe8b78e6a44340babfbc2f42171448dc0d294493"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_011.sdf": {
+    "size": 1613,
+    "sha256": "1517c8b39677b07dfafdeeaa2c9dab275c64e6affa7c9a01893c9a1c254f7665"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_012.sdf": {
+    "size": 1614,
+    "sha256": "c9020d6c473ceaea3661438947f64ec61b788e1094fdf98abb0f63732defc36c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_024.sdf": {
+    "size": 1614,
+    "sha256": "b88ebb48a107813de19fb997fc64556acc7c8f28f0c423ac8fecbb4f56dc3bd2"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_017.sdf": {
+    "size": 1615,
+    "sha256": "b4745ae3d627592ce89b2e368384669c202d9a2d48915385eda4cbd717b5fa88"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_026.sdf": {
+    "size": 1614,
+    "sha256": "e220fca694c32389fcff3c334166c5421d3833bd3a7d12eeaef753b2818a6afd"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_010.sdf": {
+    "size": 1615,
+    "sha256": "276a877dc2d7b9e9d62ed8367af5f04fa97b8c20deb11c985bc52393156c08e8"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_001.sdf": {
+    "size": 1608,
+    "sha256": "150d29eab039b95fd7da91f71f2ad90b55a85a2091759c56ea2bce0ec6b86602"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_018.sdf": {
+    "size": 1616,
+    "sha256": "6f5177344df7ad776bc149d611c078a01b474e1ff99077f72d0e278e6adae0cc"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_015.sdf": {
+    "size": 1614,
+    "sha256": "f2d685504a977ae94d75384d71244baff2d48a41bc16ab867d3746b418a2e2b5"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_011.sdf": {
+    "size": 1615,
+    "sha256": "ab9ba0863949b9ffbb1e937758fcada889d81f3461bc90ca3c186102d3f8ec51"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_005.sdf": {
+    "size": 1621,
+    "sha256": "4080f8307decacab098c9f4896b1a0362401789ac1635c9b7203d65629a386bd"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_005.sdf": {
+    "size": 1620,
+    "sha256": "a33f8eb508bbdcd12b723be40dedccdb349d3144941c1e0a0a1080149e11ba92"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_026.sdf": {
+    "size": 1604,
+    "sha256": "81de54acb0ce61e7d55632580ea15dcf85ee52725dcb763c7b23c17d733c94ea"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_obstacle.sdf": {
+    "size": 1611,
+    "sha256": "c593fc03717ea94f47674408cd853b3e3a47634f112d56626c87df4ac11c486c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_004.sdf": {
+    "size": 1604,
+    "sha256": "16bbbae761304f1535cbee174a1f10ef7c5d5dc9bbb98b295b238f7d8c051958"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_012.sdf": {
+    "size": 1617,
+    "sha256": "cafbfd3951d8e5af83bc39fe818e2e42131ac8097217b57af6aa0d82a091e160"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_023.sdf": {
+    "size": 1614,
+    "sha256": "27f65c5467b0e076a6c0e06f3d7f6a9c1062d8eace55bc3d496a406d1c796497"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_003.sdf": {
+    "size": 1619,
+    "sha256": "c5031ef51c4cd61189b043bc7a58354bff3a4a5d9d50b4d4f6a2339fbd570d81"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_crosswalk.sdf": {
+    "size": 2455,
+    "sha256": "3aa6fe259c9b493303fdf637cd1e820c2f8a55d2bdf888a6e5ba1ea22b74cb8c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_010.sdf": {
+    "size": 1621,
+    "sha256": "15070876aac2a40dd523e1fc9306b2d7a1d29e395a84d947c6f56087a69e86a7"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_008.sdf": {
+    "size": 1620,
+    "sha256": "01522043c61cc8b59a4e5d8b0e6c475d39c945e807113290f318694b7168549b"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_024.sdf": {
+    "size": 1604,
+    "sha256": "abda37a5e363fa6fcb1b491a999716367ed82043de1434ca52d13d5a2b6ce48c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_016.sdf": {
+    "size": 1614,
+    "sha256": "72bcc033bc6d2453109e93834d2910a9c4232587b0a0df1a42344824495f2591"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_005.sdf": {
+    "size": 1604,
+    "sha256": "6c27256f741cbecad2f7d31de2ea286af2f81349a949607dcba821d80a7ad2ee"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_007.sdf": {
+    "size": 1621,
+    "sha256": "ae298f420b461625ed07786fffe1a7b3efda6bde49d6d0b94511bd701b00cd69"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_007.sdf": {
+    "size": 1621,
+    "sha256": "8d7c5635ec1e4b76a3ee3148fac325dbe8fbe6e15659e2feb2c7a639fb63ac39"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_004.sdf": {
+    "size": 1620,
+    "sha256": "f45ccfa7be5c0d72a0f18b5e90c79d1be563f473bc287330b46a454c5321d65f"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_022.sdf": {
+    "size": 1604,
+    "sha256": "88888117fa15e0af1db6060cf4c996ae5e1aba8fc336eb9fe22ce08103b33ce0"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_instruction.sdf": {
+    "size": 1268,
+    "sha256": "fff43422fccd880d81e0f999f332e4eea68424cb67914b49601f50d2310f5624"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_qr_B.sdf": {
+    "size": 1267,
+    "sha256": "12675467e357ff14ad9dbcd9da47129f4b581aa6afaebf1a29b652904e2ad6f6"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_006.sdf": {
+    "size": 1604,
+    "sha256": "ab70f9e75d2ac8676d92b06fdc7f467673c7272b7e650334a82efac9b74da3e7"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_012.sdf": {
+    "size": 1608,
+    "sha256": "d93d83cfe0b58a36977084d58180416ecb0e60a6b0934589a36a9aeebec0433a"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_001.sdf": {
+    "size": 1604,
+    "sha256": "78bb5147a758b2c67581fb32f0042d3cc32f8db6e34646f6ac2f31230676011d"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_start_barrier.sdf": {
+    "size": 1061,
+    "sha256": "5bc073f0ec68109f9c6b7bca6fb2625acc101aad5dc51c5916d2a785f56be560"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_025.sdf": {
+    "size": 1614,
+    "sha256": "fbd2b89b28ccdb0a3fcc7ba85a56f92dbb416744e537030714d974a18af301a1"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_000.sdf": {
+    "size": 1604,
+    "sha256": "2886f96ac556faa49e16c54ccb5715dafc8d442a11ac66912b05d8559bb958ab"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_019.sdf": {
+    "size": 1616,
+    "sha256": "dcd0d82b73a036414ab0e3ccd68424e6d5c8a2183474cb297044f6e3181add81"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_006.sdf": {
+    "size": 1619,
+    "sha256": "9cb0dc9250a667ff0bf40d614961713cc4d763e97ce8af0a0729a3e507ebe4fc"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_005.sdf": {
+    "size": 1604,
+    "sha256": "91735c633c1339803b7ebe080af255181b55a7a965b674af5e8f45a42038872c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_014.sdf": {
+    "size": 1615,
+    "sha256": "3adfaef2c29367011b855c294cb6a70afb2a78dc1b97e7389674a706a82bdd9f"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_011.sdf": {
+    "size": 1607,
+    "sha256": "cf0ba3608c94695c25ce92ada54f068e976ab69d762e5ab789c791e703ee8482"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_019.sdf": {
+    "size": 1613,
+    "sha256": "9ee3aa194420a28b55287d406c3c5301c5f6a3f3e1c91f82f421bae80b08f989"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_label_B.sdf": {
+    "size": 1266,
+    "sha256": "c03670806ad8988bf3a558a2210e7cb8f4951a4222a3d96db6d85d7a73b04cd9"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_013.sdf": {
+    "size": 1616,
+    "sha256": "ab569c14241617a59e9417151a19967a9ba5f231284352994db9c5fbcd2b8ac3"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_000.sdf": {
+    "size": 1604,
+    "sha256": "cd2c9977a6d260658e96b55b6c0c02a16d036ded84da4c42d7c27a2eca780f3c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_012.sdf": {
+    "size": 1607,
+    "sha256": "35896f63c92ac05f85175a12918df9c8591293b8fb24ab83327a61d37e1c7e29"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_021.sdf": {
+    "size": 1604,
+    "sha256": "d0129bb8d82c9de4bfeffd099ff686ff1541604d1b00baa166ef4370775a9f78"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_023.sdf": {
+    "size": 1604,
+    "sha256": "850f4bbdc8a40d582db691c455c1696fb5857fa42293aa42466d882ff1494b9a"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_025.sdf": {
+    "size": 1604,
+    "sha256": "6c598b984cfadc7fe19d63e1eb8ac1ac00f6c1536d70abce323803fe3ec1a10c"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_001.sdf": {
+    "size": 1604,
+    "sha256": "155b0a60dc0cf6db8dbe3a88c2b84d01825e1aa2c8cdff855cc79cd84d473f8f"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_006.sdf": {
+    "size": 1619,
+    "sha256": "5e82c2e9a072233c5ec585e9486d4b8c6c33f94fbdf8dc04f1b966986a573f7f"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_011.sdf": {
+    "size": 1608,
+    "sha256": "23e038765b6a670c4c2461339451bc8d1dbbc14c6d7da5ebc966202d0b42e9be"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_010.sdf": {
+    "size": 1614,
+    "sha256": "9ecbdc07b265a153738674eecdf75e2a58dcefb40d98cb4dc02d41c657a35cf8"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_016.sdf": {
+    "size": 1617,
+    "sha256": "7858f157e152f204a53588f9fde50387956c02bebec5534f0699126839eb32f0"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_007.sdf": {
+    "size": 1614,
+    "sha256": "86a45fae1d4dd8b504bc662e2b6883f4fd438203e2076719cac1f892629392bc"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_009.sdf": {
+    "size": 1614,
+    "sha256": "3e1abfcd98134cf0a7ba3df8b83a5a4c15ff906e3ffffc3e1a22aeecf27944b9"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_020.sdf": {
+    "size": 1616,
+    "sha256": "9deca7d4276d5ec49d42cddc35ffb19382e85113b528fff56aa2e95c9ac902d8"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_002.sdf": {
+    "size": 1621,
+    "sha256": "ca7a11b2c9cae4a3223cbc67e966a14c92ddb56c1d90a11ee0d798847333392a"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_015.sdf": {
+    "size": 1613,
+    "sha256": "71c54b6282b8c2ae6071f549501e4cb93e469e955d10207d8ff71c27044b1b62"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_013.sdf": {
+    "size": 1615,
+    "sha256": "356e2507d282e9d320c5709f2996b1738798051e6e552ce447ee2ca5e0932991"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_lane_change_sign.sdf": {
+    "size": 1284,
+    "sha256": "854652d36626b0c14881f4f3c30600e3838251d3b89b03d4b8a940d9a95671d3"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_008.sdf": {
+    "size": 1621,
+    "sha256": "79a9727f0cf7cd5999f8fa2e6259266c72b0b6b96a0dce2afac6f551ad20397a"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_002.sdf": {
+    "size": 1604,
+    "sha256": "ba24e431df2c4e0377fc0e739f36409a3067f0528e6788bbed4d508d90c5d177"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_014.sdf": {
+    "size": 1616,
+    "sha256": "18866bac163babc47f1be5efd323950e9916275c0f995dcd947dcddf2e77fc2b"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_008.sdf": {
+    "size": 1614,
+    "sha256": "27c0ba8766c5e27c381ce28d68e4531d95e8f1d9fbb75bb1db3d8d76af316847"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_017.sdf": {
+    "size": 1613,
+    "sha256": "70193d6e02998e533362ee8d59fdec42ad846cf08746c448f137972d80fce2ad"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_000.sdf": {
+    "size": 1608,
+    "sha256": "6e6e9e2ea29f5c558ce8435ea5bc5c5bc9e309cca7aeb94e985d136f0e1ced8d"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_021.sdf": {
+    "size": 1614,
+    "sha256": "222e7bd4dccecc3ceca436d8302572bc0995b0bd4bf37d5c13543406d54498b9"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_006.sdf": {
+    "size": 1604,
+    "sha256": "48217ada571d2422abbc9e1b77761ca819beeca8db4dbc66b0b7abf467fe6cb8"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_009.sdf": {
+    "size": 1620,
+    "sha256": "88f90c36be1e21332f343a80f2329deb5d29fe0e4a3e7126817ba48a4e4c18bf"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_020.sdf": {
+    "size": 1614,
+    "sha256": "e471e90eb5c699862aff96ab0d06dcd6d617e0d59a9e6a74747a7ad3416d23ab"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_004.sdf": {
+    "size": 1604,
+    "sha256": "268f109d576d7a69793bec8618fdb93ce9f7bbe68486cc5f66d4cc63a1501d02"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_003.sdf": {
+    "size": 1604,
+    "sha256": "9ba6de42f25634ea9ea907fac6dafcb129b6a83f8434c1ecb12c63679b388e21"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_010.sdf": {
+    "size": 1620,
+    "sha256": "3da6823b3e44b5b273905354a619039e75e1b26ba701092dda2ad175fbd7a6fd"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_parking_label_A.sdf": {
+    "size": 1277,
+    "sha256": "597da19582c2578fdcfdd2c88ac5dfbfcf3d23552ff1cfb31b8767c3adc62e95"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_008.sdf": {
+    "size": 1612,
+    "sha256": "0fc6a1d214a011d84b12ff6b6000e85660d5a008478497d3b58c2c9bf43c2dec"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_task2_qr.sdf": {
+    "size": 3863,
+    "sha256": "b7cc2da7b566493f2dfbe0331099bac8b4ba550dbd05ba5af976759cdf4c4332"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_009.sdf": {
+    "size": 1617,
+    "sha256": "e3dfe61711a97cf751252af4876c5180e4a65eba3ceaaac242b7d3b3c68368a5"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_inner_003.sdf": {
+    "size": 1604,
+    "sha256": "f1dac52e0018ec0d2726d443e44ce2b4cd2484df29ab17ad5dc9c25156807808"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_001.sdf": {
+    "size": 1609,
+    "sha256": "2402f86d4b4835c209122748e6962aa784356598a9f6fdda9d2ea1a0f90b29c0"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_000.sdf": {
+    "size": 1609,
+    "sha256": "9ec6372eb6f8d8157decdc9e89dc234ed65e3bc1c6f0744b4fa3d5f3cd172b02"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_start_zone.sdf": {
+    "size": 1327,
+    "sha256": "b496a3d130c62bbbc36749a5fb1ef833aff3fe0315e629984b66b8dba6f7e997"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_004.sdf": {
+    "size": 1619,
+    "sha256": "87de317166a6b5e4c0b42044145b9d2e1edea3a3c88d9d23bdf1f4087c0c261f"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_002.sdf": {
+    "size": 1604,
+    "sha256": "eb384a9c9fb8b87c22d93170c0123339303f4e6b16d68cc9ee7f4080ef086d44"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_outer_018.sdf": {
+    "size": 1614,
+    "sha256": "1b8b68c5403fe960a28a547f0ebc92d52f625d621db417594c8b5b364e44eee9"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_left_009.sdf": {
+    "size": 1621,
+    "sha256": "1cdf68eb6088268b16bed6d50e299d2f05bac10c236b0b885bf921b973f6e293"
+  },
+  "src/remote5g_competition/worlds/right_red/instances/comp_guide_yellow_right_003.sdf": {
+    "size": 1620,
+    "sha256": "703b8305dcc37c7b10e5952985683df6cdc2a0e857115dcad016a70560827034"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_start_barrier/model.sdf": {
+    "size": 1020,
+    "sha256": "f9d9fc0b642f1e1309635d15f206fd73cf13d91041b1fc2ac7f691bfd6f95daf"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_start_barrier/model.config": {
+    "size": 217,
+    "sha256": "f7bc16e30d3f1fc6ad38b058d0b147f692af34c9cc1d21a00212da7176964dbf"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_red/model.sdf": {
+    "size": 1525,
+    "sha256": "ff896b38f1ae943b928da65a2f6f0e73ca675ac8516dfeb96d284d579367877c"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_red/model.config": {
+    "size": 212,
+    "sha256": "44aa3cb4c4414a10a8a81f4ddd52e1493edff0bafdec6b9084694fad8dc7cd00"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_red/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/model.sdf": {
+    "size": 1210,
+    "sha256": "c531ba9ba9fdb32ff9e73c1caa81bfcd7cfb47d2dfa2aea435d92eb99f208df4"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/model.config": {
+    "size": 217,
+    "sha256": "8ffc4f82d16088e5ef31b2fea6eed85965be78dbbb4c89356960968465c579f0"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/materials/textures/comp_sign_left_red_sign_4237d435.png": {
+    "size": 13607,
+    "sha256": "a71fa3b01c4616d037efb03e4e418d4e7750e2f6dc4b9295f31bf67307ef8e58"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/materials/textures/sign.png": {
+    "size": 13387,
+    "sha256": "3aa0ebc739ba29f960a1fcea2642552a8df444f34751bbc1f5f000e0a686a0ff"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_red/materials/scripts/sign.material": {
+    "size": 206,
+    "sha256": "0fce120e5da5941a8ecc4043a8b39e7e2413d18cc3cc56c09a8d491b4805d377"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_blue/model.sdf": {
+    "size": 1528,
+    "sha256": "7a10d160f6a04d215d486936b5b74fd19983cbafb86c8e403da2dc2356673cd9"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_blue/model.config": {
+    "size": 213,
+    "sha256": "ecf50cf77b029df711f422159fdbedad69d18113ff33ea0172316ba5059c0a2f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_blue/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_start_zone/model.sdf": {
+    "size": 1273,
+    "sha256": "07a0768edd6d9a623c8b76090adbd93c8e19f773844e4255bca656d18064abfe"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_start_zone/model.config": {
+    "size": 214,
+    "sha256": "1b2654f6e40f8a37adeacaca8fabadb7de8d1c730ae36cfa0691180512db2b61"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/model.sdf": {
+    "size": 1192,
+    "sha256": "c9bd5044bdd155b5b1b98a028e6d96e3d601b310c6f2f70f4fbfa08b5a45ccdc"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/model.config": {
+    "size": 214,
+    "sha256": "8664fc823e41afcfcd2bc96664a8b69d904ece1416e700bf85ff93cb913db230"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/materials/textures/comp_sign_A_red_sign_53200d66.png": {
+    "size": 15539,
+    "sha256": "7528bbc1eebe2190d4e6667e53e65b20b6b0d71985d633caccf52d517637a9eb"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/materials/textures/sign.png": {
+    "size": 14983,
+    "sha256": "782cb5dca86813521bfd143204b6e2241535a128fe6ff648dd8efe93b283dadb"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "9921f1501ef92a49e456d67a62dcbe101112b1c76512811d68f05909f28cac71"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/model.sdf": {
+    "size": 1216,
+    "sha256": "63ae8347e98238575475208ef651e0d2dc8c9f0ffa8e67f633d09eb29b161c87"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/model.config": {
+    "size": 218,
+    "sha256": "8abab348bae5900372d4fafd3816e095864d28d0242cca44d31613f3cccf6883"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/meshes/comp_sign_right_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/materials/textures/comp_sign_right_red_sign_e5a59239.png": {
+    "size": 13440,
+    "sha256": "15ec2cda84396204cba57898bc56ae0e6fabf59f8273c309518830659a644f8f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/materials/textures/sign.png": {
+    "size": 13000,
+    "sha256": "731fb70f327b25d83327d30ff23773522471fac59cfc850021b692e079bd9dac"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_red/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "d5defe9e625c466f2a56e366f67339314a48e8b140361ff9cd7be1e58dcaab53"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/model.sdf": {
+    "size": 1192,
+    "sha256": "f7cc888c453a78a402a762d04b59fac2b42d999163e0217128a175544ac17669"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/model.config": {
+    "size": 214,
+    "sha256": "58953cc0de035b214b8b998d17b7634379dd0776a200d9b269a8a472882a7ff0"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/materials/textures/comp_sign_B_red_sign_89c2c4be.png": {
+    "size": 13230,
+    "sha256": "398d73d85ed0b2b3b7a589923643045c6a4f2d7035fffcd68d43488f01cedeaa"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/materials/textures/sign.png": {
+    "size": 12750,
+    "sha256": "d1ea2db13474de3c2f6c1c3a1adf933fd4a10b3b06f32dfbbcd58a34bf3a8cd8"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "b62cad8a2012c331aaf4de061592b7cd17f05cb7173f75036f79c56a2bdfb079"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/model.sdf": {
+    "size": 1198,
+    "sha256": "fbae0e9912f3db394bdf4674f251ab7bb8ab9d1fcd55c4aafd7089157cdcee0e"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/code.png": {
+    "size": 788,
+    "sha256": "1caa0fa9e4e4fecb3e886ffbc52e012874f306614cacc481b30c151e8b99bb04"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/model.config": {
+    "size": 216,
+    "sha256": "49b0ca2b863eaa33ebb50bfd64b6881135cb86819e08a39c6002334cebc6b61f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/materials/textures/qr.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/materials/textures/comp_qr_parking_A_qr_f6c47831.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_A/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93df8b64f3f13ba7bb810bdd6018dfed8e6f61b2e31541bd4a3a1a4e137437b9"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/model.sdf": {
+    "size": 1198,
+    "sha256": "53d576f52b0c33d833e54e71068a00564eee75474dadbb544120eb2386910b6e"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/code.png": {
+    "size": 758,
+    "sha256": "da49c8008a6daa2829689b3d57b77ba5fb00f442d0075d12ddcf1ef896f389dd"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/model.config": {
+    "size": 216,
+    "sha256": "6d394ff36f67073491074447c4a197ec425b1c07d4712adac15b1b0535eb91ad"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/materials/textures/comp_qr_parking_B_qr_7bc62027.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_parking_B/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93e6966ceaa05a519843b0e2aa57ee731e287e119143ce5d3b5db4d032c21868"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/model.sdf": {
+    "size": 1198,
+    "sha256": "d19ff44aad5822f386baad09963ae1fc0e3703c37197565c07ef487a43a1dc39"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/model.config": {
+    "size": 215,
+    "sha256": "7ea330a5cd7bbe2ef96876d1bc88727c1e4067ed33ef91ca8f8790544811643f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/meshes/comp_sign_A_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/materials/textures/comp_sign_A_blue_sign_785ef58c.png": {
+    "size": 15798,
+    "sha256": "6ac043086fcf540a5f589e345fddd39b3efec41292c7cb768257b045356cc880"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/materials/textures/sign.png": {
+    "size": 15021,
+    "sha256": "9d1a80b66ac7bace7ba3021683cf613a3eb95d821646d054e40a89e737310b63"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_A_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "193ab450177e72da03867028097f657fa4c5a9c4425dbe29be5359fc8c400753"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_yellow/model.sdf": {
+    "size": 1528,
+    "sha256": "943f31b542c5d5267c21d3b39d6b8b6b3b31a357fd83c9926d5201b0e4421a3f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_yellow/model.config": {
+    "size": 215,
+    "sha256": "6c0a3a2fa2c83508c35e5191ecafa6ca43e6bbffac4cd54fc3d9f3774bf0114f"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_cone_yellow/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_crosswalk/model.sdf": {
+    "size": 2399,
+    "sha256": "64c2e69e82ee8ecd2b0ff938321b9e01f17e58c624969d8818602e11f4092de0"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_crosswalk/model.config": {
+    "size": 213,
+    "sha256": "c98103e5913a558066196c55514948f7abf48d539c3a5b6c7bf5b6e5f50ea476"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/model.sdf": {
+    "size": 1198,
+    "sha256": "7680e78385681cad0de62b558bec28c3db15ee7a1f24fe19f8f9ade2dbef38de"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/model.config": {
+    "size": 215,
+    "sha256": "ad255b1d6636dba5407ce373026d12f333f86436bb1114a047dba525e0dd3edf"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/meshes/comp_sign_B_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/materials/textures/comp_sign_B_blue_sign_fd6007bc.png": {
+    "size": 13550,
+    "sha256": "3edcae8e535484973e4df2e3b0efd8e8f842e03aab470f87aa71aac892c172c7"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/materials/textures/sign.png": {
+    "size": 13070,
+    "sha256": "b7c90c03009f4c515436861ea4e690e0065c65f34f7e2b2753183ce377e24043"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_B_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "cdda55e78d1d0b564536972434531a7816d5ffe81e1dc6521dede01ba41a99df"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_parking_zone/model.sdf": {
+    "size": 1693,
+    "sha256": "eed9d10ad396cd27a3638a7a0ca1cb86b4fbea9203c6f00eff89f4237cb3bb1a"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_parking_zone/model.config": {
+    "size": 216,
+    "sha256": "a48fd1f795fe193157f9ace6eff9c9d12a4488b6990c13c105d96f151fb6ae3b"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/model.sdf": {
+    "size": 1216,
+    "sha256": "c900d38b60e64b2dfb79bcece0510cfa2afdf5c95ac5820b297a87e0d8c2bbcf"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/model.config": {
+    "size": 218,
+    "sha256": "829b1259c8b612499181ae484a5240f3fcbada7eb598144a77a0d34cc516f044"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/meshes/comp_sign_left_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/materials/textures/comp_sign_left_blue_sign_b5de8e85.png": {
+    "size": 13723,
+    "sha256": "dab8175b20e461a4e9427b792d2620ad30a0d5f04cd61d530ba598f8089e1f7c"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/materials/textures/sign.png": {
+    "size": 13473,
+    "sha256": "a0c7e13efdc54e5d281c35ae9d2cdc6aa840b0f464ecbab77428a7dc6ae6de9b"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_left_blue/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "454db604296f7b0c574a4ee5197861d27bc1c92c40c8d6ee0c17933b429277c8"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/model.sdf": {
+    "size": 3798,
+    "sha256": "8761794159560a5a72476a8654097a44150041381d67f77f24b16616481f0db7"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/code.png": {
+    "size": 793,
+    "sha256": "b66c35e0699975ca859bfe0192800e55207946957cb87cd1da9f330208e56e35"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/model.config": {
+    "size": 212,
+    "sha256": "31cf6ef6acb631f6dc956abc4aeeec3fe82dbc772f54b9d7be4be3bd833c4021"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/textures/comp_qr_stand_qr_f9e2c485.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/scripts/qr.material": {
+    "size": 192,
+    "sha256": "72ccc1f1e98d8ab16ffd5b422c1763b366c3dccdc314dbcfc32da98da419ad44"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/model.sdf": {
+    "size": 1222,
+    "sha256": "fe355879c904243043bc56aa921fc7b7c1ee591bd9baa8010d0821e166030ab9"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/model.config": {
+    "size": 219,
+    "sha256": "09fed20b9973bbbe964fcf5e4487d943be7d9e2b417a310191dc7301bc3dd3c4"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/meshes/comp_sign_right_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/materials/textures/comp_sign_right_blue_sign_11472468.png": {
+    "size": 14028,
+    "sha256": "ac3b7e7c734cb487042eafd2c67a6228b3a9b00992a0a30f438d66586a9ebc53"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/materials/textures/sign.png": {
+    "size": 13591,
+    "sha256": "9e210c4043d7c11abb15ad908c2402579745385672eb89e974152114a7dd6e7c"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_sign_right_blue/materials/scripts/sign.material": {
+    "size": 210,
+    "sha256": "99657d63b434bd4243d7e537568cf2cd8786dec6b52fc12190cee46cfc8b8087"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_region2/model.sdf": {
+    "size": 1270,
+    "sha256": "651b638ee603e26dc400621d78604e8733485cb71d99228108f5221b16531870"
+  },
+  "src/remote5g_competition/worlds/right_red/models/comp_region2/model.config": {
+    "size": 211,
+    "sha256": "23bab0dd09d97ef92950b04ad24a8e82aa488db0b88c9df9bb14a144cc75add3"
+  },
+  "src/remote5g_competition/worlds/left_blue/layout.json": {
+    "size": 42822,
+    "sha256": "9e789746ddf584077274152abbce2b774315d53c712f7195e20a89ffd7b00cbb"
+  },
+  "src/remote5g_competition/worlds/left_blue/resolved.yaml": {
+    "size": 1304,
+    "sha256": "72f5b163f398984208fbd0c254625c47c30eefeca9898acc5b1e96633a75d17b"
+  },
+  "src/remote5g_competition/worlds/left_blue/competition.world": {
+    "size": 90173,
+    "sha256": "7a62167e48255b2867828aee5ebf633dcd1d8a3ff1d84d66df96da1d04ac6154"
+  },
+  "src/remote5g_competition/worlds/left_blue/coordinates.csv": {
+    "size": 13518,
+    "sha256": "88261b2260b2269973ed8d0be2fd475d5120f5485585fa72344ede660bb5815f"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_region2.sdf": {
+    "size": 1313,
+    "sha256": "bcf43e7a165aa1f49ba998d0bbfb007caf1c7c4df7c10e5fb68013d67432a546"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_002.sdf": {
+    "size": 1607,
+    "sha256": "71400d2e950b9725f2b16a2e6f4160cf76887c1041bba3c3f6c45faf04273f3f"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_022.sdf": {
+    "size": 1601,
+    "sha256": "39b6d6530e1ec71d176281d46954a924c736141bdd94b5e6c6d7c30e04696185"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_007.sdf": {
+    "size": 1602,
+    "sha256": "391bbca29451eadea16ca6b540f28e6117eb0de0e0a9a65dd7e94be019ea3a60"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_qr_A.sdf": {
+    "size": 1252,
+    "sha256": "62e62da3d467cf921b8d5dc123a01b5e74700665a62b98cd448d48a685b5a73a"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_zone.sdf": {
+    "size": 1745,
+    "sha256": "ce33c25b7c197ed95167a287a22c806b8513e411216301d90a0ba1a35a48d5fa"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_011.sdf": {
+    "size": 1600,
+    "sha256": "5c939af6c92af6b5ea090b1728733789f2b4d7bcbf0715e5fd0c717fed756984"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_012.sdf": {
+    "size": 1601,
+    "sha256": "0651d19c300e9a6496f862ddd4b713fb0ba52ef3865eb853a1c37ab354691d07"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_024.sdf": {
+    "size": 1601,
+    "sha256": "e8c294e79b0fcd6df0f06e24d9a65c27eeb621b6302fc80098e60f8fc5917e9b"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_017.sdf": {
+    "size": 1600,
+    "sha256": "f7d5ffa91181e10d74a9b33f59fc4e4ceb96cbf4a2c58da3b49599768f26aff5"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_026.sdf": {
+    "size": 1601,
+    "sha256": "4242442b4faf9a14b161bc6a2f54c4cc6d00541b8b15dee3e4cdc4bcc0a2d767"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_010.sdf": {
+    "size": 1600,
+    "sha256": "5d4260e8767268bc8cea3f1c2bb098bb8b846f445ad44434b47417c9cdc759a8"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_001.sdf": {
+    "size": 1595,
+    "sha256": "56bec22a56e31e8209742cc3b34dd4571f4cfd870b538aa7dd064255ce2d5f3f"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_018.sdf": {
+    "size": 1601,
+    "sha256": "4f5d16a4f53c7448a523ef1e3aebe6901af3fe0670b5db167c2e6da30ef214b6"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_015.sdf": {
+    "size": 1599,
+    "sha256": "5fe9bb0f81092d6a76f88777c9c6ff05a0c9fb1a54c5ed3ad8791514a90631d8"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_011.sdf": {
+    "size": 1600,
+    "sha256": "e52e14bab0fcfe37dd8686a91301c0013e0b451e972d2638ce240840f6dffe58"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_005.sdf": {
+    "size": 1606,
+    "sha256": "989eaf5d6165c35556fb14fe4dc5aec2271aaf89529c7fbd77929d565e3f6352"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_005.sdf": {
+    "size": 1609,
+    "sha256": "6f4481fd8938ad2c84002118e64ff27ce3e6bede3ea3d6f9fccce981ec5c7d8e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_026.sdf": {
+    "size": 1589,
+    "sha256": "9c7b08bc169a27b388567b4c152757b4585fb7868f0fcc1e7511a59ab3934fc3"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_obstacle.sdf": {
+    "size": 1610,
+    "sha256": "a7ad9638eaf6fe42fcb2073276784d45df5f583ba6714268333ac0a49f4b26fc"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_004.sdf": {
+    "size": 1589,
+    "sha256": "02b414dd8d513a5cc76be1c92ac0139527ad39ce6cb0189dae3e515b314072b9"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_012.sdf": {
+    "size": 1602,
+    "sha256": "13fadeb1b3a3758e371e738fcac805c4976a9d3dd922d23ebbdd46ab1222ab7b"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_023.sdf": {
+    "size": 1601,
+    "sha256": "c246240580a51c6ef2b3001c56665dbb7ffd05d693ee75b3e711549bc956177e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_003.sdf": {
+    "size": 1606,
+    "sha256": "e83b82d55ed2fb4768e76719a3898a4657626508f9ded54ab7ef08496d327ad3"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_crosswalk.sdf": {
+    "size": 2442,
+    "sha256": "bf28fc2ecf34be2c3db930894b5d6fb2f07d8d907a4dfb3eb8b01008e8cf0907"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_010.sdf": {
+    "size": 1608,
+    "sha256": "2811efcdcf7861db9a69aa1bab6fb8eb1eecfda5a3089e6f666710f4ac022440"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_008.sdf": {
+    "size": 1607,
+    "sha256": "c43ab3471ecf4327ca361d3fe86930b80ff1b06dae139d528097dbcf63d8da0d"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_024.sdf": {
+    "size": 1589,
+    "sha256": "8ec6bbdadc92600d15a4a2ad72c84f9c917d0cc55b52fb797f669e934ac73dfc"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_016.sdf": {
+    "size": 1601,
+    "sha256": "b57e1a9401be99de90dcc67de068bfc5cd0656840b2b2cd85dd6e2d1ac8aa74e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_005.sdf": {
+    "size": 1589,
+    "sha256": "3d7d157b99a15f7c1b3733576bf505fd30535f9fa905504f2e14b418b14aa74b"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_007.sdf": {
+    "size": 1607,
+    "sha256": "5db7a4e75e531a345553b4071b8c52b582e98ae42dee52df0021e39df2b4d3f1"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_007.sdf": {
+    "size": 1609,
+    "sha256": "3d66635ccb86b0a2229260229c9791a3b6a9a7b8abd3d0d071f9a2bdac7fbb56"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_004.sdf": {
+    "size": 1607,
+    "sha256": "a9c7cfb2d38cb0321c4b07d5e25b3f309a03350132b239668a2abe701d243d43"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_022.sdf": {
+    "size": 1589,
+    "sha256": "e99cf6439ebf4f265eafaab380371f62a90963a29931cbb64323ebde0c6737dd"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_instruction.sdf": {
+    "size": 1258,
+    "sha256": "b3a31068b0c59ecfd43a4fe5f4a8e8f3d11d281e4d7f32c3d1c20a02b2872e14"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_qr_B.sdf": {
+    "size": 1263,
+    "sha256": "dc76638d2ca5cd84a1584d3f6bf77915db6c4a73d1bd1ee46772d2e85f29822e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_006.sdf": {
+    "size": 1589,
+    "sha256": "039ddf78103a645c1b840dc3df9c4b5f7f0d56bc083cb0ff8b426c6ab3f54352"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_012.sdf": {
+    "size": 1595,
+    "sha256": "af20eb8770fcb2cee939357266cd264368c7e8b743c3f8fc2b1f65d03811f237"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_001.sdf": {
+    "size": 1589,
+    "sha256": "f49babdd01329b8a38c6f39d841905dbd0d842f21d85b56f142093bbb1fc387c"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_start_barrier.sdf": {
+    "size": 1076,
+    "sha256": "7f941457a362efe085198e4d71e3c95c6a8276d2c47ff9008d2f532c898bf4aa"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_025.sdf": {
+    "size": 1601,
+    "sha256": "974f75ff9bb4214065b95f9fe96f921effec69f769b70901eb82ce88240200c7"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_000.sdf": {
+    "size": 1589,
+    "sha256": "2ab4c9f4bad5279cfac81b3f3a30b283f9a14a3f4252cb214cbcd0ebdecf24ac"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_019.sdf": {
+    "size": 1601,
+    "sha256": "a0ebd62b51caf7ae6254d4ddb633deb7acb41869d1c504ba43a079b6df05ef5a"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_006.sdf": {
+    "size": 1605,
+    "sha256": "400fb4cf8356108397205875968101e145260fa00535957dc35a95d4aaec48c8"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_005.sdf": {
+    "size": 1589,
+    "sha256": "f1a215ce36d1323675ca51aa05ace9a67590e81bd72479653c83877e8c6ee4d6"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_014.sdf": {
+    "size": 1602,
+    "sha256": "9092eae8598c45f422ee2cb6777af14e97e3da6b49a81cfafce2fa29704a298c"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_011.sdf": {
+    "size": 1594,
+    "sha256": "d87c0888d85884213dbeeb67e6c087774ee0b5b67246c0a112cdfd54b2957fe2"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_019.sdf": {
+    "size": 1600,
+    "sha256": "5676490bd64dad878ca90ecfc4053f88f7067af56356594bca78eeb58d0f40e1"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_label_B.sdf": {
+    "size": 1267,
+    "sha256": "d925b90383a47c84da274d6757893b250be987eb7cbc03fdc53a6176f3121322"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_013.sdf": {
+    "size": 1601,
+    "sha256": "9b7ac3b452aef7c64a68e3ed8c891641b3add81f3dc7f3a8ae662edbfdb7df03"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_000.sdf": {
+    "size": 1589,
+    "sha256": "f4ddcaaf36cb90fe720c14c1ddecd49a677f3e84ce140c378843154193fe0768"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_012.sdf": {
+    "size": 1594,
+    "sha256": "77a5ac641079979b5d316467a23878d5ae1a6103d26a55ae0c07d5dd0377abe0"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_021.sdf": {
+    "size": 1589,
+    "sha256": "1475d954ecf6870dab2d983c7d366fb9cac763d5f4711bbbbd33137d01310b1f"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_023.sdf": {
+    "size": 1589,
+    "sha256": "1fa1a9e0ad78ae9e08e542d990f39e08d696584d701d1b11b3c4b7bc516bb5de"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_025.sdf": {
+    "size": 1589,
+    "sha256": "71a7d38417c66d9a9564e087f78883b1608dd61a062e10be5b3b69cb5fe1d997"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_001.sdf": {
+    "size": 1589,
+    "sha256": "a0906b7865c1a629d9b01c3a6621449c965148092ee23a28630e13ce44754a9f"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_006.sdf": {
+    "size": 1607,
+    "sha256": "494d5ad27811d0faa51b12df176ec33cd513e497339e3227e5b01d861bfcda03"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_011.sdf": {
+    "size": 1595,
+    "sha256": "48565b104ce538a66706acf5259c967e7132560bb2f9f89e72bf1c2a3df39cc5"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_010.sdf": {
+    "size": 1601,
+    "sha256": "4677669ee562ce49309bec3e43ca51c6f00489a819f29f02496085411dd9c223"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_016.sdf": {
+    "size": 1602,
+    "sha256": "20f9d492908af0117afe59f8cdceafc05fe1887d15c8367a080347c0e65a3880"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_007.sdf": {
+    "size": 1601,
+    "sha256": "8bc13ed9c863de2435dccd3ebe6b3f6df77d7fe027e442b2debafe076a25c515"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_009.sdf": {
+    "size": 1601,
+    "sha256": "86d7b8924461d6c709b8eb8efc35e56def05f8bc0d44d1cba006712c124be496"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_020.sdf": {
+    "size": 1601,
+    "sha256": "2059d6383caa171d5d9dfa06591873ae44ae9ec8d3d6a0379c6071e039a4740b"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_002.sdf": {
+    "size": 1608,
+    "sha256": "8ab7241e05d0244cd1ec48e8c99e249984ae6e332cc0c3a8964c248e674decab"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_015.sdf": {
+    "size": 1600,
+    "sha256": "0fbec802cf440781b953484de500227ffbc0dd05b18a84a12914f202ad6b3326"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_013.sdf": {
+    "size": 1602,
+    "sha256": "61a666ebedcadf8a38f32266ba44cdd7e5fb1f1c6da6a8fe3d7e8b0462fb1b71"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_lane_change_sign.sdf": {
+    "size": 1271,
+    "sha256": "1198f7a943c08bae3526e695609e5c50bf5933c9395bb6d2290a5623995a2328"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_008.sdf": {
+    "size": 1608,
+    "sha256": "931b6a742fd3f847829fb8e99aa4d3559552077f6016a5a894a955d3207a80ec"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_002.sdf": {
+    "size": 1589,
+    "sha256": "26a0a0416e13d0a7d61a3af0aeb6d395cb766e1af4e507da0d40f5b46ca35b85"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_014.sdf": {
+    "size": 1601,
+    "sha256": "405de15ef710a6b24d5872f1a5263d25944703d8d87f1e381ca583ff7f14d701"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_008.sdf": {
+    "size": 1599,
+    "sha256": "9953b7e24c9cb04f641394286ad64071691644c6d05bc7ce3417430bada2e663"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_017.sdf": {
+    "size": 1600,
+    "sha256": "3507c40a64f15c2405167866478e303bfca3ac429c9014dc4226713718a0f681"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_000.sdf": {
+    "size": 1595,
+    "sha256": "1c2ef0be58a2e995bc5c0c6aba49fef98d8d86ad8dfc29e56c4809ff25da6c13"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_021.sdf": {
+    "size": 1601,
+    "sha256": "e7084688f22d509e3a925069d74fa9b5e5afdf859a958ab8e654b5baeb095c91"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_006.sdf": {
+    "size": 1589,
+    "sha256": "191f278b2f7c2648c07d5b8b9b2777ed452cea0e296b05da236f62f11e6b53d2"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_009.sdf": {
+    "size": 1609,
+    "sha256": "340edb531e1acd2b4bff77d8703d90d35524e289598703d8d69d7f70002cff09"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_020.sdf": {
+    "size": 1601,
+    "sha256": "fbd9f199ddc4842527c698ec57c93f39ca8f91cd4e269e8b081f71be6fa37b02"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_004.sdf": {
+    "size": 1589,
+    "sha256": "b4e53d96fe78ace599e7de0483312b537165c0a4f22cf6567056880d61b87e51"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_003.sdf": {
+    "size": 1589,
+    "sha256": "930e8855aba719ad571c4553b6f0cad63e764afaf6975a572222a5b938763b77"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_010.sdf": {
+    "size": 1607,
+    "sha256": "6e4f65adce437f44722a23469fedca388dde19feeaa35c0de89315de25c24eac"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_parking_label_A.sdf": {
+    "size": 1256,
+    "sha256": "21935afada66d1c9a5a602ef58be8521786cb0d05d4cd5b2a21c2bd41a709dab"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_008.sdf": {
+    "size": 1599,
+    "sha256": "03f332db0f7f247dcbf084e1dc9a185df5adce4552822c970aa303d2d606c5a0"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_task2_qr.sdf": {
+    "size": 3850,
+    "sha256": "211f1ec09dabdbcd1663c1b5581ff63d101698a83d348ed067c0df13ebaa116e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_009.sdf": {
+    "size": 1602,
+    "sha256": "fee469f6310580bfd54c717e7ff9c98535ba4639f53f2723223d786d6a9fc4f5"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_inner_003.sdf": {
+    "size": 1589,
+    "sha256": "5fe3fd7a44657537a7967b03915b5b86af157cd2dfdd387bccabc1a15a740cf3"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_001.sdf": {
+    "size": 1596,
+    "sha256": "414eb6e22ee5c951279187687ced7098b82427be9daf4dddee15247c85ce0975"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_000.sdf": {
+    "size": 1596,
+    "sha256": "2cf26a541d36922fd1a903e43af4ad85f45c2f2e9c9f6602592bf00d7a92ea10"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_start_zone.sdf": {
+    "size": 1342,
+    "sha256": "214700d4923b337cf613f7e32b9d6eca0cd1dda0b062a451616a700f7ac3bb57"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_004.sdf": {
+    "size": 1606,
+    "sha256": "aad7515ae2c75414ad6be8ca7c9d55c3488a3571d372342473d117d57cd0f933"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_002.sdf": {
+    "size": 1589,
+    "sha256": "4c6f9e0e8f0e3e259080c80ce14ef4f60815ab7bdb9a1341db657b3c0962b738"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_outer_018.sdf": {
+    "size": 1601,
+    "sha256": "c32dd46c6a41c5f80d26293e6f4072bd9eff7f686d943c12a1a3009d9bdd3883"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_left_009.sdf": {
+    "size": 1606,
+    "sha256": "1dbe2aa8b222dcc7a2835c33a08282b4d48e44d0634e4a8cfe2678a4042bfa7e"
+  },
+  "src/remote5g_competition/worlds/left_blue/instances/comp_guide_yellow_right_003.sdf": {
+    "size": 1607,
+    "sha256": "54e82c22b1581290a9b7231eacbffaacfdd3e010362d39242cf17e746d840cf6"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_start_barrier/model.sdf": {
+    "size": 1020,
+    "sha256": "f9d9fc0b642f1e1309635d15f206fd73cf13d91041b1fc2ac7f691bfd6f95daf"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_start_barrier/model.config": {
+    "size": 217,
+    "sha256": "f7bc16e30d3f1fc6ad38b058d0b147f692af34c9cc1d21a00212da7176964dbf"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_red/model.sdf": {
+    "size": 1525,
+    "sha256": "f677e14fff90a70a390cbcf7d535f0ad8beb10e03c66993934c23a9b7b64c12b"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_red/model.config": {
+    "size": 212,
+    "sha256": "44aa3cb4c4414a10a8a81f4ddd52e1493edff0bafdec6b9084694fad8dc7cd00"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_red/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/model.sdf": {
+    "size": 1210,
+    "sha256": "d27cd2aa3ec25801167d91115554eccb4b4bc3f3e5135a32d00c727df69ff64d"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/model.config": {
+    "size": 217,
+    "sha256": "8ffc4f82d16088e5ef31b2fea6eed85965be78dbbb4c89356960968465c579f0"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/materials/textures/comp_sign_left_red_sign_4237d435.png": {
+    "size": 13607,
+    "sha256": "a71fa3b01c4616d037efb03e4e418d4e7750e2f6dc4b9295f31bf67307ef8e58"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/materials/textures/sign.png": {
+    "size": 13387,
+    "sha256": "3aa0ebc739ba29f960a1fcea2642552a8df444f34751bbc1f5f000e0a686a0ff"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_red/materials/scripts/sign.material": {
+    "size": 206,
+    "sha256": "0fce120e5da5941a8ecc4043a8b39e7e2413d18cc3cc56c09a8d491b4805d377"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_blue/model.sdf": {
+    "size": 1528,
+    "sha256": "f0bbcb2bbac9046563443fdbe4b24b1c19b4422c0ea32c11b89fd95780a3c839"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_blue/model.config": {
+    "size": 213,
+    "sha256": "ecf50cf77b029df711f422159fdbedad69d18113ff33ea0172316ba5059c0a2f"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_blue/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_start_zone/model.sdf": {
+    "size": 1273,
+    "sha256": "07a0768edd6d9a623c8b76090adbd93c8e19f773844e4255bca656d18064abfe"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_start_zone/model.config": {
+    "size": 214,
+    "sha256": "1b2654f6e40f8a37adeacaca8fabadb7de8d1c730ae36cfa0691180512db2b61"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/model.sdf": {
+    "size": 1192,
+    "sha256": "8dbd15cc4c48423309ca5e5c66105a81b7dd16add7d86216e2c04dfb3aaa6dfb"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/model.config": {
+    "size": 214,
+    "sha256": "8664fc823e41afcfcd2bc96664a8b69d904ece1416e700bf85ff93cb913db230"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/materials/textures/comp_sign_A_red_sign_53200d66.png": {
+    "size": 15539,
+    "sha256": "7528bbc1eebe2190d4e6667e53e65b20b6b0d71985d633caccf52d517637a9eb"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/materials/textures/sign.png": {
+    "size": 14983,
+    "sha256": "782cb5dca86813521bfd143204b6e2241535a128fe6ff648dd8efe93b283dadb"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "9921f1501ef92a49e456d67a62dcbe101112b1c76512811d68f05909f28cac71"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/model.sdf": {
+    "size": 1216,
+    "sha256": "92392b96a4521009e9656a8c7ca61cc3850e438b8584175c1a5f1975e5f93f01"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/model.config": {
+    "size": 218,
+    "sha256": "8abab348bae5900372d4fafd3816e095864d28d0242cca44d31613f3cccf6883"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/meshes/comp_sign_right_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/materials/textures/comp_sign_right_red_sign_e5a59239.png": {
+    "size": 13440,
+    "sha256": "15ec2cda84396204cba57898bc56ae0e6fabf59f8273c309518830659a644f8f"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/materials/textures/sign.png": {
+    "size": 13000,
+    "sha256": "731fb70f327b25d83327d30ff23773522471fac59cfc850021b692e079bd9dac"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_red/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "d5defe9e625c466f2a56e366f67339314a48e8b140361ff9cd7be1e58dcaab53"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/model.sdf": {
+    "size": 1192,
+    "sha256": "195164b76f2e0506c54cc38ff798afd3226e8f3d64caef0bc161cd7c1ebaaf68"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/model.config": {
+    "size": 214,
+    "sha256": "58953cc0de035b214b8b998d17b7634379dd0776a200d9b269a8a472882a7ff0"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/materials/textures/comp_sign_B_red_sign_89c2c4be.png": {
+    "size": 13230,
+    "sha256": "398d73d85ed0b2b3b7a589923643045c6a4f2d7035fffcd68d43488f01cedeaa"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/materials/textures/sign.png": {
+    "size": 12750,
+    "sha256": "d1ea2db13474de3c2f6c1c3a1adf933fd4a10b3b06f32dfbbcd58a34bf3a8cd8"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "b62cad8a2012c331aaf4de061592b7cd17f05cb7173f75036f79c56a2bdfb079"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/model.sdf": {
+    "size": 1198,
+    "sha256": "19fba37ce9b5fa32d7c0c2b8cab9701292e64c7f3acb5ed5e7a93b920c10ee12"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/code.png": {
+    "size": 788,
+    "sha256": "1caa0fa9e4e4fecb3e886ffbc52e012874f306614cacc481b30c151e8b99bb04"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/model.config": {
+    "size": 216,
+    "sha256": "49b0ca2b863eaa33ebb50bfd64b6881135cb86819e08a39c6002334cebc6b61f"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/materials/textures/qr.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/materials/textures/comp_qr_parking_A_qr_f6c47831.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93df8b64f3f13ba7bb810bdd6018dfed8e6f61b2e31541bd4a3a1a4e137437b9"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/model.sdf": {
+    "size": 1198,
+    "sha256": "bdba83e9ca086f62dc30695b96333da7e946e283300263e135aac2bb6d873504"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/code.png": {
+    "size": 758,
+    "sha256": "da49c8008a6daa2829689b3d57b77ba5fb00f442d0075d12ddcf1ef896f389dd"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/model.config": {
+    "size": 216,
+    "sha256": "6d394ff36f67073491074447c4a197ec425b1c07d4712adac15b1b0535eb91ad"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/materials/textures/comp_qr_parking_B_qr_7bc62027.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_B/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93e6966ceaa05a519843b0e2aa57ee731e287e119143ce5d3b5db4d032c21868"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/model.sdf": {
+    "size": 1198,
+    "sha256": "3da23a80fffdee4bd120bc8e95c7d0752cae8c8e0f48685125b5fa38f8a68e62"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/model.config": {
+    "size": 215,
+    "sha256": "7ea330a5cd7bbe2ef96876d1bc88727c1e4067ed33ef91ca8f8790544811643f"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/meshes/comp_sign_A_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/materials/textures/comp_sign_A_blue_sign_785ef58c.png": {
+    "size": 15798,
+    "sha256": "6ac043086fcf540a5f589e345fddd39b3efec41292c7cb768257b045356cc880"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/materials/textures/sign.png": {
+    "size": 15021,
+    "sha256": "9d1a80b66ac7bace7ba3021683cf613a3eb95d821646d054e40a89e737310b63"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_A_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "193ab450177e72da03867028097f657fa4c5a9c4425dbe29be5359fc8c400753"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_yellow/model.sdf": {
+    "size": 1528,
+    "sha256": "56f2488772e9e5d6a52dd3f400cb99481f491bf44c964e0e0af8f36089744309"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_yellow/model.config": {
+    "size": 215,
+    "sha256": "6c0a3a2fa2c83508c35e5191ecafa6ca43e6bbffac4cd54fc3d9f3774bf0114f"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_cone_yellow/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_crosswalk/model.sdf": {
+    "size": 2399,
+    "sha256": "64c2e69e82ee8ecd2b0ff938321b9e01f17e58c624969d8818602e11f4092de0"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_crosswalk/model.config": {
+    "size": 213,
+    "sha256": "c98103e5913a558066196c55514948f7abf48d539c3a5b6c7bf5b6e5f50ea476"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/model.sdf": {
+    "size": 1198,
+    "sha256": "8df8de1aaba1089ea1c2e354717898ef385f109105aaba96e3f24f3acc5eab71"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/model.config": {
+    "size": 215,
+    "sha256": "ad255b1d6636dba5407ce373026d12f333f86436bb1114a047dba525e0dd3edf"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/meshes/comp_sign_B_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/materials/textures/comp_sign_B_blue_sign_fd6007bc.png": {
+    "size": 13550,
+    "sha256": "3edcae8e535484973e4df2e3b0efd8e8f842e03aab470f87aa71aac892c172c7"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/materials/textures/sign.png": {
+    "size": 13070,
+    "sha256": "b7c90c03009f4c515436861ea4e690e0065c65f34f7e2b2753183ce377e24043"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_B_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "cdda55e78d1d0b564536972434531a7816d5ffe81e1dc6521dede01ba41a99df"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_parking_zone/model.sdf": {
+    "size": 1693,
+    "sha256": "eed9d10ad396cd27a3638a7a0ca1cb86b4fbea9203c6f00eff89f4237cb3bb1a"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_parking_zone/model.config": {
+    "size": 216,
+    "sha256": "a48fd1f795fe193157f9ace6eff9c9d12a4488b6990c13c105d96f151fb6ae3b"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/model.sdf": {
+    "size": 1216,
+    "sha256": "d9bbab4db268f2f21d4a9984874336df63ac3e305dfa6c3c4f8a634bf55f6c22"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/model.config": {
+    "size": 218,
+    "sha256": "829b1259c8b612499181ae484a5240f3fcbada7eb598144a77a0d34cc516f044"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/meshes/comp_sign_left_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/materials/textures/comp_sign_left_blue_sign_b5de8e85.png": {
+    "size": 13723,
+    "sha256": "dab8175b20e461a4e9427b792d2620ad30a0d5f04cd61d530ba598f8089e1f7c"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/materials/textures/sign.png": {
+    "size": 13473,
+    "sha256": "a0c7e13efdc54e5d281c35ae9d2cdc6aa840b0f464ecbab77428a7dc6ae6de9b"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_left_blue/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "454db604296f7b0c574a4ee5197861d27bc1c92c40c8d6ee0c17933b429277c8"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/model.sdf": {
+    "size": 3798,
+    "sha256": "f8cb119855883c64e4a91e038b05713ee7f60483d6d4b0de355fbd8785819dcc"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/code.png": {
+    "size": 793,
+    "sha256": "b66c35e0699975ca859bfe0192800e55207946957cb87cd1da9f330208e56e35"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/model.config": {
+    "size": 212,
+    "sha256": "31cf6ef6acb631f6dc956abc4aeeec3fe82dbc772f54b9d7be4be3bd833c4021"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/materials/textures/comp_qr_stand_qr_f9e2c485.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_qr_stand/materials/scripts/qr.material": {
+    "size": 192,
+    "sha256": "72ccc1f1e98d8ab16ffd5b422c1763b366c3dccdc314dbcfc32da98da419ad44"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/model.sdf": {
+    "size": 1222,
+    "sha256": "6de22053829f70001047a30041a75882ecc9f2d32640ebf2977c9112762b2b5d"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/model.config": {
+    "size": 219,
+    "sha256": "09fed20b9973bbbe964fcf5e4487d943be7d9e2b417a310191dc7301bc3dd3c4"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/meshes/comp_sign_right_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/materials/textures/comp_sign_right_blue_sign_11472468.png": {
+    "size": 14028,
+    "sha256": "ac3b7e7c734cb487042eafd2c67a6228b3a9b00992a0a30f438d66586a9ebc53"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/materials/textures/sign.png": {
+    "size": 13591,
+    "sha256": "9e210c4043d7c11abb15ad908c2402579745385672eb89e974152114a7dd6e7c"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_sign_right_blue/materials/scripts/sign.material": {
+    "size": 210,
+    "sha256": "99657d63b434bd4243d7e537568cf2cd8786dec6b52fc12190cee46cfc8b8087"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_region2/model.sdf": {
+    "size": 1270,
+    "sha256": "651b638ee603e26dc400621d78604e8733485cb71d99228108f5221b16531870"
+  },
+  "src/remote5g_competition/worlds/left_blue/models/comp_region2/model.config": {
+    "size": 211,
+    "sha256": "23bab0dd09d97ef92950b04ad24a8e82aa488db0b88c9df9bb14a144cc75add3"
+  },
+  "src/remote5g_competition/worlds/left_red/layout.json": {
+    "size": 42780,
+    "sha256": "5dfe724cd1c2be7d6b0bdd25fe7f3e9a26a189de99ef133e5c917fc10f77af18"
+  },
+  "src/remote5g_competition/worlds/left_red/resolved.yaml": {
+    "size": 1303,
+    "sha256": "c85562b677583899cdf25910efb2fd67ca7474ffe6759000fd321fbefd3efa36"
+  },
+  "src/remote5g_competition/worlds/left_red/competition.world": {
+    "size": 90079,
+    "sha256": "d4bdf40c82782a69488cb5bd469cb72eb73fee445bd1ac3f477c500375372179"
+  },
+  "src/remote5g_competition/worlds/left_red/coordinates.csv": {
+    "size": 13529,
+    "sha256": "27b11a71b01a49477853d05306b78b7aead996295d0d5b5386d4baca40ce0dca"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_region2.sdf": {
+    "size": 1313,
+    "sha256": "bcf43e7a165aa1f49ba998d0bbfb007caf1c7c4df7c10e5fb68013d67432a546"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_002.sdf": {
+    "size": 1605,
+    "sha256": "4227aeb3e56e0daf67314f2faa33a660038b3ff40a11ee5a871cc9ef2aa3d9bd"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_022.sdf": {
+    "size": 1599,
+    "sha256": "5094d058b738d63e8bc760f1606b9a72d5849d821c360795ad4b3dd708993efa"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_007.sdf": {
+    "size": 1602,
+    "sha256": "d9b5e396270e7337df151030cab8011721a8bd4348ea1aec25c90637432e98d4"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_qr_A.sdf": {
+    "size": 1249,
+    "sha256": "f9574f499beb7c0e5d947924333a29bb0fc33572a52019137cd08e72ae024798"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_zone.sdf": {
+    "size": 1745,
+    "sha256": "ce33c25b7c197ed95167a287a22c806b8513e411216301d90a0ba1a35a48d5fa"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_011.sdf": {
+    "size": 1598,
+    "sha256": "cda3e8ccff6e26b2b84a20d5730bdb61ea97f19e245dbc2eb737882a242c7543"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_012.sdf": {
+    "size": 1599,
+    "sha256": "010e99343c5436d125612debfe25000312182151e0b2ba6535e28dbf0b852624"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_024.sdf": {
+    "size": 1599,
+    "sha256": "389cd7b22f9fab604017a19198b25e4f197ca2bd61dc82028516240775b8c6c4"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_017.sdf": {
+    "size": 1600,
+    "sha256": "a90b1c58c53a0ec60a4780b7ad823b54e354420975e3a7f97944d48337391110"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_026.sdf": {
+    "size": 1599,
+    "sha256": "9b559af87ab51ecfe4386cb4dd959b55d2ec04677b18271f4a5bd886580157fc"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_010.sdf": {
+    "size": 1600,
+    "sha256": "0934988e215badf071880351fdf6190ebc217198ad037a328cf6d0e3f4b295a2"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_001.sdf": {
+    "size": 1593,
+    "sha256": "1fe1774182bf54cc67583d280145599c0cb63a833bd7f87ef7be74ca43663e61"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_018.sdf": {
+    "size": 1601,
+    "sha256": "28d811c5bfa0a5497d9e560c8a2254590d12c55cc34832a90185f64e6f1bbff0"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_015.sdf": {
+    "size": 1599,
+    "sha256": "ba5e37bcd145d414002078e9920c9bc72ffd7051a68cc1eb0adeaa71ad126f07"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_011.sdf": {
+    "size": 1600,
+    "sha256": "c72b9b93144a6cc564006748f9c653ec7adc0143fd4885a9fb569f1b6035b1bb"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_005.sdf": {
+    "size": 1604,
+    "sha256": "7f7ff849a7bc335f91cd4569665058a7e1f3c6b198d210f3c8af760c3cb93e82"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_005.sdf": {
+    "size": 1607,
+    "sha256": "7bd728ca43e5e1247e4eafa00cb2e431bcb7dce3067249741ddeb8bb431bac97"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_026.sdf": {
+    "size": 1589,
+    "sha256": "981744a9d37b8d1c6bea578be7f822d7fcb0f2f843ee2cc65f8f8e329831bef1"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_obstacle.sdf": {
+    "size": 1610,
+    "sha256": "9608252cbd89bcd2d62e2112f4ed19e5946da02f2f54277b127d9150bf38743d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_004.sdf": {
+    "size": 1589,
+    "sha256": "8edf726519d48fa8b2eaeddaf87878ab2581112d58b7b9253c7d08b99028af23"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_012.sdf": {
+    "size": 1602,
+    "sha256": "a782c6fcaf4227a7dc9129a15aa164404f36b9c2adec9984888383e2b063412b"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_023.sdf": {
+    "size": 1599,
+    "sha256": "bd775768b5c0aff128298d6fc2f23204ab8a4acceebceefb214d3e08a4a7b641"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_003.sdf": {
+    "size": 1604,
+    "sha256": "d6e3f526115e483ae3324932f18a1fca66fd87aabcecac63d835b5b28931232d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_crosswalk.sdf": {
+    "size": 2442,
+    "sha256": "bf28fc2ecf34be2c3db930894b5d6fb2f07d8d907a4dfb3eb8b01008e8cf0907"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_010.sdf": {
+    "size": 1606,
+    "sha256": "125b74eb8a2b0291d3e844440f5b5d9488c81fadbd0b7bf043cb13d71d1d8e89"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_008.sdf": {
+    "size": 1605,
+    "sha256": "a52b894a90e57faf7e3321d69c857c6ca362021cef0aac2bb952a0083896b529"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_024.sdf": {
+    "size": 1589,
+    "sha256": "271165c5ef45c87c810d68de9d8aa5698f65a28b789150f6299ecf5c5d4ec2c6"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_016.sdf": {
+    "size": 1599,
+    "sha256": "fbbf66434df9b447efc303b0b7372b1068b949966a5cc274b31daa827e0495ae"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_005.sdf": {
+    "size": 1589,
+    "sha256": "3b54e18aaeda1fd37a8f2b2a31de426f7e43e8dde45bd694781f1d754a1b9ec3"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_007.sdf": {
+    "size": 1605,
+    "sha256": "aa08ab7a964473f87a86e9da6b20d39c8eb5a352d3a342180020a27ff1583446"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_007.sdf": {
+    "size": 1607,
+    "sha256": "2b7a3f6ae34b82b1a83c88ce9f64ca47f45788f24dd5edf3c85b486286feebe0"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_004.sdf": {
+    "size": 1605,
+    "sha256": "bb86be3393879d04c4b00d86bf8a9cba0ed4dd8328f2100df378be5fb5eef658"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_022.sdf": {
+    "size": 1589,
+    "sha256": "5fe98ecfd3c1548ad93994686f18fc062501172a5d053d8eb985ef0a35e896ae"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_instruction.sdf": {
+    "size": 1250,
+    "sha256": "1ab7cd697936b3ad66ddcf6abeef58ecd8ca4e6b327b4e99e786ba1b3dbd68fa"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_qr_B.sdf": {
+    "size": 1260,
+    "sha256": "e9c3b9e082c82c149d762b0f2f7db38fda3295ded5b4153deacee0d057c6534c"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_006.sdf": {
+    "size": 1589,
+    "sha256": "899cb9533a9c87e63cf4f2154a9f539d3f42418ab03104944cd7a48f3609d698"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_012.sdf": {
+    "size": 1593,
+    "sha256": "f8e37568adde39a4016995b89c91b9c869941a945a75a54c191beeda41b3dd8b"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_001.sdf": {
+    "size": 1589,
+    "sha256": "16a8fb734cf49b5461ea7a8205bfe4292fd4e5230f781c475672dade898df32d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_start_barrier.sdf": {
+    "size": 1076,
+    "sha256": "7f941457a362efe085198e4d71e3c95c6a8276d2c47ff9008d2f532c898bf4aa"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_025.sdf": {
+    "size": 1599,
+    "sha256": "9c24f0ee99d8742481f7a9479926baf44c8084590bc27bdfe4265a2cbc2ffa33"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_000.sdf": {
+    "size": 1589,
+    "sha256": "f2bf0244447767f47b97bfb1655f14020d50fcdfd782f81c164a89aa71baf0f3"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_019.sdf": {
+    "size": 1601,
+    "sha256": "bbd2ab1e2005f5fe41b751da7dcd86e1629116575e08e56e9c15207c50fd46ed"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_006.sdf": {
+    "size": 1603,
+    "sha256": "96d5d501ec3bee0e233ef01e14359d47b878c35ab2e812f508f876bed163f002"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_005.sdf": {
+    "size": 1589,
+    "sha256": "304b6b1d02721a78bc95e1aee57bfa9fe512d92dfb37d9c7283906af1f318858"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_014.sdf": {
+    "size": 1600,
+    "sha256": "99fe9ece2cf49691e49d59f60190d3d1eff52e2843d52219da205c0e4f2d7f16"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_011.sdf": {
+    "size": 1592,
+    "sha256": "fe810ee6977ad9b7a8d0709694b4537c1d11b942d37b7122ca3b7a376743032a"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_019.sdf": {
+    "size": 1598,
+    "sha256": "66c7a7a22c7174a91fb2d7090873231fd3cf6ec374909b98dc9a9b470b35aa81"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_label_B.sdf": {
+    "size": 1259,
+    "sha256": "70f4d20746fa037e6b24eb2648a1f7ee60407bdf9f8d078a4205a7fe44bf0e97"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_013.sdf": {
+    "size": 1601,
+    "sha256": "c0d93e5af24f0010c70238c7970b9b8af062de4172d3c32bab0fbaa254b266b5"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_000.sdf": {
+    "size": 1589,
+    "sha256": "64987d7f2c721e0b24c1606f8d2cf9eaf3d3d35584a4773c717ff48e157240ee"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_012.sdf": {
+    "size": 1592,
+    "sha256": "3536b72570e65196cf34fcce4dbcf115585e42c2b402b72c5342c88b7dafa31a"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_021.sdf": {
+    "size": 1589,
+    "sha256": "02f80bcd5905788da8108030cddbcd76438ceddf63ce7a840490b2e69d55fb48"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_023.sdf": {
+    "size": 1589,
+    "sha256": "6937985103bdc2bd81b15646bc807b5612e82d113015c29120c1135a3bc9aa8c"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_025.sdf": {
+    "size": 1589,
+    "sha256": "1e2bc8fdede69dc41d862e7ea34f8b85bab754c7fb6c5a64dc675fbc6e5fe07d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_001.sdf": {
+    "size": 1589,
+    "sha256": "64e0ed718d44454fc5ddebe8ee895e7258a40a09eaa6198992a54efa3e30de9f"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_006.sdf": {
+    "size": 1605,
+    "sha256": "554f0265bbca485843a05bd670976c6cca8f36ce7c2f50b7528b0e1e62131643"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_011.sdf": {
+    "size": 1593,
+    "sha256": "78eb6e0662ab7b282e24394fadd2d09e7e0b96cc64bc1f38a6ee549611a38e1d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_010.sdf": {
+    "size": 1599,
+    "sha256": "c810b862a0f087eb79168bf12c18e9779ec37f3f129956adaa75d7df8c75a6a1"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_016.sdf": {
+    "size": 1602,
+    "sha256": "96152f9544633e5ec64830eec826404a817e71e0809c1448516a115fe81f781e"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_007.sdf": {
+    "size": 1599,
+    "sha256": "f26220970e5cacd1e1820b36d3523b1689663a596798073d3dd941aa43aff1e5"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_009.sdf": {
+    "size": 1599,
+    "sha256": "8857698c7498a4062af9865647a0f9bd5bd732d7265085943260bf9525b53014"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_020.sdf": {
+    "size": 1601,
+    "sha256": "5c98021e597eb8d9d550ef99a6ba2dae501156f24cbf5515794325a7ba0702d9"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_002.sdf": {
+    "size": 1606,
+    "sha256": "c1856a1d9a29f1d4977034b181cc8a0d5b982dc01ab95613f5762db12dff2b96"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_015.sdf": {
+    "size": 1598,
+    "sha256": "0a42b2074b33ed313e0efabda5cbe567345772adf38dbf6a3d29eb1390ff3829"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_013.sdf": {
+    "size": 1600,
+    "sha256": "dcfe7e6e1d2e7c3e8a448a1305491835a9b9951157792b459cb9e7602438a60e"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_lane_change_sign.sdf": {
+    "size": 1263,
+    "sha256": "b2a92a6c12c1bcef619c1b96bcde3a484c8044ad5c8beaaa3899b8338c3009c5"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_008.sdf": {
+    "size": 1606,
+    "sha256": "c52539758b3cf94335ca574bfe5e473c42d2f3b1361ca3e02c8a93a51ef93b7d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_002.sdf": {
+    "size": 1589,
+    "sha256": "02881052476004c57214e920a5f950f5f962714446c430d5eec8bf2059eab607"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_014.sdf": {
+    "size": 1601,
+    "sha256": "badbe538257bc25cd6b441678a4cca477ddf777615904447c4443cb6c524eaf6"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_008.sdf": {
+    "size": 1599,
+    "sha256": "aeaf54f6983779bb23b9a19b1e4c0d2bf4293657dcb4f8c963ebd044a9955015"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_017.sdf": {
+    "size": 1598,
+    "sha256": "fe4de17dd13ff3f13b698275b428108be4549e1a720c1887c833eb8a747ef4ef"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_000.sdf": {
+    "size": 1593,
+    "sha256": "72dfca8b35f01e04432869f88b26c2fe0655c7d0c88c7abcbd43c12dc5d6bea2"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_021.sdf": {
+    "size": 1599,
+    "sha256": "89a7cd40452c2edad11ebe5e96ed4bbb70474a8ac06f242afd12ec485655a275"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_006.sdf": {
+    "size": 1589,
+    "sha256": "8f88be3ecf5b009f06f49000a0e79ce6996744200e776f7b3a84abc1e4805b68"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_009.sdf": {
+    "size": 1607,
+    "sha256": "c520d6d4c436742ca187ac9c440ba31150b3228a606924e2c2e5bd53147745e3"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_020.sdf": {
+    "size": 1599,
+    "sha256": "096f29862c1559386ac629f6f60a30cb217bd81befed95f2179ef5e8b039610d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_004.sdf": {
+    "size": 1589,
+    "sha256": "9ea347affe5835c129e887787f512247b143cc84277be9feac4cffd9d3c181e2"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_003.sdf": {
+    "size": 1589,
+    "sha256": "598a53ba0b0c568e399fd1a8a3896d92e2ccc6736075e4ea2108663ce0d191b9"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_010.sdf": {
+    "size": 1605,
+    "sha256": "39ae05c393a44df836d3731fd8241174433154db4c8b070fb0109115abf8a701"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_parking_label_A.sdf": {
+    "size": 1248,
+    "sha256": "a5d71528ea348b82e35f5580008783e4274a5898b5851ed97666a13271f73f11"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_008.sdf": {
+    "size": 1597,
+    "sha256": "7477faa737e820878be68b0f0b84f86ede53737992b949840861a154876708e8"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_task2_qr.sdf": {
+    "size": 3847,
+    "sha256": "7640d30dc20d541e63e806629436b5b2c4f373742863de85077ce819ebf03a2d"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_009.sdf": {
+    "size": 1602,
+    "sha256": "24f9a2e95b4bf9f30642d4dcdd203bd60bf91073330ac7f98e58282879bae7ad"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_inner_003.sdf": {
+    "size": 1589,
+    "sha256": "c71e5ae465f1899d274c2d54d76c19fa58b3598995feb3fd92a3fe21bfe23bfe"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_001.sdf": {
+    "size": 1594,
+    "sha256": "4f27ddf28232c7f38cfb8d5c68d6b26b3ff71389175af31bbb156f4a05067218"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_000.sdf": {
+    "size": 1594,
+    "sha256": "9238473b9767897a5244af03946099a2f048be9d30ed207850a645a50b688477"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_start_zone.sdf": {
+    "size": 1342,
+    "sha256": "214700d4923b337cf613f7e32b9d6eca0cd1dda0b062a451616a700f7ac3bb57"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_004.sdf": {
+    "size": 1604,
+    "sha256": "36aabd3e92609a2f32d299ac0b08a14e8b49a1b266f53c3be088d098776dc044"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_002.sdf": {
+    "size": 1589,
+    "sha256": "bfff0f7db78f1d20614f47a5bf763a647c1dcbe3ade74bfa3e9bda903218eefa"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_outer_018.sdf": {
+    "size": 1599,
+    "sha256": "47553850c0364f82c99eb57853dde361d418af6231ad48ea7e82359398c5e349"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_left_009.sdf": {
+    "size": 1604,
+    "sha256": "a99bca928ff606547bd639abfc8bf0b1eec4ac5af6ecd15dded0e4385c123a7c"
+  },
+  "src/remote5g_competition/worlds/left_red/instances/comp_guide_yellow_right_003.sdf": {
+    "size": 1605,
+    "sha256": "50adaee235c8043c80c3ce3039d567c1be57deca597f5db756498638014ee150"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_start_barrier/model.sdf": {
+    "size": 1020,
+    "sha256": "f9d9fc0b642f1e1309635d15f206fd73cf13d91041b1fc2ac7f691bfd6f95daf"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_start_barrier/model.config": {
+    "size": 217,
+    "sha256": "f7bc16e30d3f1fc6ad38b058d0b147f692af34c9cc1d21a00212da7176964dbf"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_red/model.sdf": {
+    "size": 1523,
+    "sha256": "d4727fc60eaa29bcb2d147286098b9d07687c08acc08f4c77cef403668062e4f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_red/model.config": {
+    "size": 212,
+    "sha256": "44aa3cb4c4414a10a8a81f4ddd52e1493edff0bafdec6b9084694fad8dc7cd00"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_red/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/model.sdf": {
+    "size": 1207,
+    "sha256": "7b42bd3cf5299dcce5acae5cc53101a7dbb6824e4c14b31cc13a7f04afbe296b"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/model.config": {
+    "size": 217,
+    "sha256": "8ffc4f82d16088e5ef31b2fea6eed85965be78dbbb4c89356960968465c579f0"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/materials/textures/comp_sign_left_red_sign_4237d435.png": {
+    "size": 13607,
+    "sha256": "a71fa3b01c4616d037efb03e4e418d4e7750e2f6dc4b9295f31bf67307ef8e58"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/materials/textures/sign.png": {
+    "size": 13387,
+    "sha256": "3aa0ebc739ba29f960a1fcea2642552a8df444f34751bbc1f5f000e0a686a0ff"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/materials/scripts/sign.material": {
+    "size": 206,
+    "sha256": "0fce120e5da5941a8ecc4043a8b39e7e2413d18cc3cc56c09a8d491b4805d377"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_blue/model.sdf": {
+    "size": 1526,
+    "sha256": "a6af8283e0628da870d4d751d6be338e0b40d147caa9370c8c4da6187cfbeae0"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_blue/model.config": {
+    "size": 213,
+    "sha256": "ecf50cf77b029df711f422159fdbedad69d18113ff33ea0172316ba5059c0a2f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_start_zone/model.sdf": {
+    "size": 1273,
+    "sha256": "07a0768edd6d9a623c8b76090adbd93c8e19f773844e4255bca656d18064abfe"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_start_zone/model.config": {
+    "size": 214,
+    "sha256": "1b2654f6e40f8a37adeacaca8fabadb7de8d1c730ae36cfa0691180512db2b61"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/model.sdf": {
+    "size": 1189,
+    "sha256": "5650a16990df022edc170177154398da2da6b2f669bd213353b571bb647edf71"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/model.config": {
+    "size": 214,
+    "sha256": "8664fc823e41afcfcd2bc96664a8b69d904ece1416e700bf85ff93cb913db230"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/materials/textures/comp_sign_A_red_sign_53200d66.png": {
+    "size": 15539,
+    "sha256": "7528bbc1eebe2190d4e6667e53e65b20b6b0d71985d633caccf52d517637a9eb"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/materials/textures/sign.png": {
+    "size": 14983,
+    "sha256": "782cb5dca86813521bfd143204b6e2241535a128fe6ff648dd8efe93b283dadb"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "9921f1501ef92a49e456d67a62dcbe101112b1c76512811d68f05909f28cac71"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/model.sdf": {
+    "size": 1213,
+    "sha256": "2d38b3069abf4cf6e74717750f201b34fa54440f99a324d61ef82cb0c9fd989a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/model.config": {
+    "size": 218,
+    "sha256": "8abab348bae5900372d4fafd3816e095864d28d0242cca44d31613f3cccf6883"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/meshes/comp_sign_right_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/materials/textures/comp_sign_right_red_sign_e5a59239.png": {
+    "size": 13440,
+    "sha256": "15ec2cda84396204cba57898bc56ae0e6fabf59f8273c309518830659a644f8f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/materials/textures/sign.png": {
+    "size": 13000,
+    "sha256": "731fb70f327b25d83327d30ff23773522471fac59cfc850021b692e079bd9dac"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_red/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "d5defe9e625c466f2a56e366f67339314a48e8b140361ff9cd7be1e58dcaab53"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/model.sdf": {
+    "size": 1189,
+    "sha256": "309d929908b9e3268d47eafcaab0129566be24028a34d0cd2ac69f59ba0bdd28"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/model.config": {
+    "size": 214,
+    "sha256": "58953cc0de035b214b8b998d17b7634379dd0776a200d9b269a8a472882a7ff0"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/textures/comp_sign_B_red_sign_89c2c4be.png": {
+    "size": 13230,
+    "sha256": "398d73d85ed0b2b3b7a589923643045c6a4f2d7035fffcd68d43488f01cedeaa"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/textures/sign.png": {
+    "size": 12750,
+    "sha256": "d1ea2db13474de3c2f6c1c3a1adf933fd4a10b3b06f32dfbbcd58a34bf3a8cd8"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "b62cad8a2012c331aaf4de061592b7cd17f05cb7173f75036f79c56a2bdfb079"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/model.sdf": {
+    "size": 1195,
+    "sha256": "21e8d83ed5ae1abc125050c2897e8a9c8b333c841ebfffd62eb53b715d94b908"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/code.png": {
+    "size": 788,
+    "sha256": "1caa0fa9e4e4fecb3e886ffbc52e012874f306614cacc481b30c151e8b99bb04"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/model.config": {
+    "size": 216,
+    "sha256": "49b0ca2b863eaa33ebb50bfd64b6881135cb86819e08a39c6002334cebc6b61f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/materials/textures/qr.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/materials/textures/comp_qr_parking_A_qr_f6c47831.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93df8b64f3f13ba7bb810bdd6018dfed8e6f61b2e31541bd4a3a1a4e137437b9"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/model.sdf": {
+    "size": 1195,
+    "sha256": "d1a8741cf26151c87cc8d378da00a0482b3c3778b3174fd1a7ce17b14568eb0d"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/code.png": {
+    "size": 758,
+    "sha256": "da49c8008a6daa2829689b3d57b77ba5fb00f442d0075d12ddcf1ef896f389dd"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/model.config": {
+    "size": 216,
+    "sha256": "6d394ff36f67073491074447c4a197ec425b1c07d4712adac15b1b0535eb91ad"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/materials/textures/comp_qr_parking_B_qr_7bc62027.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93e6966ceaa05a519843b0e2aa57ee731e287e119143ce5d3b5db4d032c21868"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/model.sdf": {
+    "size": 1195,
+    "sha256": "70fbffceb70ec991d7b10d49694ca989c35d8fd824f672f66155b8b857107552"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/model.config": {
+    "size": 215,
+    "sha256": "7ea330a5cd7bbe2ef96876d1bc88727c1e4067ed33ef91ca8f8790544811643f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/meshes/comp_sign_A_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/materials/textures/comp_sign_A_blue_sign_785ef58c.png": {
+    "size": 15798,
+    "sha256": "6ac043086fcf540a5f589e345fddd39b3efec41292c7cb768257b045356cc880"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/materials/textures/sign.png": {
+    "size": 15021,
+    "sha256": "9d1a80b66ac7bace7ba3021683cf613a3eb95d821646d054e40a89e737310b63"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_A_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "193ab450177e72da03867028097f657fa4c5a9c4425dbe29be5359fc8c400753"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/model.sdf": {
+    "size": 1526,
+    "sha256": "87d249c18dfb6f1234008143a17326c2af5b626d03abd12dac525770de2a4e56"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/model.config": {
+    "size": 215,
+    "sha256": "6c0a3a2fa2c83508c35e5191ecafa6ca43e6bbffac4cd54fc3d9f3774bf0114f"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_crosswalk/model.sdf": {
+    "size": 2399,
+    "sha256": "64c2e69e82ee8ecd2b0ff938321b9e01f17e58c624969d8818602e11f4092de0"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_crosswalk/model.config": {
+    "size": 213,
+    "sha256": "c98103e5913a558066196c55514948f7abf48d539c3a5b6c7bf5b6e5f50ea476"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/model.sdf": {
+    "size": 1195,
+    "sha256": "11eb2b233cb758efab4e2e6a6979d38a20e3c42c42b13e2cc0e9b18d7e1bb9fb"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/model.config": {
+    "size": 215,
+    "sha256": "ad255b1d6636dba5407ce373026d12f333f86436bb1114a047dba525e0dd3edf"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/meshes/comp_sign_B_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/materials/textures/comp_sign_B_blue_sign_fd6007bc.png": {
+    "size": 13550,
+    "sha256": "3edcae8e535484973e4df2e3b0efd8e8f842e03aab470f87aa71aac892c172c7"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/materials/textures/sign.png": {
+    "size": 13070,
+    "sha256": "b7c90c03009f4c515436861ea4e690e0065c65f34f7e2b2753183ce377e24043"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_B_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "cdda55e78d1d0b564536972434531a7816d5ffe81e1dc6521dede01ba41a99df"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_parking_zone/model.sdf": {
+    "size": 1693,
+    "sha256": "eed9d10ad396cd27a3638a7a0ca1cb86b4fbea9203c6f00eff89f4237cb3bb1a"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_parking_zone/model.config": {
+    "size": 216,
+    "sha256": "a48fd1f795fe193157f9ace6eff9c9d12a4488b6990c13c105d96f151fb6ae3b"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/model.sdf": {
+    "size": 1213,
+    "sha256": "bde267a076fcbb9afc307a4fd4db81135e7523d5ce9e95ae0ef087d80ec7a56e"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/model.config": {
+    "size": 218,
+    "sha256": "829b1259c8b612499181ae484a5240f3fcbada7eb598144a77a0d34cc516f044"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/meshes/comp_sign_left_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/materials/textures/comp_sign_left_blue_sign_b5de8e85.png": {
+    "size": 13723,
+    "sha256": "dab8175b20e461a4e9427b792d2620ad30a0d5f04cd61d530ba598f8089e1f7c"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/materials/textures/sign.png": {
+    "size": 13473,
+    "sha256": "a0c7e13efdc54e5d281c35ae9d2cdc6aa840b0f464ecbab77428a7dc6ae6de9b"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_left_blue/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "454db604296f7b0c574a4ee5197861d27bc1c92c40c8d6ee0c17933b429277c8"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/model.sdf": {
+    "size": 3795,
+    "sha256": "6b6e3b00fef1b1210349ba9b078ff43d32db8c192b6a77d3bd93d3ac2e4ba0d9"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/code.png": {
+    "size": 793,
+    "sha256": "b66c35e0699975ca859bfe0192800e55207946957cb87cd1da9f330208e56e35"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/model.config": {
+    "size": 212,
+    "sha256": "31cf6ef6acb631f6dc956abc4aeeec3fe82dbc772f54b9d7be4be3bd833c4021"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/materials/textures/comp_qr_stand_qr_f9e2c485.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_qr_stand/materials/scripts/qr.material": {
+    "size": 192,
+    "sha256": "72ccc1f1e98d8ab16ffd5b422c1763b366c3dccdc314dbcfc32da98da419ad44"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/model.sdf": {
+    "size": 1219,
+    "sha256": "01f8c9c08d1b121903c5b7dccc5a04c64462459224b91b065c1ee8588809461c"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/model.config": {
+    "size": 219,
+    "sha256": "09fed20b9973bbbe964fcf5e4487d943be7d9e2b417a310191dc7301bc3dd3c4"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/meshes/comp_sign_right_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/materials/textures/comp_sign_right_blue_sign_11472468.png": {
+    "size": 14028,
+    "sha256": "ac3b7e7c734cb487042eafd2c67a6228b3a9b00992a0a30f438d66586a9ebc53"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/materials/textures/sign.png": {
+    "size": 13591,
+    "sha256": "9e210c4043d7c11abb15ad908c2402579745385672eb89e974152114a7dd6e7c"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_sign_right_blue/materials/scripts/sign.material": {
+    "size": 210,
+    "sha256": "99657d63b434bd4243d7e537568cf2cd8786dec6b52fc12190cee46cfc8b8087"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_region2/model.sdf": {
+    "size": 1270,
+    "sha256": "651b638ee603e26dc400621d78604e8733485cb71d99228108f5221b16531870"
+  },
+  "src/remote5g_competition/worlds/left_red/models/comp_region2/model.config": {
+    "size": 211,
+    "sha256": "23bab0dd09d97ef92950b04ad24a8e82aa488db0b88c9df9bb14a144cc75add3"
+  },
+  "src/remote5g_competition/worlds/right_blue/layout.json": {
+    "size": 43513,
+    "sha256": "e10025f299276d2c0a3c2779a8e85541959230c0e1402d6fb44960935325dda6"
+  },
+  "src/remote5g_competition/worlds/right_blue/resolved.yaml": {
+    "size": 1306,
+    "sha256": "3d51700c47090bf9e9767f87e497fc4766ad5682e38d3274b819e5efa0854cc7"
+  },
+  "src/remote5g_competition/worlds/right_blue/competition.world": {
+    "size": 90911,
+    "sha256": "e3848af1a951415e7726d0b6973b82dcbd59d97fa581229a6dce275e728988d7"
+  },
+  "src/remote5g_competition/worlds/right_blue/coordinates.csv": {
+    "size": 14150,
+    "sha256": "9166908918a7def00f1e34d3c5c869da0f3e6172b56760ef8ed36075e143d61e"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_region2.sdf": {
+    "size": 1326,
+    "sha256": "4775516ea97e23c93589de871793cd8f3b0faa52e2e4325a1df6fbac562412d9"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_002.sdf": {
+    "size": 1622,
+    "sha256": "918585b626469cffb699bfe575b365dd49c9616470f83ee0f83b06ccafdfb19d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_022.sdf": {
+    "size": 1616,
+    "sha256": "6fe433d6338bb5d8ca743f7b2b1fbad1512298b6fff4bde09f62f9d6a87b780c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_007.sdf": {
+    "size": 1617,
+    "sha256": "e84095d7f2984f35cea0d70135c3febc6e9717a2242f3b85bc088f681e036f00"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_qr_A.sdf": {
+    "size": 1281,
+    "sha256": "b7c3306eb72f034497725595d1296c2623a7cc495f4b872be385b0e60d2ec7db"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_zone.sdf": {
+    "size": 1760,
+    "sha256": "ef64070467be1bbf26f2f9dcbe8b78e6a44340babfbc2f42171448dc0d294493"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_011.sdf": {
+    "size": 1615,
+    "sha256": "285b3b1b69a43802bd1f50ae8807c51bc44e92ed28889dacded2ab0a50bb1828"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_012.sdf": {
+    "size": 1616,
+    "sha256": "83738553fe46fd3325cebf778d7751d4d9492460a92f4abbcf2297cef3a0e64d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_024.sdf": {
+    "size": 1616,
+    "sha256": "945f6b7f48b39e2559908130739ed87e31f09fe2e5c9847738a6f0b54282a569"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_017.sdf": {
+    "size": 1615,
+    "sha256": "c5e742362e1a05f1b1da442b0fe6b202c0d3e3bbec11045fde7c7174515c7b7c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_026.sdf": {
+    "size": 1616,
+    "sha256": "fa88115aaecfba054ec4825ae0479784833cd9ebf9d4dbf991524be39ff0f488"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_010.sdf": {
+    "size": 1615,
+    "sha256": "07fdb4c283df8a1eddaea5d909abe353ea56c2f4fc97701328148030ba9c4730"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_001.sdf": {
+    "size": 1610,
+    "sha256": "14e4e8fa3617456b00f5822d61db62c3b67ff1c93a41403739c1858fa2fdd748"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_018.sdf": {
+    "size": 1616,
+    "sha256": "9a9338f2fc70be3d22b428de3a2a81760c21d615df08c5be99c34887da3906a0"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_015.sdf": {
+    "size": 1614,
+    "sha256": "5e564cff24ffac349d7c9653c75e828874d03df0c90a4006a697e8f1ee239d7d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_011.sdf": {
+    "size": 1615,
+    "sha256": "bc8242a709e06d2bd25c442dd2fb6a7ff15fbed8ecb72d3df42412781ffb9077"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_005.sdf": {
+    "size": 1623,
+    "sha256": "c46932c896212b284d8595e16ab21e9b934f37e690d97f87c2a36702f074f048"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_005.sdf": {
+    "size": 1622,
+    "sha256": "ce952da20392dfec5b5e0ff8e0baf82e620c73ef763f13cf68b56da3dd7b0ea8"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_026.sdf": {
+    "size": 1604,
+    "sha256": "902ae6b813fe233259e4300623d3819b6eb7ed177b4abc01de7ab4f632fd15b4"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_obstacle.sdf": {
+    "size": 1611,
+    "sha256": "9b19f9e645f36dd378962843de0f3169f406b71d6fbea205de44e3ef3455af32"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_004.sdf": {
+    "size": 1604,
+    "sha256": "5b9e2335179baaa051751d23081431c3218df712bbb66daaaac1bae0564f1b29"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_012.sdf": {
+    "size": 1617,
+    "sha256": "42badf44e0151775222be9c012c3635f7d98f5e3595a42a8613c462d81ab5329"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_023.sdf": {
+    "size": 1616,
+    "sha256": "77295305b062f207ee3429c7bd64b23d305e0339f8751857d6df8f30a3917db9"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_003.sdf": {
+    "size": 1621,
+    "sha256": "abf4cf728aa15986b58016fe7fc033c7bf95c4383ff4d0de820cdb1ebeb6a974"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_crosswalk.sdf": {
+    "size": 2455,
+    "sha256": "3aa6fe259c9b493303fdf637cd1e820c2f8a55d2bdf888a6e5ba1ea22b74cb8c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_010.sdf": {
+    "size": 1623,
+    "sha256": "4c38fd734ea238146c7d1566c4599006780e27fd2af82f68c8d113757be257a8"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_008.sdf": {
+    "size": 1622,
+    "sha256": "476052d239a9b5858858d49552b84c68805c53a5560aed92031e1cd3b0042872"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_024.sdf": {
+    "size": 1604,
+    "sha256": "413774bef6636f0bdeee7e916dcd2415229ecead70b96b53708d8bafa4aab4d6"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_016.sdf": {
+    "size": 1616,
+    "sha256": "38f7db55a10a8f59f78b558bf0080c8ddf3d836b7e7c2a9df16e1937338cd23d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_005.sdf": {
+    "size": 1604,
+    "sha256": "91842860cc77133cd33285c2a0b5cf737d5bfeac521c8da97808ee023e3193d3"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_007.sdf": {
+    "size": 1623,
+    "sha256": "1c3b3cbb62e5c5e17db00157a4d5d442cebb87ffeb85239037b194b15cbb6a86"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_007.sdf": {
+    "size": 1623,
+    "sha256": "d2d988af6b265f0f826d702f780b1fc5d3e23e1a2d6c3c8c64caccfd8216dd9e"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_004.sdf": {
+    "size": 1622,
+    "sha256": "82f84000d277350ba2e0db4dc79124b71adb1a06af418551bae982ca0187158d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_022.sdf": {
+    "size": 1604,
+    "sha256": "1456bd656c8cb2a9fd79c57a544214218834468a020e3f4fbcdd9e87ff18f720"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_instruction.sdf": {
+    "size": 1276,
+    "sha256": "f6866104d174159a0087aff89aefa51b89dd23c299a4f07c524b4f1fffefac9b"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_qr_B.sdf": {
+    "size": 1270,
+    "sha256": "3c2e55dd0ad295122619737bb2fe9518e836cc334a8f9170000e130fcb0b3ae1"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_006.sdf": {
+    "size": 1604,
+    "sha256": "908e370f3ef98111ce79d6941b627deaac9f2ae676cbd87eea9a696c04b523d1"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_012.sdf": {
+    "size": 1610,
+    "sha256": "d0b19a40f42b38d620172127f69b5a800eea30653c503ea6a026c6228d559d85"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_001.sdf": {
+    "size": 1604,
+    "sha256": "407c6a54bf22d05539d8432e45a651e879970e51dcac9d693c3519557353cf09"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_start_barrier.sdf": {
+    "size": 1061,
+    "sha256": "5bc073f0ec68109f9c6b7bca6fb2625acc101aad5dc51c5916d2a785f56be560"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_025.sdf": {
+    "size": 1616,
+    "sha256": "5071bde8496d9b59eb36e14521bfc4aeb1ef5713e8fce1663f078b78750fe105"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_000.sdf": {
+    "size": 1604,
+    "sha256": "267726a5f8578ea1f6a51049fd7900e08c908621e3f24b02db499611c5e9cca0"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_019.sdf": {
+    "size": 1616,
+    "sha256": "1822ce2ec28126640a74643adce333cb6400e87bbed57560626e572db31b4c26"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_006.sdf": {
+    "size": 1621,
+    "sha256": "ddd20d5ac932435bf120acd54bdd5cb9619d9f70ac1f9c0940d9c3d3f1d6b537"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_005.sdf": {
+    "size": 1604,
+    "sha256": "5923cebaa8882a28afff3e626ab920e899324f5dbf0b62da884841c80b33a8b9"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_014.sdf": {
+    "size": 1617,
+    "sha256": "8aa4a2e5f1bc871a5fb4f2b7d09da163587aaad3e209b56cf81ba4b8ea579746"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_011.sdf": {
+    "size": 1609,
+    "sha256": "c71fb56d27306adb82d658c8e01665217807bbd93ae4a96262ea19afb34ae805"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_019.sdf": {
+    "size": 1615,
+    "sha256": "e23b4c323d3758b23f605e85b6ac15667df4e054a47b7f07c6dfa29492d77c72"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_label_B.sdf": {
+    "size": 1274,
+    "sha256": "0810ac530e08644dc370c5dbabde6b63bf0fdfc275e9b6fa8bf6518a1e3d107f"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_013.sdf": {
+    "size": 1616,
+    "sha256": "6f32fc0d45b7c6c355c11c482de3c3988374584036cc769cbdb7d1009c9ece80"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_000.sdf": {
+    "size": 1604,
+    "sha256": "5ced3cde604e151745cfdd9e03eaab47ff13cf226a465a18ab84d0097bb46e29"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_012.sdf": {
+    "size": 1609,
+    "sha256": "035d223da5ed2cca712aae1b288f724b8fca4915c8843b4e9978596f07754d8c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_021.sdf": {
+    "size": 1604,
+    "sha256": "7d5c959b1c576f4dca961357eb66d4db41f32000372fac2c42791e6f5d140deb"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_023.sdf": {
+    "size": 1604,
+    "sha256": "8d867fae44f481820ed4daa6e33186a830a99cf7e55b1e6e2b781c1b51278faf"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_025.sdf": {
+    "size": 1604,
+    "sha256": "92a80d3fa2e6dc8a7cb12bbd45b53f8c64ef0c648d5a3f790a61cfd793db4db3"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_001.sdf": {
+    "size": 1604,
+    "sha256": "0d8b6c9b3cd0519338cd409a51d0779fa6f44e611fb0a77b5e1913d0ba574bd8"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_006.sdf": {
+    "size": 1621,
+    "sha256": "3ea2c65cc108aeabac184fc27dbfd76a7ba2569d5a064145ec5219fe2dde2a6c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_011.sdf": {
+    "size": 1610,
+    "sha256": "6a8989a8de557a88f9436e0cbaa120bc0a9ea98aa43253465ed19fd14d02955d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_010.sdf": {
+    "size": 1616,
+    "sha256": "6507bd6d9d7c5a83b697d78c89ab1f5e6ebd0b3d2835daeb07a9db0982f33e75"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_016.sdf": {
+    "size": 1617,
+    "sha256": "ac093d7b0478bc2d88e2817690a067a30d6b65789520571488fb35981a8615ee"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_007.sdf": {
+    "size": 1616,
+    "sha256": "87e3b09d674aff471014d63291de9b35cd425dccf246dbb66e04b78fe8e93099"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_009.sdf": {
+    "size": 1616,
+    "sha256": "c2b9c6c449e27daa64efc98bbaae933302962984a00ba8a6d4fc87e5a84b7f82"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_020.sdf": {
+    "size": 1616,
+    "sha256": "7e8a1d76b91b36ec0458f8612f17e79dd8fd59944bb025661194d0c75aa8dbe1"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_002.sdf": {
+    "size": 1623,
+    "sha256": "ad4ab728d26ea20be47dbcb15e605d1b8268e2d473adf9d8dd5e9240a3dc0387"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_015.sdf": {
+    "size": 1615,
+    "sha256": "d3cdbeafbbbbc8aa0552c4e19d89fa4516a78be3b500e5369246ecb387405200"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_013.sdf": {
+    "size": 1617,
+    "sha256": "29934fef3c499e858eb523ef16ce7fbe985b3f4d5fb09a9594473b9ff337375c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_lane_change_sign.sdf": {
+    "size": 1292,
+    "sha256": "006941b8ac8672c03aebfd986eff7eb9dd24625f1c882702157d009b5cf8faa0"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_008.sdf": {
+    "size": 1623,
+    "sha256": "8f70a13716fae4b4ee5e3e5d854eb4407b239b0e70bba63c55796397b32b5594"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_002.sdf": {
+    "size": 1604,
+    "sha256": "d8a33fb54a19268f2df82c48537f82bb92ec6afeca983656a05d179a8726d53a"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_014.sdf": {
+    "size": 1616,
+    "sha256": "624feb98793e15a01fb32eab97ff202d1601dc515d8bbc7cc8d6f6bf52052567"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_008.sdf": {
+    "size": 1614,
+    "sha256": "ee6e9c74b652960cfe9ef33c42ce79d8629c707e61af3aa698e37a7ef8553106"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_017.sdf": {
+    "size": 1615,
+    "sha256": "88d64d0e62a616ba00d94c904814e3e8b807468606e8bda66c72b529dc5aec5a"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_000.sdf": {
+    "size": 1610,
+    "sha256": "3fdf2d3cadd6d1ccdc713eb3db76ac8616f32b866950ec64a2aa1d3013dc9a12"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_021.sdf": {
+    "size": 1616,
+    "sha256": "89b8e9ed547f1ae3a1fb0b2bcc6d2a90c530f1f1d3d86ec1b07bf794de2bc907"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_006.sdf": {
+    "size": 1604,
+    "sha256": "7cb0fd6f373540a59ca71967297e453d7aebb3d0d572fdaafbb6731aab372eac"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_009.sdf": {
+    "size": 1622,
+    "sha256": "fa992589fef0b47c6cbea87f9b3aac5ccc1ec89753105eba986daac7749484a0"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_020.sdf": {
+    "size": 1616,
+    "sha256": "53e2618602888e9d672e23b7417590f849cab04743919a20016a6ce3510f5f7a"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_004.sdf": {
+    "size": 1604,
+    "sha256": "3111c9173983aab0f62a0deb317c9d01188191de601f77de24b7fa5f012060d4"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_003.sdf": {
+    "size": 1604,
+    "sha256": "27e4a279c55d06a7597807756ebc81306c1ab39dc65c2ae72fa37b858ff9a16c"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_010.sdf": {
+    "size": 1622,
+    "sha256": "b3a28e8efe0ff1381cd6ad2c3146f685b4470a1e86d7af8160b5bc91fa0586fd"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_parking_label_A.sdf": {
+    "size": 1285,
+    "sha256": "c466e0e36f79cca9097335ee6505485acd41c297e1fe8e87422663328df4352e"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_008.sdf": {
+    "size": 1614,
+    "sha256": "400c2db3371f55d703c98d1f17063e385723fd361332c2f6a261238b7fc7a208"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_task2_qr.sdf": {
+    "size": 3866,
+    "sha256": "5f0f5e79ea03f8dbd7de5d2e723283459df780225ef170a8a0ec87d3244d0fef"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_009.sdf": {
+    "size": 1617,
+    "sha256": "5d75f8b6ffabfd060e988e0d36dae7a95b7f08898c5dd7dbfca5f5994746dcdb"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_inner_003.sdf": {
+    "size": 1604,
+    "sha256": "b509167788b30e7010522a3a3e7ad41a2601e666d4a9e6a9037189fe47e0ab26"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_001.sdf": {
+    "size": 1611,
+    "sha256": "f6171333f1be30ba631ae150b6513b887b048cfda540e2c666a140967cae490d"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_000.sdf": {
+    "size": 1611,
+    "sha256": "bbd25e8e84cb5d27be41b445cead21dfd490205307e93066436668b9d302e91e"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_start_zone.sdf": {
+    "size": 1327,
+    "sha256": "b496a3d130c62bbbc36749a5fb1ef833aff3fe0315e629984b66b8dba6f7e997"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_004.sdf": {
+    "size": 1621,
+    "sha256": "adaf1715bcf235a0e96c5f3291d60347bb8004ea6093436a8c6c73275d569bf6"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_002.sdf": {
+    "size": 1604,
+    "sha256": "1716c9b9123485069ea8de61837fbddaa921f292408935f154f6524069f1c399"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_outer_018.sdf": {
+    "size": 1616,
+    "sha256": "9b4843122493e7c725a013344851170c2b175da33015a10077d0eb2d4d287b87"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_left_009.sdf": {
+    "size": 1623,
+    "sha256": "a8f85f67d95bf1dcf4fb00df77cdbd9ca5da8e8c9beefc4ebbe83d5745937fb8"
+  },
+  "src/remote5g_competition/worlds/right_blue/instances/comp_guide_yellow_right_003.sdf": {
+    "size": 1622,
+    "sha256": "46f371ab5059329cc3919af4fc575c3b78cf061b78cf50c85d933367afff3017"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_start_barrier/model.sdf": {
+    "size": 1020,
+    "sha256": "f9d9fc0b642f1e1309635d15f206fd73cf13d91041b1fc2ac7f691bfd6f95daf"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_start_barrier/model.config": {
+    "size": 217,
+    "sha256": "f7bc16e30d3f1fc6ad38b058d0b147f692af34c9cc1d21a00212da7176964dbf"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_red/model.sdf": {
+    "size": 1527,
+    "sha256": "4f33ac4f32331f95a61e3f6023b99e2caa8c3a313b2eca5fa900a637f965d46e"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_red/model.config": {
+    "size": 212,
+    "sha256": "44aa3cb4c4414a10a8a81f4ddd52e1493edff0bafdec6b9084694fad8dc7cd00"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_red/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/model.sdf": {
+    "size": 1213,
+    "sha256": "e5470252a067aeec338e566b213a4c59b39946707d97c91117c88eab755422db"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/model.config": {
+    "size": 217,
+    "sha256": "8ffc4f82d16088e5ef31b2fea6eed85965be78dbbb4c89356960968465c579f0"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/materials/textures/comp_sign_left_red_sign_4237d435.png": {
+    "size": 13607,
+    "sha256": "a71fa3b01c4616d037efb03e4e418d4e7750e2f6dc4b9295f31bf67307ef8e58"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/materials/textures/sign.png": {
+    "size": 13387,
+    "sha256": "3aa0ebc739ba29f960a1fcea2642552a8df444f34751bbc1f5f000e0a686a0ff"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/materials/scripts/sign.material": {
+    "size": 206,
+    "sha256": "0fce120e5da5941a8ecc4043a8b39e7e2413d18cc3cc56c09a8d491b4805d377"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_blue/model.sdf": {
+    "size": 1530,
+    "sha256": "70333f1038c4e338c7da01ad10f12296d1c14336bf3a9b2ad296866a5f7367a9"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_blue/model.config": {
+    "size": 213,
+    "sha256": "ecf50cf77b029df711f422159fdbedad69d18113ff33ea0172316ba5059c0a2f"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_blue/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_start_zone/model.sdf": {
+    "size": 1273,
+    "sha256": "07a0768edd6d9a623c8b76090adbd93c8e19f773844e4255bca656d18064abfe"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_start_zone/model.config": {
+    "size": 214,
+    "sha256": "1b2654f6e40f8a37adeacaca8fabadb7de8d1c730ae36cfa0691180512db2b61"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/model.sdf": {
+    "size": 1195,
+    "sha256": "ca3d3791e8a41561a30b3b7deaed31b3bacd195dee0c9e45a65081d6fb9490d9"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/model.config": {
+    "size": 214,
+    "sha256": "8664fc823e41afcfcd2bc96664a8b69d904ece1416e700bf85ff93cb913db230"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/materials/textures/comp_sign_A_red_sign_53200d66.png": {
+    "size": 15539,
+    "sha256": "7528bbc1eebe2190d4e6667e53e65b20b6b0d71985d633caccf52d517637a9eb"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/materials/textures/sign.png": {
+    "size": 14983,
+    "sha256": "782cb5dca86813521bfd143204b6e2241535a128fe6ff648dd8efe93b283dadb"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "9921f1501ef92a49e456d67a62dcbe101112b1c76512811d68f05909f28cac71"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/model.sdf": {
+    "size": 1219,
+    "sha256": "5d3ce210a784801adcdccfeb14fe15c91f44628ec1031441f504b00ce24c44be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/model.config": {
+    "size": 218,
+    "sha256": "8abab348bae5900372d4fafd3816e095864d28d0242cca44d31613f3cccf6883"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/meshes/comp_sign_right_red_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/materials/textures/comp_sign_right_red_sign_e5a59239.png": {
+    "size": 13440,
+    "sha256": "15ec2cda84396204cba57898bc56ae0e6fabf59f8273c309518830659a644f8f"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/materials/textures/sign.png": {
+    "size": 13000,
+    "sha256": "731fb70f327b25d83327d30ff23773522471fac59cfc850021b692e079bd9dac"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_red/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "d5defe9e625c466f2a56e366f67339314a48e8b140361ff9cd7be1e58dcaab53"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/model.sdf": {
+    "size": 1195,
+    "sha256": "975e67331f7d43ad304d0c259250605ea3fce246a5a9caab0e67e493de34be0d"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/model.config": {
+    "size": 214,
+    "sha256": "58953cc0de035b214b8b998d17b7634379dd0776a200d9b269a8a472882a7ff0"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/materials/textures/comp_sign_B_red_sign_89c2c4be.png": {
+    "size": 13230,
+    "sha256": "398d73d85ed0b2b3b7a589923643045c6a4f2d7035fffcd68d43488f01cedeaa"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/materials/textures/sign.png": {
+    "size": 12750,
+    "sha256": "d1ea2db13474de3c2f6c1c3a1adf933fd4a10b3b06f32dfbbcd58a34bf3a8cd8"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_red/materials/scripts/sign.material": {
+    "size": 200,
+    "sha256": "b62cad8a2012c331aaf4de061592b7cd17f05cb7173f75036f79c56a2bdfb079"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/model.sdf": {
+    "size": 1201,
+    "sha256": "62689df2e09b8a0b75ac8e938562554cf9b681516c97e6f5c230c78f651eaa75"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/code.png": {
+    "size": 788,
+    "sha256": "1caa0fa9e4e4fecb3e886ffbc52e012874f306614cacc481b30c151e8b99bb04"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/model.config": {
+    "size": 216,
+    "sha256": "49b0ca2b863eaa33ebb50bfd64b6881135cb86819e08a39c6002334cebc6b61f"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/materials/textures/qr.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/materials/textures/comp_qr_parking_A_qr_f6c47831.png": {
+    "size": 3406,
+    "sha256": "ea1fccaa77fa615ac68b7b97c0ff75352dfffd7a3bff004d1db0fcd33f5fe6c9"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_A/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93df8b64f3f13ba7bb810bdd6018dfed8e6f61b2e31541bd4a3a1a4e137437b9"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/model.sdf": {
+    "size": 1201,
+    "sha256": "b608c1b92ea8fa2b49060e045dbcd6f5989221b0275f601c68ef342d62b4fb17"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/code.png": {
+    "size": 758,
+    "sha256": "da49c8008a6daa2829689b3d57b77ba5fb00f442d0075d12ddcf1ef896f389dd"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/model.config": {
+    "size": 216,
+    "sha256": "6d394ff36f67073491074447c4a197ec425b1c07d4712adac15b1b0535eb91ad"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae": {
+    "size": 1745,
+    "sha256": "577cb8943ded31d2100a582c8ec68e4bc811d309945659189fdb829289db58cd"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/materials/textures/comp_qr_parking_B_qr_7bc62027.png": {
+    "size": 3392,
+    "sha256": "0890fcf23d0967739a5fb2b178fd9f989f8152ea33e540c10619cb010cd99479"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_parking_B/materials/scripts/qr.material": {
+    "size": 200,
+    "sha256": "93e6966ceaa05a519843b0e2aa57ee731e287e119143ce5d3b5db4d032c21868"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/model.sdf": {
+    "size": 1201,
+    "sha256": "475edcc2a39cf00bd394330393d3676767014191a54afa62481f4f2f8ef68e6e"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/model.config": {
+    "size": 215,
+    "sha256": "7ea330a5cd7bbe2ef96876d1bc88727c1e4067ed33ef91ca8f8790544811643f"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/meshes/comp_sign_A_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/materials/textures/comp_sign_A_blue_sign_785ef58c.png": {
+    "size": 15798,
+    "sha256": "6ac043086fcf540a5f589e345fddd39b3efec41292c7cb768257b045356cc880"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/materials/textures/sign.png": {
+    "size": 15021,
+    "sha256": "9d1a80b66ac7bace7ba3021683cf613a3eb95d821646d054e40a89e737310b63"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_A_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "193ab450177e72da03867028097f657fa4c5a9c4425dbe29be5359fc8c400753"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_yellow/model.sdf": {
+    "size": 1530,
+    "sha256": "2719f555b686ccc02bc3270232520906574fa00e78adda0f858a6071714e0ec6"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_yellow/model.config": {
+    "size": 215,
+    "sha256": "6c0a3a2fa2c83508c35e5191ecafa6ca43e6bbffac4cd54fc3d9f3774bf0114f"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_cone_yellow/meshes/cone.dae": {
+    "size": 9489,
+    "sha256": "bae2f6ed0673603d66fe3d00dbf85c843dd417ae5294d4f431e61c27161d55f8"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_crosswalk/model.sdf": {
+    "size": 2399,
+    "sha256": "64c2e69e82ee8ecd2b0ff938321b9e01f17e58c624969d8818602e11f4092de0"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_crosswalk/model.config": {
+    "size": 213,
+    "sha256": "c98103e5913a558066196c55514948f7abf48d539c3a5b6c7bf5b6e5f50ea476"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/model.sdf": {
+    "size": 1201,
+    "sha256": "515de3998da9f8dc344d393d8fab78f586342b4379c57d4e78cbeeed05980bec"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/model.config": {
+    "size": 215,
+    "sha256": "ad255b1d6636dba5407ce373026d12f333f86436bb1114a047dba525e0dd3edf"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/meshes/comp_sign_B_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "e254d7ea8321b138e5fb08b32d72e55d9d4e221608480555991666d64fb5b90a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/materials/textures/comp_sign_B_blue_sign_fd6007bc.png": {
+    "size": 13550,
+    "sha256": "3edcae8e535484973e4df2e3b0efd8e8f842e03aab470f87aa71aac892c172c7"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/materials/textures/sign.png": {
+    "size": 13070,
+    "sha256": "b7c90c03009f4c515436861ea4e690e0065c65f34f7e2b2753183ce377e24043"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_B_blue/materials/scripts/sign.material": {
+    "size": 202,
+    "sha256": "cdda55e78d1d0b564536972434531a7816d5ffe81e1dc6521dede01ba41a99df"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_parking_zone/model.sdf": {
+    "size": 1693,
+    "sha256": "eed9d10ad396cd27a3638a7a0ca1cb86b4fbea9203c6f00eff89f4237cb3bb1a"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_parking_zone/model.config": {
+    "size": 216,
+    "sha256": "a48fd1f795fe193157f9ace6eff9c9d12a4488b6990c13c105d96f151fb6ae3b"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/model.sdf": {
+    "size": 1219,
+    "sha256": "5d980c68dbe3516ef6e789d5d9bdf21db82a1682180eac00d2896bde0731759d"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/model.config": {
+    "size": 218,
+    "sha256": "829b1259c8b612499181ae484a5240f3fcbada7eb598144a77a0d34cc516f044"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/meshes/comp_sign_left_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/materials/textures/comp_sign_left_blue_sign_b5de8e85.png": {
+    "size": 13723,
+    "sha256": "dab8175b20e461a4e9427b792d2620ad30a0d5f04cd61d530ba598f8089e1f7c"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/materials/textures/sign.png": {
+    "size": 13473,
+    "sha256": "a0c7e13efdc54e5d281c35ae9d2cdc6aa840b0f464ecbab77428a7dc6ae6de9b"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_left_blue/materials/scripts/sign.material": {
+    "size": 208,
+    "sha256": "454db604296f7b0c574a4ee5197861d27bc1c92c40c8d6ee0c17933b429277c8"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/model.sdf": {
+    "size": 3801,
+    "sha256": "6341581152539c8ec174291150bcfe36e2b0535b44c5443f7e30329097865e07"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/code.png": {
+    "size": 793,
+    "sha256": "b66c35e0699975ca859bfe0192800e55207946957cb87cd1da9f330208e56e35"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/model.config": {
+    "size": 212,
+    "sha256": "31cf6ef6acb631f6dc956abc4aeeec3fe82dbc772f54b9d7be4be3bd833c4021"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/meshes/qr.dae": {
+    "size": 1745,
+    "sha256": "69f5f3cba69617d87ba1f0eed2407eae04ba2608e6873974a236fa8678c240f4"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/materials/textures/qr.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/materials/textures/comp_qr_stand_qr_f9e2c485.png": {
+    "size": 3392,
+    "sha256": "46fe079aa453df43ec94573a2e5a356c0690de0e425ac0a33c955b42f5efc3cb"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_qr_stand/materials/scripts/qr.material": {
+    "size": 192,
+    "sha256": "72ccc1f1e98d8ab16ffd5b422c1763b366c3dccdc314dbcfc32da98da419ad44"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/model.sdf": {
+    "size": 1225,
+    "sha256": "278c87feff4a76b8af820592b52e1416021e39fa55ef7b1aa91dc078ccb88b1d"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/model.config": {
+    "size": 219,
+    "sha256": "09fed20b9973bbbe964fcf5e4487d943be7d9e2b417a310191dc7301bc3dd3c4"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/meshes/comp_sign_right_blue_sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/meshes/sign.dae": {
+    "size": 1757,
+    "sha256": "572c7492a4c591d250f33f82130501edf3f24c2de4c229b0b1cd2db2cbca88be"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/materials/textures/comp_sign_right_blue_sign_11472468.png": {
+    "size": 14028,
+    "sha256": "ac3b7e7c734cb487042eafd2c67a6228b3a9b00992a0a30f438d66586a9ebc53"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/materials/textures/sign.png": {
+    "size": 13591,
+    "sha256": "9e210c4043d7c11abb15ad908c2402579745385672eb89e974152114a7dd6e7c"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_sign_right_blue/materials/scripts/sign.material": {
+    "size": 210,
+    "sha256": "99657d63b434bd4243d7e537568cf2cd8786dec6b52fc12190cee46cfc8b8087"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_region2/model.sdf": {
+    "size": 1270,
+    "sha256": "651b638ee603e26dc400621d78604e8733485cb71d99228108f5221b16531870"
+  },
+  "src/remote5g_competition/worlds/right_blue/models/comp_region2/model.config": {
+    "size": 211,
+    "sha256": "23bab0dd09d97ef92950b04ad24a8e82aa488db0b88c9df9bb14a144cc75add3"
+  },
+  "scripts/launch_track.sh": {
+    "size": 671,
+    "sha256": "93b0c4acaa5631a0740e865e9e67f915ecf938d9fe02f655799961bec1df3fda"
+  },
+  "scripts/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scripts/generate_athletics_tracks.py": {
+    "size": 11573,
+    "sha256": "189dd4e5423ea8a81053765359c0218312933ace9fbd3b7ccf2d337eb72739d8"
+  },
+  "scripts/test_xtnetrc.sh": {
+    "size": 1420,
+    "sha256": "0b67ed9173245ec2a97bb4b3fa2cd53d60d100a4bcc345dc7e0a09e56f2b0491"
+  },
+  "scripts/lib/geos_planar.py": {
+    "size": 6227,
+    "sha256": "de3d8a6e98b3be3a47f9dc1f86a3b7403b1691a3f09ca5f83d0dd6b9e7348258"
+  },
+  "config/athletics_track.json": {
+    "size": 1318,
+    "sha256": "01f9aa80643fcf9095b245c936bc5442e2a3edd577be51bfcb15499c1c78301e"
+  },
+  "config/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "simulation/models/wa_400m_track_blue/model.sdf": {
+    "size": 2735,
+    "sha256": "7a59e9d7811969f5965f85e0ab16e6b07bfaac08efb8f25a966ecadf55cafefb"
+  },
+  "simulation/models/wa_400m_track_blue/geometry_audit.json": {
+    "size": 367,
+    "sha256": "a30466407a810c7a1964aef51a9c06508c17c1758ccd8fe8785efb78fbb3c585"
+  },
+  "simulation/models/wa_400m_track_blue/model.config": {
+    "size": 330,
+    "sha256": "3152c2a07e7e349e43ed29e1df6fa10c7bbf987630d5e180de591a2aaa7b2b14"
+  },
+  "simulation/models/wa_400m_track_blue/meshes/infield.dae": {
+    "size": 284260,
+    "sha256": "3937341c8c1991cce79e866039839031c85b34c8d725d63278c89039852d21cb"
+  },
+  "simulation/models/wa_400m_track_blue/meshes/markings.dae": {
+    "size": 5215768,
+    "sha256": "2d2665b31381c33b456509c8a0cc391504929b7629a1c2d4718d77111d037083"
+  },
+  "simulation/models/wa_400m_track_blue/meshes/kerb.dae": {
+    "size": 1553026,
+    "sha256": "c2b100087c6ff3d077122583406388fadbbc00c163cfdc523f65b2e0dc040d77"
+  },
+  "simulation/models/wa_400m_track_blue/meshes/track.dae": {
+    "size": 4505553,
+    "sha256": "edd5ba7a126133917302ec47dbb0521488f36baf141b979385ac4d21b6a41ecf"
+  },
+  "simulation/models/wa_400m_track_blue/meshes/surround.dae": {
+    "size": 236689,
+    "sha256": "41b4b646d98cfef59c40e4c815e8ea688770ef67c9f6a55cc2f8f685cb99ccea"
+  },
+  "simulation/models/wa_400m_track_red/model.sdf": {
+    "size": 2732,
+    "sha256": "54496389765e8247417313c77c21f029cab759f03f6cb2436cf1d66786ea0878"
+  },
+  "simulation/models/wa_400m_track_red/geometry_audit.json": {
+    "size": 367,
+    "sha256": "a30466407a810c7a1964aef51a9c06508c17c1758ccd8fe8785efb78fbb3c585"
+  },
+  "simulation/models/wa_400m_track_red/model.config": {
+    "size": 328,
+    "sha256": "74740f864519ba5cdd72d6b2d6f957ecc6aca996ba4ceb4b71558089436df0f4"
+  },
+  "simulation/models/wa_400m_track_red/meshes/infield.dae": {
+    "size": 284260,
+    "sha256": "3937341c8c1991cce79e866039839031c85b34c8d725d63278c89039852d21cb"
+  },
+  "simulation/models/wa_400m_track_red/meshes/markings.dae": {
+    "size": 5215768,
+    "sha256": "2d2665b31381c33b456509c8a0cc391504929b7629a1c2d4718d77111d037083"
+  },
+  "simulation/models/wa_400m_track_red/meshes/kerb.dae": {
+    "size": 1553026,
+    "sha256": "c2b100087c6ff3d077122583406388fadbbc00c163cfdc523f65b2e0dc040d77"
+  },
+  "simulation/models/wa_400m_track_red/meshes/track.dae": {
+    "size": 4505553,
+    "sha256": "edd5ba7a126133917302ec47dbb0521488f36baf141b979385ac4d21b6a41ecf"
+  },
+  "simulation/models/wa_400m_track_red/meshes/surround.dae": {
+    "size": 236689,
+    "sha256": "41b4b646d98cfef59c40e4c815e8ea688770ef67c9f6a55cc2f8f685cb99ccea"
+  },
+  "simulation/worlds/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "simulation/worlds/athletics_400m_red.world": {
+    "size": 904,
+    "sha256": "e6458fac8c3279972a4a58c0d73d4fcab1d10462602569b098176d6acb4f7059"
+  },
+  "simulation/worlds/athletics_400m_blue.world": {
+    "size": 906,
+    "sha256": "1bf31fe01ec6e3cda58467e1ee26db3dd029190a2e7869b349086543ef9b4ce5"
+  },
+  "simulation/maps/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "simulation/maps/lane_3_centerline.csv": {
+    "size": 93336,
+    "sha256": "3de49e4044898698895b1492853186815e43bf37d63a510b83aed15dee01166a"
+  },
+  "simulation/maps/lane_6_centerline.csv": {
+    "size": 98534,
+    "sha256": "f2be1a391e6859dedf8ddbc662c5fa83c2a151e36842fe2448a5fae0b4e3f3a8"
+  },
+  "simulation/maps/lane_4_centerline.csv": {
+    "size": 95030,
+    "sha256": "569e2ef3c691ad2f83281f9a197929bf26a57dc233f7bc6ba2d1e669ff0dab72"
+  },
+  "simulation/maps/lane_2_centerline.csv": {
+    "size": 91583,
+    "sha256": "74763d83cdda983d78c17ac1e09127824b67032ae038668f890a931dbc59dc51"
+  },
+  "simulation/maps/lane_1_centerline.csv": {
+    "size": 89833,
+    "sha256": "3870dda4ba332191d1185f11ac3935e56a6df871667cae3330b2554ae331b0ab"
+  },
+  "simulation/maps/lane_7_centerline.csv": {
+    "size": 100229,
+    "sha256": "1dd71ae1563ac99730ee388bc0b1c66f070a2cd079f4cd7314addba3a1fd9f70"
+  },
+  "simulation/maps/lane_5_centerline.csv": {
+    "size": 96782,
+    "sha256": "f6611b2259a4f4199bd7709b8b4b1f9def774cd514067333f66274c81dff8999"
+  },
+  "simulation/maps/lane_8_centerline.csv": {
+    "size": 101980,
+    "sha256": "eb9731bdeb8707838d33d2c9349c6e65702ca4ad654f72bd91b11f09cd74913a"
+  },
+  "docs/GAZEBO_TEST_REPORT.md": {
+    "size": 9701,
+    "sha256": "e5c274e502edbb7a60bae3513f1ed7f9865034ef0cd927845e0f7bcc472aee89"
+  },
+  "docs/SCENE_TEST_REPORT.md": {
+    "size": 113,
+    "sha256": "47507b432934f8300eae3ac29a629381568a89a782422c62457c77bf7e1ba0cf"
+  },
+  "docs/COMPETITION_SCENE.md": {
+    "size": 113,
+    "sha256": "df0f7467097ab4dee5d873dcc097f769db050eb1d180510ae4d9e559a2e984d0"
+  },
+  "docs/MODEL_DIMENSIONS.md": {
+    "size": 111,
+    "sha256": "6fb247596bbdfef463e0d989d4d97e9a9f53d2cef2b53c00f58eb9e6997e5294"
+  },
+  "docs/official/World-Athletics-Track-and-Field-Facilities-Manual-2019-Edition.pdf:Zone.Identifier": {
+    "size": 25,
+    "sha256": "b952d24cf701bc4e7a7d21e1ae85c611824e80579a89836c0cb49b193446ccfe"
+  },
+  "docs/official/World-Athletics-Track-and-Field-Facilities-Manual-2019-Edition.pdf": {
+    "size": 4430593,
+    "sha256": "cf7354862013bd06bdb3eb7be4f956b2b56177ad18caa9d8b460f7a091185045"
+  },
+  "docs/official/赛项二-室外5G远程驾驶无人车赛比赛规则.pdf": {
+    "size": 1791533,
+    "sha256": "1e5596a99e7e8e7aad1c1003aca56f125c6cb7bcd1d6fa4fb3492b7fbe8a2387"
+  },
+  "docs/notes/.gitkeep": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "docs/notes/gazebo_athletics_track.md": {
+    "size": 4741,
+    "sha256": "cb28d79c6d262f4336ef14ec7f9db2fb07f6db8033498bcb668348f30ab7b1df"
+  },
+  "README.md": {
+    "size": 2140,
+    "sha256": "8cb34748e7f411eec6db18a3b62a029870b24061eac77d7e904fb8074e2e0146"
+  }
+}

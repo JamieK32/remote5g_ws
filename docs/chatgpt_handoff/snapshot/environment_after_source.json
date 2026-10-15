@@ -1,0 +1,15 @@
+{
+  "ROS_DISTRO": "humble",
+  "ROS_VERSION": "2",
+  "ROS_DOMAIN_ID": "95",
+  "RMW_IMPLEMENTATION": null,
+  "AMENT_PREFIX_PATH": "/home/jamiek/remote5g_ws/install/remote5g_competition:/home/jamiek/remote5g_ws/install/remote5g_sim:/opt/ros/humble",
+  "COLCON_PREFIX_PATH": "/home/jamiek/remote5g_ws/install",
+  "CMAKE_PREFIX_PATH": "/home/jamiek/remote5g_ws/install/remote5g_competition:/home/jamiek/remote5g_ws/install/remote5g_sim",
+  "PYTHONPATH": "/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+  "DISPLAY": ":0",
+  "WAYLAND_DISPLAY": "wayland-0",
+  "VIRTUAL_ENV": null,
+  "CONDA_PREFIX": null,
+  "SHELL": "/bin/bash"
+}

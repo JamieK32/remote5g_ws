@@ -1,0 +1,61 @@
+/home/jamiek/remote5g_ws/
+├── .gitignore
+├── README.md
+├── artifacts/
+├── build/
+├── config/
+│   ├── .gitkeep
+│   ├── athletics_track.json
+├── data/
+│   ├── .gitkeep
+├── deliverables/
+├── docs/
+│   ├── COMPETITION_SCENE.md
+│   ├── GAZEBO_TEST_REPORT.md
+│   ├── MODEL_DIMENSIONS.md
+│   ├── SCENE_TEST_REPORT.md
+│   ├── notes/
+│   ├── official/
+├── install/
+├── log/
+├── reports/
+├── scripts/
+│   ├── .gitkeep
+│   ├── generate_athletics_tracks.py
+│   ├── launch_track.sh
+│   ├── lib/
+│   ├── test_xtnetrc.sh
+├── simulation/
+│   ├── maps/
+│   ├── models/
+│   ├── worlds/
+├── src/
+│   ├── .gitkeep
+│   ├── remote5g_competition/
+│   │   ├── CMakeLists.txt
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── config/
+│   │   ├── docs/
+│   │   ├── launch/
+│   │   ├── materials/
+│   │   ├── models/
+│   │   ├── package.xml
+│   │   ├── scripts/
+│   │   ├── src/
+│   │   ├── test/
+│   │   ├── worlds/
+│   ├── remote5g_sim/
+│   │   ├── CMakeLists.txt
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── config/
+│   │   ├── docs/
+│   │   ├── include/
+│   │   ├── launch/
+│   │   ├── package.xml
+│   │   ├── scripts/
+│   │   ├── src/
+│   │   ├── test/
+│   │   ├── urdf/
+│   │   ├── worlds/

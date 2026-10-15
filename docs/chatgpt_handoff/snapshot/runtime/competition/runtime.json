@@ -1,0 +1,2687 @@
+{
+  "status": "PASS",
+  "graph": {
+    "/gazebo": {
+      "publishers": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/performance_metrics",
+          [
+            "gazebo_msgs/msg/PerformanceMetrics"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/delete_entity",
+          [
+            "gazebo_msgs/srv/DeleteEntity"
+          ]
+        ],
+        [
+          "/gazebo/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/gazebo/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/gazebo/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/gazebo/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/gazebo/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/gazebo/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ],
+        [
+          "/get_model_list",
+          [
+            "gazebo_msgs/srv/GetModelList"
+          ]
+        ],
+        [
+          "/pause_physics",
+          [
+            "std_srvs/srv/Empty"
+          ]
+        ],
+        [
+          "/reset_simulation",
+          [
+            "std_srvs/srv/Empty"
+          ]
+        ],
+        [
+          "/reset_world",
+          [
+            "std_srvs/srv/Empty"
+          ]
+        ],
+        [
+          "/spawn_entity",
+          [
+            "gazebo_msgs/srv/SpawnEntity"
+          ]
+        ],
+        [
+          "/unpause_physics",
+          [
+            "std_srvs/srv/Empty"
+          ]
+        ]
+      ],
+      "clients": []
+    },
+    "/gazebo/competition_state": {
+      "publishers": [
+        [
+          "/gazebo/link_states",
+          [
+            "gazebo_msgs/msg/LinkStates"
+          ]
+        ],
+        [
+          "/gazebo/model_states",
+          [
+            "gazebo_msgs/msg/ModelStates"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/gazebo/competition_state/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/gazebo/competition_state/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/gazebo/competition_state/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/gazebo/competition_state/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/gazebo/competition_state/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/gazebo/competition_state/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ],
+        [
+          "/gazebo/get_entity_state",
+          [
+            "gazebo_msgs/srv/GetEntityState"
+          ]
+        ],
+        [
+          "/gazebo/set_entity_state",
+          [
+            "gazebo_msgs/srv/SetEntityState"
+          ]
+        ]
+      ],
+      "clients": []
+    },
+    "/camera/front/front_camera_ros": {
+      "publishers": [
+        [
+          "/camera/front/camera_info",
+          [
+            "sensor_msgs/msg/CameraInfo"
+          ]
+        ],
+        [
+          "/camera/front/front/image_raw/compressed",
+          [
+            "sensor_msgs/msg/CompressedImage"
+          ]
+        ],
+        [
+          "/camera/front/front/image_raw/compressedDepth",
+          [
+            "sensor_msgs/msg/CompressedImage"
+          ]
+        ],
+        [
+          "/camera/front/front/image_raw/theora",
+          [
+            "theora_image_transport/msg/Packet"
+          ]
+        ],
+        [
+          "/camera/front/image_raw",
+          [
+            "sensor_msgs/msg/Image"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/camera/front/front_camera_ros/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/camera/front/front_camera_ros/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/camera/front/front_camera_ros/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/camera/front/front_camera_ros/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/camera/front/front_camera_ros/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/camera/front/front_camera_ros/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ],
+        [
+          "/camera/front/set_camera_info",
+          [
+            "sensor_msgs/srv/SetCameraInfo"
+          ]
+        ]
+      ],
+      "clients": []
+    },
+    "/camera/gimbal/gimbal_camera_ros": {
+      "publishers": [
+        [
+          "/camera/gimbal/camera_info",
+          [
+            "sensor_msgs/msg/CameraInfo"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal/image_raw/compressed",
+          [
+            "sensor_msgs/msg/CompressedImage"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal/image_raw/compressedDepth",
+          [
+            "sensor_msgs/msg/CompressedImage"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal/image_raw/theora",
+          [
+            "theora_image_transport/msg/Packet"
+          ]
+        ],
+        [
+          "/camera/gimbal/image_raw",
+          [
+            "sensor_msgs/msg/Image"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/camera/gimbal/gimbal_camera_ros/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal_camera_ros/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal_camera_ros/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal_camera_ros/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal_camera_ros/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/camera/gimbal/gimbal_camera_ros/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ],
+        [
+          "/camera/gimbal/set_camera_info",
+          [
+            "sensor_msgs/srv/SetCameraInfo"
+          ]
+        ]
+      ],
+      "clients": []
+    },
+    "/xtnetrc_control": {
+      "publishers": [
+        [
+          "/diagnostics",
+          [
+            "diagnostic_msgs/msg/DiagnosticArray"
+          ]
+        ],
+        [
+          "/joint_states",
+          [
+            "sensor_msgs/msg/JointState"
+          ]
+        ],
+        [
+          "/odom",
+          [
+            "nav_msgs/msg/Odometry"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ],
+        [
+          "/tf",
+          [
+            "tf2_msgs/msg/TFMessage"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/ackermann_cmd",
+          [
+            "ackermann_msgs/msg/AckermannDriveStamped"
+          ]
+        ],
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/cmd_vel",
+          [
+            "geometry_msgs/msg/Twist"
+          ]
+        ],
+        [
+          "/gimbal/pan_cmd",
+          [
+            "std_msgs/msg/Float64"
+          ]
+        ],
+        [
+          "/gimbal/tilt_cmd",
+          [
+            "std_msgs/msg/Float64"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/gimbal/center",
+          [
+            "std_srvs/srv/Trigger"
+          ]
+        ],
+        [
+          "/xtnetrc_control/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/xtnetrc_control/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/xtnetrc_control/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/xtnetrc_control/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/xtnetrc_control/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/xtnetrc_control/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ]
+      ],
+      "clients": []
+    },
+    "/robot_state_publisher": {
+      "publishers": [
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/robot_description",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ],
+        [
+          "/tf",
+          [
+            "tf2_msgs/msg/TFMessage"
+          ]
+        ],
+        [
+          "/tf_static",
+          [
+            "tf2_msgs/msg/TFMessage"
+          ]
+        ]
+      ],
+      "subscriptions": [
+        [
+          "/clock",
+          [
+            "rosgraph_msgs/msg/Clock"
+          ]
+        ],
+        [
+          "/joint_states",
+          [
+            "sensor_msgs/msg/JointState"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ],
+      "services": [
+        [
+          "/robot_state_publisher/describe_parameters",
+          [
+            "rcl_interfaces/srv/DescribeParameters"
+          ]
+        ],
+        [
+          "/robot_state_publisher/get_parameter_types",
+          [
+            "rcl_interfaces/srv/GetParameterTypes"
+          ]
+        ],
+        [
+          "/robot_state_publisher/get_parameters",
+          [
+            "rcl_interfaces/srv/GetParameters"
+          ]
+        ],
+        [
+          "/robot_state_publisher/list_parameters",
+          [
+            "rcl_interfaces/srv/ListParameters"
+          ]
+        ],
+        [
+          "/robot_state_publisher/set_parameters",
+          [
+            "rcl_interfaces/srv/SetParameters"
+          ]
+        ],
+        [
+          "/robot_state_publisher/set_parameters_atomically",
+          [
+            "rcl_interfaces/srv/SetParametersAtomically"
+          ]
+        ]
+      ],
+      "clients": []
+    }
+  },
+  "topics": {
+    "/ackermann_cmd": {
+      "types": [
+        "ackermann_msgs/msg/AckermannDriveStamped"
+      ],
+      "publishers": []
+    },
+    "/camera/front/camera_info": {
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/front/front/image_raw/compressed": {
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/front/front/image_raw/compressedDepth": {
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/front/front/image_raw/theora": {
+      "types": [
+        "theora_image_transport/msg/Packet"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/front/image_raw": {
+      "types": [
+        "sensor_msgs/msg/Image"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/gimbal/camera_info": {
+      "types": [
+        "sensor_msgs/msg/CameraInfo"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/gimbal/gimbal/image_raw/compressed": {
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/gimbal/gimbal/image_raw/compressedDepth": {
+      "types": [
+        "sensor_msgs/msg/CompressedImage"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/gimbal/gimbal/image_raw/theora": {
+      "types": [
+        "theora_image_transport/msg/Packet"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/camera/gimbal/image_raw": {
+      "types": [
+        "sensor_msgs/msg/Image"
+      ],
+      "publishers": [
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/clock": {
+      "types": [
+        "rosgraph_msgs/msg/Clock"
+      ],
+      "publishers": [
+        {
+          "node": "/gazebo",
+          "reliability": "BEST_EFFORT",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/cmd_vel": {
+      "types": [
+        "geometry_msgs/msg/Twist"
+      ],
+      "publishers": []
+    },
+    "/diagnostics": {
+      "types": [
+        "diagnostic_msgs/msg/DiagnosticArray"
+      ],
+      "publishers": [
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/gazebo/link_states": {
+      "types": [
+        "gazebo_msgs/msg/LinkStates"
+      ],
+      "publishers": [
+        {
+          "node": "/gazebo/competition_state",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/gazebo/model_states": {
+      "types": [
+        "gazebo_msgs/msg/ModelStates"
+      ],
+      "publishers": [
+        {
+          "node": "/gazebo/competition_state",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/gimbal/pan_cmd": {
+      "types": [
+        "std_msgs/msg/Float64"
+      ],
+      "publishers": []
+    },
+    "/gimbal/tilt_cmd": {
+      "types": [
+        "std_msgs/msg/Float64"
+      ],
+      "publishers": []
+    },
+    "/joint_states": {
+      "types": [
+        "sensor_msgs/msg/JointState"
+      ],
+      "publishers": [
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/odom": {
+      "types": [
+        "nav_msgs/msg/Odometry"
+      ],
+      "publishers": [
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/parameter_events": {
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ],
+      "publishers": [
+        {
+          "node": "/handoff_observer",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/gazebo",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/gazebo/competition_state",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/robot_state_publisher",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/performance_metrics": {
+      "types": [
+        "gazebo_msgs/msg/PerformanceMetrics"
+      ],
+      "publishers": [
+        {
+          "node": "/gazebo",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/robot_description": {
+      "types": [
+        "std_msgs/msg/String"
+      ],
+      "publishers": [
+        {
+          "node": "/robot_state_publisher",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        }
+      ]
+    },
+    "/rosout": {
+      "types": [
+        "rcl_interfaces/msg/Log"
+      ],
+      "publishers": [
+        {
+          "node": "/handoff_observer",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/gazebo",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/gazebo/competition_state",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/camera/front/front_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/camera/gimbal/gimbal_camera_ros",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        },
+        {
+          "node": "/robot_state_publisher",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        }
+      ]
+    },
+    "/tf": {
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ],
+      "publishers": [
+        {
+          "node": "/xtnetrc_control",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        },
+        {
+          "node": "/robot_state_publisher",
+          "reliability": "RELIABLE",
+          "durability": "VOLATILE",
+          "depth": 0
+        }
+      ]
+    },
+    "/tf_static": {
+      "types": [
+        "tf2_msgs/msg/TFMessage"
+      ],
+      "publishers": [
+        {
+          "node": "/robot_state_publisher",
+          "reliability": "RELIABLE",
+          "durability": "TRANSIENT_LOCAL",
+          "depth": 0
+        }
+      ]
+    }
+  },
+  "services": [
+    [
+      "/camera/front/front_camera_ros/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/camera/front/front_camera_ros/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/camera/front/front_camera_ros/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/camera/front/front_camera_ros/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/camera/front/front_camera_ros/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/camera/front/front_camera_ros/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/camera/front/set_camera_info",
+      [
+        "sensor_msgs/srv/SetCameraInfo"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/camera/gimbal/gimbal_camera_ros/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/camera/gimbal/set_camera_info",
+      [
+        "sensor_msgs/srv/SetCameraInfo"
+      ]
+    ],
+    [
+      "/delete_entity",
+      [
+        "gazebo_msgs/srv/DeleteEntity"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/gazebo/competition_state/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/gazebo/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/gazebo/get_entity_state",
+      [
+        "gazebo_msgs/srv/GetEntityState"
+      ]
+    ],
+    [
+      "/gazebo/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/gazebo/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/gazebo/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/gazebo/set_entity_state",
+      [
+        "gazebo_msgs/srv/SetEntityState"
+      ]
+    ],
+    [
+      "/gazebo/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/gazebo/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/get_model_list",
+      [
+        "gazebo_msgs/srv/GetModelList"
+      ]
+    ],
+    [
+      "/gimbal/center",
+      [
+        "std_srvs/srv/Trigger"
+      ]
+    ],
+    [
+      "/handoff_observer/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/handoff_observer/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/handoff_observer/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/handoff_observer/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/handoff_observer/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/handoff_observer/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/pause_physics",
+      [
+        "std_srvs/srv/Empty"
+      ]
+    ],
+    [
+      "/reset_simulation",
+      [
+        "std_srvs/srv/Empty"
+      ]
+    ],
+    [
+      "/reset_world",
+      [
+        "std_srvs/srv/Empty"
+      ]
+    ],
+    [
+      "/robot_state_publisher/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/robot_state_publisher/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/robot_state_publisher/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/robot_state_publisher/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/robot_state_publisher/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/robot_state_publisher/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ],
+    [
+      "/spawn_entity",
+      [
+        "gazebo_msgs/srv/SpawnEntity"
+      ]
+    ],
+    [
+      "/unpause_physics",
+      [
+        "std_srvs/srv/Empty"
+      ]
+    ],
+    [
+      "/xtnetrc_control/describe_parameters",
+      [
+        "rcl_interfaces/srv/DescribeParameters"
+      ]
+    ],
+    [
+      "/xtnetrc_control/get_parameter_types",
+      [
+        "rcl_interfaces/srv/GetParameterTypes"
+      ]
+    ],
+    [
+      "/xtnetrc_control/get_parameters",
+      [
+        "rcl_interfaces/srv/GetParameters"
+      ]
+    ],
+    [
+      "/xtnetrc_control/list_parameters",
+      [
+        "rcl_interfaces/srv/ListParameters"
+      ]
+    ],
+    [
+      "/xtnetrc_control/set_parameters",
+      [
+        "rcl_interfaces/srv/SetParameters"
+      ]
+    ],
+    [
+      "/xtnetrc_control/set_parameters_atomically",
+      [
+        "rcl_interfaces/srv/SetParametersAtomically"
+      ]
+    ]
+  ],
+  "samples": {
+    "/tf_static": {
+      "transforms": [
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_footprint"
+          },
+          "child_frame_id": "base_link",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.055315
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "front_axle_beam",
+          "transform": {
+            "translation": {
+              "x": 0.23861,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "front_axle_post",
+          "transform": {
+            "translation": {
+              "x": 0.23861,
+              "y": 0.0,
+              "z": 0.035
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "front_camera_link",
+          "transform": {
+            "translation": {
+              "x": 0.3,
+              "y": 0.0,
+              "z": 0.18
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.22310636213174548,
+              "z": 0.0,
+              "w": 0.9747941070689432
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "front_camera_link"
+          },
+          "child_frame_id": "front_camera_optical_frame",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.5,
+              "y": -0.4999999999999999,
+              "z": 0.5,
+              "w": -0.5000000000000001
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "gimbal_tilt_link"
+          },
+          "child_frame_id": "gimbal_camera_link",
+          "transform": {
+            "translation": {
+              "x": 0.012,
+              "y": 0.0,
+              "z": 0.02
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "gimbal_base",
+          "transform": {
+            "translation": {
+              "x": 0.08,
+              "y": 0.0,
+              "z": 0.195
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "gimbal_camera_link"
+          },
+          "child_frame_id": "gimbal_camera_optical_frame",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.5,
+              "y": -0.4999999999999999,
+              "z": 0.5,
+              "w": -0.5000000000000001
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "rear_axle_beam",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "rear_axle_post",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.035
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "/clock": {
+      "clock": {
+        "sec": 5,
+        "nanosec": 800000000
+      }
+    },
+    "/odom": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 806000000
+        },
+        "frame_id": "odom"
+      },
+      "child_frame_id": "base_footprint",
+      "pose": {
+        "pose": {
+          "position": {
+            "x": -40.50570335485639,
+            "y": -39.525001922210805,
+            "z": -0.0001049510467252962
+          },
+          "orientation": {
+            "x": -9.476155002493149e-07,
+            "y": -1.2278719136860786e-07,
+            "z": 0.9999999999965837,
+            "w": 2.4329920380507025e-06
+          }
+        },
+        "covariance": [
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06
+        ]
+      },
+      "twist": {
+        "twist": {
+          "linear": {
+            "x": 2.166907832041695e-08,
+            "y": -4.5071712728992774e-08,
+            "z": 3.280903335442387e-05
+          },
+          "angular": {
+            "x": -1.3373159779884386e-07,
+            "y": -5.175467977505359e-06,
+            "z": 1.242284966387542e-06
+          }
+        },
+        "covariance": [
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1e-06
+        ]
+      }
+    },
+    "/joint_states": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 806000000
+        },
+        "frame_id": ""
+      },
+      "name": [
+        "front_left_steering_joint",
+        "front_right_steering_joint",
+        "rear_left_wheel_joint",
+        "rear_right_wheel_joint",
+        "front_left_wheel_joint",
+        "front_right_wheel_joint",
+        "gimbal_pan_joint",
+        "gimbal_tilt_joint"
+      ],
+      "position": [
+        7.96170250634276e-05,
+        6.246771617934854e-05,
+        -3.2740150366805665e-05,
+        -4.539721111296302e-05,
+        6.893646470729209e-05,
+        5.366140002660558e-05,
+        3.421569703121463e-06,
+        -0.0059273692801875555
+      ],
+      "velocity": [
+        1.308546812340384e-05,
+        1.0034207170460431e-05,
+        -2.948024769178314e-06,
+        2.843874351946984e-06,
+        -2.9596393439896645e-06,
+        2.92414000543657e-06,
+        -7.654135897114251e-05,
+        -0.0005489950586686021
+      ],
+      "effort": [
+        -0.0006388990207259315,
+        -0.0005012468605103574,
+        4.320810246863264e-09,
+        4.320810246863264e-09,
+        0.0,
+        0.0,
+        -1.125328933987188e-06,
+        0.005943839131947614
+      ]
+    },
+    "/diagnostics": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 806000000
+        },
+        "frame_id": ""
+      },
+      "status": [
+        {
+          "level": "\u0001",
+          "name": "XT-NetRC virtual actuators",
+          "message": "startup_stopped",
+          "hardware_id": "gazebo_only",
+          "values": [
+            {
+              "key": "speed_setpoint",
+              "value": "0.000000"
+            },
+            {
+              "key": "steering_setpoint",
+              "value": "0.000000"
+            },
+            {
+              "key": "requested_speed",
+              "value": "0.000000"
+            },
+            {
+              "key": "requested_angle",
+              "value": "0.000000"
+            },
+            {
+              "key": "common_rear_torque",
+              "value": "0.000000"
+            },
+            {
+              "key": "lease_age_s",
+              "value": "7.743583"
+            }
+          ]
+        }
+      ]
+    },
+    "/tf": {
+      "transforms": [
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "front_left_knuckle",
+          "transform": {
+            "translation": {
+              "x": 0.23861,
+              "y": 0.12,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 3.9808512521199596e-05,
+              "w": 0.9999999992076412
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "front_left_knuckle"
+          },
+          "child_frame_id": "front_left_wheel",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 3.446823234682099e-05,
+              "z": 0.0,
+              "w": 0.9999999994059705
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "front_right_knuckle",
+          "transform": {
+            "translation": {
+              "x": 0.23861,
+              "y": -0.12,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 3.123385808459588e-05,
+              "w": 0.9999999995122231
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "front_right_knuckle"
+          },
+          "child_frame_id": "front_right_wheel",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 2.6830700010083616e-05,
+              "z": 0.0,
+              "w": 0.9999999996400566
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "gimbal_base"
+          },
+          "child_frame_id": "gimbal_pan_link",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.008
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.7107848515598972e-06,
+              "w": 0.9999999999985365
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "gimbal_pan_link"
+          },
+          "child_frame_id": "gimbal_tilt_link",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.032
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0029636803015445764,
+              "z": 0.0,
+              "w": 0.9999956082898918
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "rear_left_wheel",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": 0.12,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": -1.6370075182671694e-05,
+              "z": 0.0,
+              "w": 0.9999999998660103
+            }
+          }
+        },
+        {
+          "header": {
+            "stamp": {
+              "sec": 5,
+              "nanosec": 806000000
+            },
+            "frame_id": "base_link"
+          },
+          "child_frame_id": "rear_right_wheel",
+          "transform": {
+            "translation": {
+              "x": 0.0,
+              "y": -0.12,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": -2.269860555453236e-05,
+              "z": 0.0,
+              "w": 0.9999999997423865
+            }
+          }
+        }
+      ]
+    },
+    "/camera/front/camera_info": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 776000000
+        },
+        "frame_id": "front_camera_optical_frame"
+      },
+      "height": 720,
+      "width": 1280,
+      "distortion_model": "plumb_bob",
+      "d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "k": [
+        762.7249337622711,
+        0.0,
+        640.5,
+        0.0,
+        762.7249337622711,
+        360.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "r": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "p": [
+        762.7249337622711,
+        0.0,
+        640.5,
+        -0.0,
+        0.0,
+        762.7249337622711,
+        360.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "binning_x": 0,
+      "binning_y": 0,
+      "roi": {
+        "x_offset": 0,
+        "y_offset": 0,
+        "height": 0,
+        "width": 0,
+        "do_rectify": false
+      }
+    },
+    "/camera/front/image_raw": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 776000000
+        },
+        "frame_id": "front_camera_optical_frame"
+      },
+      "width": 1280,
+      "height": 720,
+      "encoding": "rgb8",
+      "step": 3840,
+      "data_bytes": 2764800
+    },
+    "/camera/gimbal/camera_info": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 776000000
+        },
+        "frame_id": "gimbal_camera_optical_frame"
+      },
+      "height": 720,
+      "width": 1280,
+      "distortion_model": "plumb_bob",
+      "d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "k": [
+        914.0151876932167,
+        0.0,
+        640.5,
+        0.0,
+        914.0151876932167,
+        360.5,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "r": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "p": [
+        914.0151876932167,
+        0.0,
+        640.5,
+        -0.0,
+        0.0,
+        914.0151876932167,
+        360.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "binning_x": 0,
+      "binning_y": 0,
+      "roi": {
+        "x_offset": 0,
+        "y_offset": 0,
+        "height": 0,
+        "width": 0,
+        "do_rectify": false
+      }
+    },
+    "/camera/gimbal/image_raw": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 776000000
+        },
+        "frame_id": "gimbal_camera_optical_frame"
+      },
+      "width": 1280,
+      "height": 720,
+      "encoding": "rgb8",
+      "step": 3840,
+      "data_bytes": 2764800
+    }
+  },
+  "frequencies": {
+    "/tf_static": {
+      "messages": 1,
+      "wall_hz": null,
+      "wall_duration_s": 0
+    },
+    "/clock": {
+      "messages": 58,
+      "wall_hz": 7.52953979242767,
+      "wall_duration_s": 7.570183779003855
+    },
+    "/odom": {
+      "messages": 113,
+      "wall_hz": 15.05053727525359,
+      "wall_duration_s": 7.441594805000932
+    },
+    "/joint_states": {
+      "messages": 113,
+      "wall_hz": 15.051307219257396,
+      "wall_duration_s": 7.44121413299581
+    },
+    "/diagnostics": {
+      "messages": 113,
+      "wall_hz": 15.050738899793826,
+      "wall_duration_s": 7.441495115002908
+    },
+    "/tf": {
+      "messages": 226,
+      "wall_hz": 30.235582337776442,
+      "wall_duration_s": 7.441563304004376
+    },
+    "/camera/front/camera_info": {
+      "messages": 82,
+      "wall_hz": 12.256243486895166,
+      "wall_duration_s": 6.608876535996387
+    },
+    "/camera/front/image_raw": {
+      "messages": 27,
+      "wall_hz": 4.003803694819744,
+      "wall_duration_s": 6.4938248679973185
+    },
+    "/camera/gimbal/camera_info": {
+      "messages": 80,
+      "wall_hz": 12.162397443807196,
+      "wall_duration_s": 6.495429898997827
+    },
+    "/camera/gimbal/image_raw": {
+      "messages": 21,
+      "wall_hz": 3.3646867246830845,
+      "wall_duration_s": 5.944089787997655
+    }
+  },
+  "tf": {
+    "base_link": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_footprint"
+      },
+      "child_frame_id": "base_link",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.055315
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "front_axle_beam": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "front_axle_beam",
+      "transform": {
+        "translation": {
+          "x": 0.23861,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "front_axle_post": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "front_axle_post",
+      "transform": {
+        "translation": {
+          "x": 0.23861,
+          "y": 0.0,
+          "z": 0.035
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "front_camera_link": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "front_camera_link",
+      "transform": {
+        "translation": {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 0.18
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.22310636213174548,
+          "z": 0.0,
+          "w": 0.9747941070689432
+        }
+      }
+    },
+    "front_camera_optical_frame": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "front_camera_link"
+      },
+      "child_frame_id": "front_camera_optical_frame",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.5,
+          "y": -0.4999999999999999,
+          "z": 0.5,
+          "w": -0.5000000000000001
+        }
+      }
+    },
+    "gimbal_camera_link": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "gimbal_tilt_link"
+      },
+      "child_frame_id": "gimbal_camera_link",
+      "transform": {
+        "translation": {
+          "x": 0.012,
+          "y": 0.0,
+          "z": 0.02
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "gimbal_base": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "gimbal_base",
+      "transform": {
+        "translation": {
+          "x": 0.08,
+          "y": 0.0,
+          "z": 0.195
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "gimbal_camera_optical_frame": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "gimbal_camera_link"
+      },
+      "child_frame_id": "gimbal_camera_optical_frame",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.5,
+          "y": -0.4999999999999999,
+          "z": 0.5,
+          "w": -0.5000000000000001
+        }
+      }
+    },
+    "rear_axle_beam": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "rear_axle_beam",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "rear_axle_post": {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "rear_axle_post",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.035
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      }
+    },
+    "base_footprint": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 959000000
+        },
+        "frame_id": "odom"
+      },
+      "child_frame_id": "base_footprint",
+      "transform": {
+        "translation": {
+          "x": -40.50570326418166,
+          "y": -39.525001922046435,
+          "z": -0.00010495104842390968
+        },
+        "rotation": {
+          "x": -9.476125771918907e-07,
+          "y": -1.2274903475684877e-07,
+          "z": 0.9999999999965912,
+          "w": 2.4299411247838497e-06
+        }
+      }
+    },
+    "front_left_knuckle": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "front_left_knuckle",
+      "transform": {
+        "translation": {
+          "x": 0.23861,
+          "y": 0.12,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 4.0504885677110526e-05,
+          "w": 0.9999999991796771
+        }
+      }
+    },
+    "front_left_wheel": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "front_left_knuckle"
+      },
+      "child_frame_id": "front_left_wheel",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 3.396415988956383e-05,
+          "z": 0.0,
+          "w": 0.9999999994232178
+        }
+      }
+    },
+    "front_right_knuckle": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "front_right_knuckle",
+      "transform": {
+        "translation": {
+          "x": 0.23861,
+          "y": -0.12,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 3.177653573469908e-05,
+          "w": 0.9999999994951259
+        }
+      }
+    },
+    "front_right_wheel": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "front_right_knuckle"
+      },
+      "child_frame_id": "front_right_wheel",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 2.6326487088180576e-05,
+          "z": 0.0,
+          "w": 0.9999999996534579
+        }
+      }
+    },
+    "gimbal_pan_link": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "gimbal_base"
+      },
+      "child_frame_id": "gimbal_pan_link",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.008
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.7105449501278443e-06,
+          "w": 0.999999999998537
+        }
+      }
+    },
+    "gimbal_tilt_link": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "gimbal_pan_link"
+      },
+      "child_frame_id": "gimbal_tilt_link",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.032
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.002963680299682075,
+          "z": 0.0,
+          "w": 0.9999956082898971
+        }
+      }
+    },
+    "rear_left_wheel": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "rear_left_wheel",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": 0.12,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -1.6923585420239155e-05,
+          "z": 0.0,
+          "w": 0.9999999998567961
+        }
+      }
+    },
+    "rear_right_wheel": {
+      "header": {
+        "stamp": {
+          "sec": 5,
+          "nanosec": 908000000
+        },
+        "frame_id": "base_link"
+      },
+      "child_frame_id": "rear_right_wheel",
+      "transform": {
+        "translation": {
+          "x": 0.0,
+          "y": -0.12,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -2.3241217358766406e-05,
+          "z": 0.0,
+          "w": 0.9999999997299229
+        }
+      }
+    }
+  },
+  "actual_vehicle_state": {
+    "header": {
+      "stamp": {
+        "sec": 6,
+        "nanosec": 30000000
+      },
+      "frame_id": "world"
+    },
+    "state": {
+      "name": "",
+      "pose": {
+        "position": {
+          "x": -40.505703223108036,
+          "y": -39.52500192177953,
+          "z": -0.00010495102697685214
+        },
+        "orientation": {
+          "x": -9.439639200939921e-07,
+          "y": -1.228734074196558e-07,
+          "z": 0.9999999999965936,
+          "w": 2.430414319798528e-06
+        }
+      },
+      "twist": {
+        "linear": {
+          "x": -2.6421733265547404e-08,
+          "y": 4.675297471355325e-08,
+          "z": 3.2808727474690725e-05
+        },
+        "angular": {
+          "x": 1.9503757607309775e-07,
+          "y": 5.209434128304227e-06,
+          "z": 1.2060433945847444e-06
+        }
+      },
+      "reference_frame": ""
+    },
+    "success": true
+  },
+  "domain": "95"
+}

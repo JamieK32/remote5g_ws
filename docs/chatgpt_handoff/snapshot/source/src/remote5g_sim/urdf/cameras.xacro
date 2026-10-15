@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="camera" params="name parent xyz rpy width height hfov rate">
+    <xacro:box name="${name}_camera_link" mass="${p['camera_mass']}" xyz="0 0 0" size="${[0.03,0.045,0.025]}" color="0.15 0.15 0.15 1"/>
+    <xacro:fixed name="${name}_camera_mount" parent="${parent}" child="${name}_camera_link" xyz="${xyz}" rpy="${rpy}"/>
+    <link name="${name}_camera_optical_frame"/>
+    <xacro:fixed name="${name}_optical_joint" parent="${name}_camera_link" child="${name}_camera_optical_frame" xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    <gazebo reference="${name}_camera_link">
+      <material>Gazebo/Black</material>
+      <sensor name="${name}_rgb" type="camera"><always_on>true</always_on><update_rate>${rate}</update_rate><visualize>false</visualize>
+        <camera><horizontal_fov>${hfov}</horizontal_fov><image><width>${width}</width><height>${height}</height><format>R8G8B8</format></image><clip><near>0.02</near><far>100</far></clip></camera>
+        <plugin name="${name}_camera_ros" filename="libgazebo_ros_camera.so"><ros><namespace>/camera/${name}</namespace><remapping>${name}/image_raw:=image_raw</remapping><remapping>${name}/camera_info:=camera_info</remapping></ros><camera_name>${name}</camera_name><frame_name>${name}_camera_optical_frame</frame_name></plugin>
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+  <xacro:macro name="gimbal_axis" params="name parent child xyz axis lower upper">
+    <joint name="${name}" type="revolute"><parent link="${parent}"/><child link="${child}"/><origin xyz="${xyz}"/><axis xyz="${axis}"/><limit lower="${lower}" upper="${upper}" effort="${p['gimbal_torque']}" velocity="${p['gimbal_rate']}"/><dynamics damping="0.001"/></joint>
+  </xacro:macro>
+</robot>

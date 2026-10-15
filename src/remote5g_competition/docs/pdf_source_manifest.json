@@ -1,0 +1,79 @@
+{
+  "pdf": "/home/jamiek/remote5g_ws/docs/official/\u8d5b\u9879\u4e8c-\u5ba4\u59165G\u8fdc\u7a0b\u9a7e\u9a76\u65e0\u4eba\u8f66\u8d5b\u6bd4\u8d5b\u89c4\u5219.pdf",
+  "sha256": "1e5596a99e7e8e7aad1c1003aca56f125c6cb7bcd1d6fa4fb3492b7fbe8a2387",
+  "pages": 14,
+  "signs": {
+    "right_red": {
+      "file": "materials/source_signs/right_red.jpeg",
+      "page": 6,
+      "xref": 65,
+      "width": 205,
+      "height": 290,
+      "sha256": "7b2a7dc81a0780179b457daa55c9b1fc6ac3bf1438564e5957fc74fb8b2e85ae",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "left_red": {
+      "file": "materials/source_signs/left_red.jpeg",
+      "page": 6,
+      "xref": 66,
+      "width": 206,
+      "height": 291,
+      "sha256": "ebfe4454c2041e27d0e8df4f69f67af236f6c879ff2da31215ce7b054560b7b7",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "right_blue": {
+      "file": "materials/source_signs/right_blue.jpeg",
+      "page": 6,
+      "xref": 67,
+      "width": 205,
+      "height": 290,
+      "sha256": "9c854a71f8f840415a793c0e22c9c4ad46124d4ca0677cb7e09424a18180c6f5",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "left_blue": {
+      "file": "materials/source_signs/left_blue.jpeg",
+      "page": 6,
+      "xref": 68,
+      "width": 206,
+      "height": 291,
+      "sha256": "3957de903fedc4bc9d397946dc3931b0ef0d013ade1ba1a11967534dc1396823",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "A_red": {
+      "file": "materials/source_signs/A_red.jpeg",
+      "page": 7,
+      "xref": 74,
+      "width": 272,
+      "height": 193,
+      "sha256": "6ff1148d461470834541a6e89807cc873b6c3fcdb0b4d85c29ca91ad0c411be6",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "B_red": {
+      "file": "materials/source_signs/B_red.jpeg",
+      "page": 7,
+      "xref": 75,
+      "width": 272,
+      "height": 193,
+      "sha256": "3f5df3d0665c9f2381eca8cc2367279bcc08887a263efd451b29668bff6dd9ca",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "A_blue": {
+      "file": "materials/source_signs/A_blue.jpeg",
+      "page": 7,
+      "xref": 76,
+      "width": 272,
+      "height": 193,
+      "sha256": "5e9a2cfdf13ccb13ff4feac1c01dbac05dff3c818ab203a93f38b37a3e49ffdf",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    },
+    "B_blue": {
+      "file": "materials/source_signs/B_blue.jpeg",
+      "page": 7,
+      "xref": 77,
+      "width": 272,
+      "height": 193,
+      "sha256": "39411de19fb926acfad9664e460213206bd69ad05327ff7e52a67529a8873f9f",
+      "source": "Unmodified image stream extracted from user supplied official PDF; not original editable print source"
+    }
+  }
+}

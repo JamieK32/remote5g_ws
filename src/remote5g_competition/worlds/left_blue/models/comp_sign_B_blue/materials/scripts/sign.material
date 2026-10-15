@@ -1,0 +1,9 @@
+material competition/comp_sign_B_blue/sign
+{
+ technique { pass { lighting off
+ cull_hardware none
+ cull_software none
+ texture_unit { texture comp_sign_B_blue_sign_fd6007bc.png
+ filtering none
+ } } }
+}

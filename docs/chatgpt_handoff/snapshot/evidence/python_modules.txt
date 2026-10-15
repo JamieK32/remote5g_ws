@@ -1,0 +1,11 @@
+COMMAND:
+python3 -c "import sys,cv2,numpy,yaml,rclpy; print('python',sys.executable); print('cv2',cv2.__version__,cv2.__file__); print('numpy',numpy.__version__); print('yaml',yaml.__version__); print('rclpy',rclpy.__file__)"
+
+EXIT_CODE: 0
+
+OUTPUT:
+python /usr/bin/python3
+cv2 4.5.4 /usr/lib/python3/dist-packages/cv2.cpython-310-x86_64-linux-gnu.so
+numpy 1.21.5
+yaml 5.4.1
+rclpy /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py

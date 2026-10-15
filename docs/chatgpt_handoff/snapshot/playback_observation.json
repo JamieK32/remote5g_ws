@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "isolated_ros_domain": 96,
+  "received_counts": {
+    "odom": 111,
+    "clock": 109
+  },
+  "samples": {
+    "last_clock_seconds": 34.072206129,
+    "last_odom_seconds": 34.194
+  },
+  "observer_use_sim_time": true,
+  "observer_clock_seconds": 34.072206129
+}

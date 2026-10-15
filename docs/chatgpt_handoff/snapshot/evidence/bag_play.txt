@@ -1,0 +1,11 @@
+COMMAND: ['ros2', 'bag', 'play', '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag', '--topics', '/odom', '/joint_states', '/tf', '/tf_static', '--clock', '20']
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792046972.582942942] [rosbag2_storage]: Opened database '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag/sample_bag_0.db3' for READ_ONLY.
+[INFO] [1792046972.583006773] [rosbag2_player]: Set rate to 1
+[INFO] [1792046972.588502492] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1792046972.588538971] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1792046972.588544271] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1792046972.588548419] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1792046972.588552126] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1792046972.588920443] [rosbag2_storage]: Opened database '/home/jamiek/remote5g_ws/docs/chatgpt_handoff/snapshot/runtime/competition/sample_bag/sample_bag_0.db3' for READ_ONLY.
+
+EXIT_CODE: 0

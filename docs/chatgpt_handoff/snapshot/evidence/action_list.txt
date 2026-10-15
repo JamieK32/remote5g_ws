@@ -1,0 +1,3 @@
+COMMAND: ['ros2', 'action', 'list', '-t']
+
+EXIT_CODE: 0

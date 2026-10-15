@@ -1,0 +1,89 @@
+<sdf version="1.6">
+  <model name="comp_crosswalk">
+    <static>true</static>
+    <link name="body">
+      <inertial>
+        <pose>0 0 0.04 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.001</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="paper_0">
+        <pose>0 -0.42 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.297 0.105 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="paper_1">
+        <pose>0 -0.21 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.297 0.105 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="paper_2">
+        <pose>0 0.0 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.297 0.105 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="paper_3">
+        <pose>0 0.21 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.297 0.105 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <visual name="paper_4">
+        <pose>0 0.42 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.297 0.105 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+    </link>
+  </model>
+</sdf>

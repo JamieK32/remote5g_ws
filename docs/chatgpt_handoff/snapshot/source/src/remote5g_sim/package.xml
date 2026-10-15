@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>remote5g_sim</name><version>0.1.0</version>
+  <description>XT-NetRC reference Ackermann vehicle, dual cameras and pan tilt Gazebo Classic simulation.</description>
+  <maintainer email="jamiek@example.com">JamieK</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <depend>gazebo_dev</depend><depend>gazebo_ros</depend><depend>rclcpp</depend>
+  <depend>ackermann_msgs</depend><depend>geometry_msgs</depend><depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend><depend>std_msgs</depend><depend>std_srvs</depend>
+  <depend>diagnostic_msgs</depend><depend>tf2_ros</depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>gazebo_plugins</exec_depend><exec_depend>gazebo_msgs</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend><exec_depend>xacro</exec_depend>
+  <exec_depend>launch_ros</exec_depend><exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-yaml</exec_depend><exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend><exec_depend>tf2_msgs</exec_depend>
+  <export><build_type>ament_cmake</build_type><gazebo_ros plugin_path="lib"/></export>
+</package>

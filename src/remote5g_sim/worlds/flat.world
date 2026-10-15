@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sdf version="1.6"><world name="xtnetrc_flat">
+  <gravity>0 0 -9.81</gravity>
+  <physics name="ode" type="ode"><max_step_size>0.001</max_step_size><real_time_update_rate>1000</real_time_update_rate><ode><solver><type>quick</type><iters>80</iters><sor>1.0</sor></solver></ode></physics>
+  <scene><ambient>0.6 0.6 0.6 1</ambient><background>0.6 0.8 0.95 1</background><shadows>false</shadows></scene>
+  <light name="sun" type="directional"><diffuse>0.8 0.8 0.8 1</diffuse><direction>-0.3 0.2 -1</direction></light>
+  <model name="ground"><static>true</static><link name="ground"><collision name="ground"><geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry><surface><friction><ode><mu>1</mu><mu2>1</mu2></ode></friction></surface></collision><visual name="ground"><geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry><material><ambient>0.35 0.45 0.35 1</ambient><diffuse>0.35 0.45 0.35 1</diffuse></material></visual></link></model>
+  <!-- Asymmetric visual landmarks let image regression detect true pan and tilt. -->
+  <model name="red_marker"><static>true</static><pose>3 1 0.5 0 0 0</pose><link name="marker"><collision name="marker"><geometry><box><size>0.4 0.4 1</size></box></geometry></collision><visual name="marker"><geometry><box><size>0.4 0.4 1</size></box></geometry><material><ambient>1 0.05 0.05 1</ambient><diffuse>1 0.05 0.05 1</diffuse></material></visual></link></model>
+  <model name="blue_marker"><static>true</static><pose>3 -1 0.3 0 0 0</pose><link name="marker"><collision name="marker"><geometry><box><size>0.4 0.4 0.6</size></box></geometry></collision><visual name="marker"><geometry><box><size>0.4 0.4 0.6</size></box></geometry><material><ambient>0.05 0.05 1 1</ambient><diffuse>0.05 0.05 1 1</diffuse></material></visual></link></model>
+  <plugin name="gazebo_state" filename="libgazebo_ros_state.so"><ros><namespace>/gazebo</namespace></ros><update_rate>20</update_rate></plugin>
+  <gui><camera name="car_view"><pose>1.2 -1.2 0.9 0 0.45 2.35</pose></camera></gui>
+</world></sdf>

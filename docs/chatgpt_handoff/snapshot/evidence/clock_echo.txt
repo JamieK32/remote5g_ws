@@ -1,0 +1,7 @@
+COMMAND: ['ros2', 'topic', 'echo', '/clock', '--qos-reliability', 'best_effort', '--once']
+clock:
+  sec: 12
+  nanosec: 700000000
+---
+
+EXIT_CODE: 0

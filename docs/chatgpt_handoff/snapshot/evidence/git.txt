@@ -1,0 +1,8 @@
+COMMAND:
+git status --short; git rev-parse --show-toplevel
+
+EXIT_CODE: 128
+
+OUTPUT:
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git

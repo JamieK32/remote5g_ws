@@ -1,0 +1,408 @@
+{
+  "robot": "xtnetrc",
+  "links": [
+    {
+      "name": "base_footprint",
+      "mass": "0.001",
+      "collision_geometries": []
+    },
+    {
+      "name": "base_link",
+      "mass": "3.0",
+      "collision_geometries": [
+        "<geometry><box size=\"0.41 0.19 0.105\" /></geometry>"
+      ]
+    },
+    {
+      "name": "rear_axle_beam",
+      "mass": "0.04",
+      "collision_geometries": [
+        "<geometry><box size=\"0.02 0.22 0.014\" /></geometry>"
+      ]
+    },
+    {
+      "name": "rear_axle_post",
+      "mass": "0.03",
+      "collision_geometries": [
+        "<geometry><box size=\"0.02 0.02 0.07\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_axle_beam",
+      "mass": "0.04",
+      "collision_geometries": [
+        "<geometry><box size=\"0.02 0.22 0.014\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_axle_post",
+      "mass": "0.03",
+      "collision_geometries": [
+        "<geometry><box size=\"0.02 0.02 0.07\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_left_knuckle",
+      "mass": "0.06",
+      "collision_geometries": [
+        "<geometry><box size=\"0.018 0.018 0.03\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_left_wheel",
+      "mass": "0.18",
+      "collision_geometries": [
+        "<geometry><cylinder length=\"0.04952\" radius=\"0.055315\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_right_knuckle",
+      "mass": "0.06",
+      "collision_geometries": [
+        "<geometry><box size=\"0.018 0.018 0.03\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_right_wheel",
+      "mass": "0.18",
+      "collision_geometries": [
+        "<geometry><cylinder length=\"0.04952\" radius=\"0.055315\" /></geometry>"
+      ]
+    },
+    {
+      "name": "rear_left_wheel",
+      "mass": "0.18",
+      "collision_geometries": [
+        "<geometry><cylinder length=\"0.04952\" radius=\"0.055315\" /></geometry>"
+      ]
+    },
+    {
+      "name": "rear_right_wheel",
+      "mass": "0.18",
+      "collision_geometries": [
+        "<geometry><cylinder length=\"0.04952\" radius=\"0.055315\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_camera_link",
+      "mass": "0.05",
+      "collision_geometries": [
+        "<geometry><box size=\"0.03 0.045 0.025\" /></geometry>"
+      ]
+    },
+    {
+      "name": "front_camera_optical_frame",
+      "mass": null,
+      "collision_geometries": []
+    },
+    {
+      "name": "gimbal_base",
+      "mass": "0.04",
+      "collision_geometries": [
+        "<geometry><box size=\"0.04 0.04 0.015\" /></geometry>"
+      ]
+    },
+    {
+      "name": "gimbal_pan_link",
+      "mass": "0.04",
+      "collision_geometries": [
+        "<geometry><box size=\"0.025 0.025 0.025\" /></geometry>"
+      ]
+    },
+    {
+      "name": "gimbal_tilt_link",
+      "mass": "0.04",
+      "collision_geometries": [
+        "<geometry><box size=\"0.03 0.06 0.015\" /></geometry>"
+      ]
+    },
+    {
+      "name": "gimbal_camera_link",
+      "mass": "0.05",
+      "collision_geometries": [
+        "<geometry><box size=\"0.03 0.045 0.025\" /></geometry>"
+      ]
+    },
+    {
+      "name": "gimbal_camera_optical_frame",
+      "mass": null,
+      "collision_geometries": []
+    }
+  ],
+  "joints": [
+    {
+      "name": "base_joint",
+      "type": "fixed",
+      "parent": "base_footprint",
+      "child": "base_link",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.055315"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "rear_axle_beam_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "rear_axle_beam",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "rear_axle_post_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "rear_axle_post",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.035"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "front_axle_beam_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "front_axle_beam",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.23861 0 0"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "front_axle_post_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "front_axle_post",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.23861 0 0.035"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "front_left_steering_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "front_left_knuckle",
+      "origin": {
+        "xyz": "0.23861 0.12 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "lower": "-0.6",
+        "upper": "0.6",
+        "velocity": "4"
+      }
+    },
+    {
+      "name": "front_left_wheel_joint",
+      "type": "continuous",
+      "parent": "front_left_knuckle",
+      "child": "front_left_wheel",
+      "origin": {
+        "xyz": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 1 0"
+      },
+      "limit": {
+        "effort": "2",
+        "velocity": "50"
+      }
+    },
+    {
+      "name": "front_right_steering_joint",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "front_right_knuckle",
+      "origin": {
+        "xyz": "0.23861 -0.12 0"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "1.0",
+        "lower": "-0.6",
+        "upper": "0.6",
+        "velocity": "4"
+      }
+    },
+    {
+      "name": "front_right_wheel_joint",
+      "type": "continuous",
+      "parent": "front_right_knuckle",
+      "child": "front_right_wheel",
+      "origin": {
+        "xyz": "0 0 0"
+      },
+      "axis": {
+        "xyz": "0 1 0"
+      },
+      "limit": {
+        "effort": "2",
+        "velocity": "50"
+      }
+    },
+    {
+      "name": "rear_left_wheel_joint",
+      "type": "continuous",
+      "parent": "base_link",
+      "child": "rear_left_wheel",
+      "origin": {
+        "xyz": "0 0.12 0"
+      },
+      "axis": {
+        "xyz": "0 1 0"
+      },
+      "limit": {
+        "effort": "2",
+        "velocity": "50"
+      }
+    },
+    {
+      "name": "rear_right_wheel_joint",
+      "type": "continuous",
+      "parent": "base_link",
+      "child": "rear_right_wheel",
+      "origin": {
+        "xyz": "0 -0.12 0"
+      },
+      "axis": {
+        "xyz": "0 1 0"
+      },
+      "limit": {
+        "effort": "2",
+        "velocity": "50"
+      }
+    },
+    {
+      "name": "front_camera_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "front_camera_link",
+      "origin": {
+        "rpy": "0 0.45 0",
+        "xyz": "0.3 0.0 0.18"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "front_optical_joint",
+      "type": "fixed",
+      "parent": "front_camera_link",
+      "child": "front_camera_optical_frame",
+      "origin": {
+        "rpy": "-1.5707963267948966 0 -1.5707963267948966",
+        "xyz": "0 0 0"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "gimbal_mount",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "gimbal_base",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.08 0.0 0.195"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "gimbal_pan_joint",
+      "type": "revolute",
+      "parent": "gimbal_base",
+      "child": "gimbal_pan_link",
+      "origin": {
+        "xyz": "0 0 0.008"
+      },
+      "axis": {
+        "xyz": "0 0 1"
+      },
+      "limit": {
+        "effort": "0.15",
+        "lower": "-1.5707963267948966",
+        "upper": "1.5707963267948966",
+        "velocity": "1.0"
+      }
+    },
+    {
+      "name": "gimbal_tilt_joint",
+      "type": "revolute",
+      "parent": "gimbal_pan_link",
+      "child": "gimbal_tilt_link",
+      "origin": {
+        "xyz": "0 0 0.032"
+      },
+      "axis": {
+        "xyz": "0 -1 0"
+      },
+      "limit": {
+        "effort": "0.15",
+        "lower": "-0.6",
+        "upper": "0.8",
+        "velocity": "1.0"
+      }
+    },
+    {
+      "name": "gimbal_camera_mount",
+      "type": "fixed",
+      "parent": "gimbal_tilt_link",
+      "child": "gimbal_camera_link",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.012 0 0.02"
+      },
+      "axis": {},
+      "limit": {}
+    },
+    {
+      "name": "gimbal_optical_joint",
+      "type": "fixed",
+      "parent": "gimbal_camera_link",
+      "child": "gimbal_camera_optical_frame",
+      "origin": {
+        "rpy": "-1.5707963267948966 0 -1.5707963267948966",
+        "xyz": "0 0 0"
+      },
+      "axis": {},
+      "limit": {}
+    }
+  ],
+  "sensors": [
+    {
+      "reference": "front_camera_link",
+      "sensor": {
+        "name": "front_rgb",
+        "type": "camera"
+      },
+      "camera": "<sensor name=\"front_rgb\" type=\"camera\"><always_on>true</always_on><update_rate>30.0</update_rate><visualize>false</visualize><camera><horizontal_fov>1.3962634015954636</horizontal_fov><image><width>1280</width><height>720</height><format>R8G8B8</format></image><clip><near>0.02</near><far>100</far></clip></camera><plugin filename=\"libgazebo_ros_camera.so\" name=\"front_camera_ros\"><ros><namespace>/camera/front</namespace><remapping>front/image_raw:=image_raw</remapping><remapping>front/camera_info:=camera_info</remapping></ros><camera_name>front</camera_name><frame_name>front_camera_optical_frame</frame_name></plugin></sensor>"
+    },
+    {
+      "reference": "gimbal_camera_link",
+      "sensor": {
+        "name": "gimbal_rgb",
+        "type": "camera"
+      },
+      "camera": "<sensor name=\"gimbal_rgb\" type=\"camera\"><always_on>true</always_on><update_rate>15.0</update_rate><visualize>false</visualize><camera><horizontal_fov>1.2217304763960306</horizontal_fov><image><width>1280</width><height>720</height><format>R8G8B8</format></image><clip><near>0.02</near><far>100</far></clip></camera><plugin filename=\"libgazebo_ros_camera.so\" name=\"gimbal_camera_ros\"><ros><namespace>/camera/gimbal</namespace><remapping>gimbal/image_raw:=image_raw</remapping><remapping>gimbal/camera_info:=camera_info</remapping></ros><camera_name>gimbal</camera_name><frame_name>gimbal_camera_optical_frame</frame_name></plugin></sensor>"
+    }
+  ]
+}

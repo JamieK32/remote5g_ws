@@ -1,0 +1,12 @@
+COMMAND:
+command -v ros2 rviz2 rqt colcon catkin_make docker; ros2 doctor --report
+
+EXIT_CODE: 124
+
+OUTPUT:
+/opt/ros/humble/bin/ros2
+/opt/ros/humble/bin/rviz2
+/opt/ros/humble/bin/rqt
+/usr/bin/colcon
+
+TIMEOUT after 35s

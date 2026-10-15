@@ -1,0 +1,192 @@
+[
+  {
+    "name": "remote5g_sim",
+    "version": "0.1.0",
+    "path": "src/remote5g_sim",
+    "dependencies": [
+      {
+        "kind": "buildtool_depend",
+        "name": "ament_cmake"
+      },
+      {
+        "kind": "build_depend",
+        "name": "qtbase5-dev"
+      },
+      {
+        "kind": "depend",
+        "name": "gazebo_dev"
+      },
+      {
+        "kind": "depend",
+        "name": "gazebo_ros"
+      },
+      {
+        "kind": "depend",
+        "name": "rclcpp"
+      },
+      {
+        "kind": "depend",
+        "name": "ackermann_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "geometry_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "nav_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "sensor_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "std_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "std_srvs"
+      },
+      {
+        "kind": "depend",
+        "name": "diagnostic_msgs"
+      },
+      {
+        "kind": "depend",
+        "name": "tf2_ros"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "rclpy"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "gazebo_plugins"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "gazebo_msgs"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "robot_state_publisher"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "xacro"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "launch_ros"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "ament_index_python"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-yaml"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-numpy"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-opencv"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "tf2_msgs"
+      }
+    ]
+  },
+  {
+    "name": "remote5g_competition",
+    "version": "0.1.0",
+    "path": "src/remote5g_competition",
+    "dependencies": [
+      {
+        "kind": "buildtool_depend",
+        "name": "ament_cmake"
+      },
+      {
+        "kind": "build_depend",
+        "name": "gazebo_dev"
+      },
+      {
+        "kind": "build_depend",
+        "name": "qtbase5-dev"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "remote5g_sim"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "gazebo_ros"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "gazebo_msgs"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "rclpy"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-yaml"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-numpy"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-opencv"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-qrcode"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "python3-pil"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "launch_ros"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "robot_state_publisher"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "xacro"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "ament_index_python"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "ackermann_msgs"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "sensor_msgs"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "std_msgs"
+      },
+      {
+        "kind": "exec_depend",
+        "name": "std_srvs"
+      }
+    ]
+  }
+]

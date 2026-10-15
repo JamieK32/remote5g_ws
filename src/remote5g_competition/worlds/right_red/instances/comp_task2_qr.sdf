@@ -1,0 +1,124 @@
+<sdf version="1.6">
+  <model name="comp_task2_qr">
+    <static>true</static>
+    <link name="body">
+      <inertial>
+        <pose>0 0 0.04 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.001</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="front_panel">
+        <pose>0 0 0.135 0 0.7853981633974483 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.148 0.21</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <collision name="front_panel">
+        <pose>0 0 0.135 0 0.7853981633974483 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.148 0.21</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="front_support">
+        <pose>-0.07424621202458748 0 0.03037689398770626 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.006 0.148 0.06075378797541252</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.15 0.15 0.15 1</ambient>
+          <diffuse>0.15 0.15 0.15 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <collision name="front_support">
+        <pose>-0.07424621202458748 0 0.03037689398770626 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.006 0.148 0.06075378797541252</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="rear_leg">
+        <pose>0.11 0 0.1 0 -0.45 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.148 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.15 0.15 0.15 1</ambient>
+          <diffuse>0.15 0.15 0.15 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <collision name="rear_leg">
+        <pose>0.11 0 0.1 0 -0.45 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.148 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base">
+        <pose>0.04 0 0.002 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.26 0.148 0.004</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+      <collision name="base">
+        <pose>0.04 0 0.002 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.26 0.148 0.004</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="qr">
+        <pose>-0.0016263455967290594 0 0.13662634559672907 0 0.7853981633974483 0</pose>
+        <geometry>
+          <mesh>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/scripts</uri>
+            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/textures</uri>
+            <name>competition/comp_qr_stand/qr</name>
+          </script>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+    </link>
+    <pose>36.5737289934626 39.525 0 0 0 3.141592653589793</pose>
+  </model>
+</sdf>

@@ -1,0 +1,9 @@
+COMMAND: ['rviz2', '-f', 'odom', '--ros-args', '-p', 'use_sim_time:=true']
+Dropped Escape call with ulEscapeCode : 0x03007703
+Dropped Escape call with ulEscapeCode : 0x03007703
+[INFO] [1792046937.491029765] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792046937.491173688] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[INFO] [1792046937.579461036] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792046940.938663974] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+
+EXIT_CODE: 124

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "documents": 12,
+  "standalone_full_context": true,
+  "link_and_fence_checks": "PASS",
+  "mermaid_diagrams_unique": 7,
+  "mermaid_blocks_including_combined": 14,
+  "mermaid_validation": "Structural checks and source comparison; no external renderer run",
+  "source_packages_after_ignore": 2,
+  "baseline_file_hashes_checked": 986,
+  "baseline_changes": [
+    "src/remote5g_sim/README.md",
+    "src/remote5g_sim/launch/sim.launch.py",
+    "src/remote5g_sim/scripts/drive.py",
+    "src/remote5g_sim/config/parameter_sources.yaml",
+    "src/remote5g_sim/config/vehicle.yaml",
+    "src/remote5g_competition/launch/competition.launch.py",
+    "README.md"
+  ],
+  "authorized_changes_only": true,
+  "credential_pattern_scan": "No matches in selected exports; only whitelisted files copied",
+  "runtime_processes": "All owned groups cleaned",
+  "errors": []
+}

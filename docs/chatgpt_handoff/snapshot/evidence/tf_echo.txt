@@ -1,0 +1,45 @@
+COMMAND: ['ros2', 'run', 'tf2_ros', 'tf2_echo', 'odom', 'front_camera_optical_frame']
+[INFO] [1792046917.353965442] [tf2_echo]: Waiting for transform odom ->  front_camera_optical_frame: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+At time 18.33000000
+- Translation: [-40.806, -39.525, 0.235]
+- Rotation: in Quaternion (xyzw) [0.599, 0.599, -0.376, -0.376]
+- Rotation: in RPY (radian) [-2.021, -0.000, 1.571]
+- Rotation: in RPY (degree) [-115.783, -0.000, 90.000]
+- Matrix:
+  0.000  0.435 -0.900 -40.806
+  1.000 -0.000  0.000 -39.525
+  0.000 -0.900 -0.435  0.235
+  0.000  0.000  0.000  1.000
+At time 19.39000000
+- Translation: [-40.806, -39.525, 0.235]
+- Rotation: in Quaternion (xyzw) [0.599, 0.599, -0.376, -0.376]
+- Rotation: in RPY (radian) [-2.021, -0.000, 1.571]
+- Rotation: in RPY (degree) [-115.783, -0.000, 90.000]
+- Matrix:
+  0.000  0.435 -0.900 -40.806
+  1.000 -0.000  0.000 -39.525
+  0.000 -0.900 -0.435  0.235
+  0.000  0.000  0.000  1.000
+At time 19.995000000
+- Translation: [-40.806, -39.525, 0.235]
+- Rotation: in Quaternion (xyzw) [0.599, 0.599, -0.376, -0.376]
+- Rotation: in RPY (radian) [-2.021, -0.000, 1.571]
+- Rotation: in RPY (degree) [-115.783, -0.000, 90.000]
+- Matrix:
+  0.000  0.435 -0.900 -40.806
+  1.000 -0.000  0.000 -39.525
+  0.000 -0.900 -0.435  0.235
+  0.000  0.000  0.000  1.000
+At time 21.1000000
+- Translation: [-40.806, -39.525, 0.235]
+- Rotation: in Quaternion (xyzw) [0.599, 0.599, -0.376, -0.376]
+- Rotation: in RPY (radian) [-2.021, -0.000, 1.571]
+- Rotation: in RPY (degree) [-115.783, -0.000, 90.000]
+- Matrix:
+  0.000  0.435 -0.900 -40.806
+  1.000 -0.000  0.000 -39.525
+  0.000 -0.900 -0.435  0.235
+  0.000  0.000  0.000  1.000
+[INFO] [1792046922.219706788] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+
+EXIT_CODE: 124

@@ -1,0 +1,4 @@
+# Keep generated resource bytes and raw audit evidence intact.
+*.csv whitespace=cr-at-eol
+*.dae -whitespace
+docs/chatgpt_handoff/snapshot/evidence/** -whitespace

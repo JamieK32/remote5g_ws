@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-15",
+  "repository_name_requested": "remote5g_ws",
+  "visibility_requested": "private",
+  "local_branch": "main",
+  "remote_status": "pending_github_authorization",
+  "remote_created": false,
+  "additional_baseline_changes": [
+    "README.md"
+  ],
+  "new_repository_files": [
+    ".gitignore",
+    ".git/"
+  ],
+  "author_source": "Existing Windows Git user configuration; repository-local settings only",
+  "source_changes": "Git exclusions and current root README only; model/control source preserved",
+  "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded"
+}

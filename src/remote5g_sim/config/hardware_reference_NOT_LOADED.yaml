@@ -1,0 +1,15 @@
+calibration_verified: false
+motor_gpio: 13
+pan_center_pwm: 72
+pan_gpio: 22
+pan_safe_pwm:
+- 28
+- 122
+source: main/config/runtime_2023.json, main/camera_gimbal/config/gimbal_default.json
+steering_gpio: 12
+tilt_center_pwm: 73
+tilt_gpio: 23
+tilt_safe_pwm:
+- 58
+- 122
+warning: 仅供 Sim-to-Real 文档核对；任何 launch 或 plugin 均不读取本文件；PWM 不等于角度。

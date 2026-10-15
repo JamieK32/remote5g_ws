@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="wheel" params="name parent xyz">
+    <link name="${name}_wheel">
+      <inertial><mass value="${p['wheel_mass']}"/><inertia ixx="${p['wheel_mass']*(3*p['wheel_radius']**2+p['wheel_width']**2)/12}" iyy="${p['wheel_mass']*p['wheel_radius']**2/2}" izz="${p['wheel_mass']*(3*p['wheel_radius']**2+p['wheel_width']**2)/12}" ixy="0" ixz="0" iyz="0"/></inertial>
+      <visual><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${p['wheel_radius']}" length="${p['wheel_width']}"/></geometry><material name="rubber"><color rgba="0.06 0.06 0.06 1"/></material></visual>
+      <visual><geometry><box size="${p['wheel_radius']*1.6} ${p['wheel_width']+0.001} 0.008"/></geometry><material name="rim"><color rgba="0.7 0.7 0.7 1"/></material></visual>
+      <collision><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${p['wheel_radius']}" length="${p['wheel_width']}"/></geometry></collision>
+    </link>
+    <joint name="${name}_wheel_joint" type="continuous"><parent link="${parent}"/><child link="${name}_wheel"/><origin xyz="${xyz}"/><axis xyz="0 1 0"/><limit effort="2" velocity="50"/><dynamics damping="${p['wheel_damping']}" friction="0"/></joint>
+    <gazebo reference="${name}_wheel"><material>Gazebo/Black</material><mu1>${p['mu']}</mu1><mu2>${p['mu']}</mu2><kp>${p['contact_kp']}</kp><kd>${p['contact_kd']}</kd><minDepth>0.0001</minDepth><maxVel>0.1</maxVel></gazebo>
+  </xacro:macro>
+  <xacro:macro name="front" params="side y">
+    <xacro:box name="front_${side}_knuckle" mass="${p['knuckle_mass']}" xyz="0 0 0" size="${[0.018,0.018,0.03]}" color="0.2 0.3 0.8 1"/>
+    <joint name="front_${side}_steering_joint" type="revolute"><parent link="base_link"/><child link="front_${side}_knuckle"/><origin xyz="${p['wheelbase']} ${y} 0"/><axis xyz="0 0 1"/><limit lower="${-p['joint_steering_limit']}" upper="${p['joint_steering_limit']}" effort="${p['steering_torque']}" velocity="4"/><dynamics damping="0.01"/></joint>
+    <xacro:wheel name="front_${side}" parent="front_${side}_knuckle" xyz="0 0 0"/>
+  </xacro:macro>
+</robot>
