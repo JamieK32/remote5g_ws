@@ -1018,7 +1018,7 @@ TF/CameraInfo、低速停车和录放是视觉/避障前置。基本实验记录
 
 | 项目 | 当前事实 | 如何使用/边界 |
 |---|---|---|
-| Git | [V] 本次上传任务已初始化当前工作区Git仓库，分支main；远端待账号授权 | 当前本地main；用git status、git log查看提交；远端是否建立见snapshot/repository_setup.json |
+| Git | [V] 当前工作区Git仓库分支main；已推送至GitHub私有仓库JamieK32/remote5g_ws | 用git status、git log、git remote -v查看状态；远端地址及可见性验证见snapshot/repository_setup.json |
 | 源码分层 | [S] sim与competition两包分离，插件/模型/场景/测试分目录 | 仿真复用sim，不复制车辆代码；视觉/任务包尚未创建 |
 | 配置 | [S] vehicle.yaml、competition.yaml、parameter_sources.yaml、派生resolved.yaml | 机械和任务场景参数分开；来源性质已标注，未实测不得改称实测 |
 | 依赖 | [V/S] package.xml/CMake明确ROS依赖；QR脚本固定缓存包版本 | 部分依赖在工程外用户缓存，缺乏完整机器可复现环境锁；本次不安装 |
@@ -1451,8 +1451,8 @@ ChatGPT先按原A1启动/观察课程教学，再介绍50Hz Timer与30fps采集�
     "repository_name_requested": "remote5g_ws",
     "visibility_requested": "private",
     "local_branch": "main",
-    "remote_status": "pending_github_authorization",
-    "remote_created": false,
+    "remote_status": "uploaded",
+    "remote_created": true,
     "additional_baseline_changes": [
       "README.md"
     ],
@@ -1462,7 +1462,12 @@ ChatGPT先按原A1启动/观察课程教学，再介绍50Hz Timer与30fps采集�
     ],
     "author_source": "Existing Windows Git user configuration; repository-local settings only",
     "source_changes": "Git exclusions and current root README only; model/control source preserved",
-    "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded"
+    "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded",
+    "remote_url": "https://github.com/JamieK32/remote5g_ws",
+    "remote_owner": "JamieK32",
+    "remote_visibility_verified": "private",
+    "default_branch": "main",
+    "initial_uploaded_commit": "8d79a7119e8f84cb65afe5e20879af7b9ce493d1"
   },
   "initial_audit_control_observation": {
     "ackermann_motion": {

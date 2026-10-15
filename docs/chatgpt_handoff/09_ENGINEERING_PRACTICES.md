@@ -8,7 +8,7 @@
 
 | 项目 | 当前事实 | 如何使用/边界 |
 |---|---|---|
-| Git | [V] 本次上传任务已初始化当前工作区Git仓库，分支main；远端待账号授权 | 当前本地main；用git status、git log查看提交；远端是否建立见snapshot/repository_setup.json |
+| Git | [V] 当前工作区Git仓库分支main；已推送至GitHub私有仓库JamieK32/remote5g_ws | 用git status、git log、git remote -v查看状态；远端地址及可见性验证见snapshot/repository_setup.json |
 | 源码分层 | [S] sim与competition两包分离，插件/模型/场景/测试分目录 | 仿真复用sim，不复制车辆代码；视觉/任务包尚未创建 |
 | 配置 | [S] vehicle.yaml、competition.yaml、parameter_sources.yaml、派生resolved.yaml | 机械和任务场景参数分开；来源性质已标注，未实测不得改称实测 |
 | 依赖 | [V/S] package.xml/CMake明确ROS依赖；QR脚本固定缓存包版本 | 部分依赖在工程外用户缓存，缺乏完整机器可复现环境锁；本次不安装 |

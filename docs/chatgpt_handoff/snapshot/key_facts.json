@@ -197,8 +197,8 @@
     "repository_name_requested": "remote5g_ws",
     "visibility_requested": "private",
     "local_branch": "main",
-    "remote_status": "pending_github_authorization",
-    "remote_created": false,
+    "remote_status": "uploaded",
+    "remote_created": true,
     "additional_baseline_changes": [
       "README.md"
     ],
@@ -208,7 +208,12 @@
     ],
     "author_source": "Existing Windows Git user configuration; repository-local settings only",
     "source_changes": "Git exclusions and current root README only; model/control source preserved",
-    "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded"
+    "upload_scope": "Source, track assets, configs, learning drafts, documentation and small handoff evidence; build/log/bag/index/archive outputs excluded",
+    "remote_url": "https://github.com/JamieK32/remote5g_ws",
+    "remote_owner": "JamieK32",
+    "remote_visibility_verified": "private",
+    "default_branch": "main",
+    "initial_uploaded_commit": "8d79a7119e8f84cb65afe5e20879af7b9ce493d1"
   },
   "initial_audit_control_observation": {
     "ackermann_motion": {
