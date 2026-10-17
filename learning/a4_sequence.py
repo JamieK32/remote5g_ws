@@ -56,7 +56,7 @@ def main():
 
         # 5. 第二阶段：向左转弯3秒
         print("第二阶段：向左转弯")
-        drive_for(node, publisher, 0.10, -0.25, 3.0)
+        drive_for(node, publisher, 0.10, 0.25, 3.0)
 
     except KeyboardInterrupt:
         print("用户中断程序")
