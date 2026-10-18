@@ -9,7 +9,7 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--output',default='/home/jamiek/remote5g_ws/reports/xtnetrc/model_check.json'); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--output',default=str(Path.home()/'.ros/remote5g/reports/xtnetrc/model_check.json')); a=p.parse_args()
     share=Path(get_package_share_directory('remote5g_sim'))
     doc=xacro.process_file(str(share/'urdf/car.xacro')); root=ET.fromstring(doc.toxml())
     links={l.attrib['name'] for l in root.findall('link')}; joints=root.findall('joint'); children=[]

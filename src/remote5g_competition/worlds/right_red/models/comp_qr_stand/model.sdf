@@ -106,13 +106,13 @@
         <pose>-0.0016263455967290594 0 0.13662634559672907 0 0.7853981633974483 0</pose>
         <geometry>
           <mesh>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae</uri>
+            <uri>model://comp_qr_stand/meshes/comp_qr_stand_qr.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/scripts</uri>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_qr_stand/materials/textures</uri>
+            <uri>model://comp_qr_stand/materials/scripts</uri>
+            <uri>model://comp_qr_stand/materials/textures</uri>
             <name>competition/comp_qr_stand/qr</name>
           </script>
         </material>

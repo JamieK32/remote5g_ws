@@ -18,7 +18,7 @@ def cleanup(proc):
    except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait(timeout=3)
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--output',default='/home/jamiek/remote5g_ws/reports/competition/final');p.add_argument('--gui',action='store_true');p.add_argument('--single',choices=['left_red','right_blue']);a=p.parse_args();out=Path(a.output).resolve();out.mkdir(parents=True,exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('--output',default=str(Path.home()/'.ros/remote5g/reports/competition/final'));p.add_argument('--gui',action='store_true');p.add_argument('--single',choices=['left_red','right_blue']);a=p.parse_args();out=Path(a.output).resolve();out.mkdir(parents=True,exist_ok=True)
  package=Path(get_package_share_directory('remote5g_competition'));base=load_config(package/'config/competition.yaml');env=os.environ.copy();env['ROS_DOMAIN_ID']=env.get('COMPETITION_TEST_DOMAIN','85');port=int(env.get('COMPETITION_TEST_PORT','11385'));env['GAZEBO_MASTER_URI']=f'http://127.0.0.1:{port}';summary={}
  with socket.socket() as sock:
   sock.settimeout(.5)

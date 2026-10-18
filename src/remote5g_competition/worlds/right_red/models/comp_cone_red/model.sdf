@@ -17,7 +17,7 @@
       <visual name="cone">
         <geometry>
           <mesh>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_cone_red/meshes/cone.dae</uri>
+            <uri>model://comp_cone_red/meshes/cone.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -29,7 +29,7 @@
       <collision name="cone">
         <geometry>
           <mesh>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_red/models/comp_cone_red/meshes/cone.dae</uri>
+            <uri>model://comp_cone_red/meshes/cone.dae</uri>
           </mesh>
         </geometry>
         <surface>

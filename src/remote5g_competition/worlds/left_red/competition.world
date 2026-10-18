@@ -265,13 +265,13 @@
           <pose>0 0 0.0015999999999999999 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae</uri>
+              <uri>model://comp_sign_left_red/meshes/comp_sign_left_red_sign.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_left_red/materials/textures</uri>
+              <uri>model://comp_sign_left_red/materials/scripts</uri>
+              <uri>model://comp_sign_left_red/materials/textures</uri>
               <name>competition/comp_sign_left_red/sign</name>
             </script>
           </material>
@@ -387,13 +387,13 @@
           <pose>-0.0016263455967290594 0 0.13662634559672907 0 0.7853981633974483 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_stand/meshes/comp_qr_stand_qr.dae</uri>
+              <uri>model://comp_qr_stand/meshes/comp_qr_stand_qr.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_stand/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_stand/materials/textures</uri>
+              <uri>model://comp_qr_stand/materials/scripts</uri>
+              <uri>model://comp_qr_stand/materials/textures</uri>
               <name>competition/comp_qr_stand/qr</name>
             </script>
           </material>
@@ -481,13 +481,13 @@
           <pose>0 0 0.0015999999999999999 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae</uri>
+              <uri>model://comp_sign_B_red/meshes/comp_sign_B_red_sign.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/textures</uri>
+              <uri>model://comp_sign_B_red/materials/scripts</uri>
+              <uri>model://comp_sign_B_red/materials/textures</uri>
               <name>competition/comp_sign_B_red/sign</name>
             </script>
           </material>
@@ -515,13 +515,13 @@
           <pose>0 0 0.0015999999999999999 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/meshes/comp_sign_A_red_sign.dae</uri>
+              <uri>model://comp_sign_A_red/meshes/comp_sign_A_red_sign.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_A_red/materials/textures</uri>
+              <uri>model://comp_sign_A_red/materials/scripts</uri>
+              <uri>model://comp_sign_A_red/materials/textures</uri>
               <name>competition/comp_sign_A_red/sign</name>
             </script>
           </material>
@@ -549,13 +549,13 @@
           <pose>0 0 0.0021999999999999997 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae</uri>
+              <uri>model://comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_A/materials/textures</uri>
+              <uri>model://comp_qr_parking_A/materials/scripts</uri>
+              <uri>model://comp_qr_parking_A/materials/textures</uri>
               <name>competition/comp_qr_parking_A/qr</name>
             </script>
           </material>
@@ -583,13 +583,13 @@
           <pose>0 0 0.0015999999999999999 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/meshes/comp_sign_B_red_sign.dae</uri>
+              <uri>model://comp_sign_B_red/meshes/comp_sign_B_red_sign.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_sign_B_red/materials/textures</uri>
+              <uri>model://comp_sign_B_red/materials/scripts</uri>
+              <uri>model://comp_sign_B_red/materials/textures</uri>
               <name>competition/comp_sign_B_red/sign</name>
             </script>
           </material>
@@ -617,13 +617,13 @@
           <pose>0 0 0.0021999999999999997 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae</uri>
+              <uri>model://comp_qr_parking_B/meshes/comp_qr_parking_B_qr.dae</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/materials/scripts</uri>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_qr_parking_B/materials/textures</uri>
+              <uri>model://comp_qr_parking_B/materials/scripts</uri>
+              <uri>model://comp_qr_parking_B/materials/textures</uri>
               <name>competition/comp_qr_parking_B/qr</name>
             </script>
           </material>
@@ -650,7 +650,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -662,7 +662,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -703,7 +703,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -715,7 +715,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -756,7 +756,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -768,7 +768,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -809,7 +809,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -821,7 +821,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -862,7 +862,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -874,7 +874,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -915,7 +915,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -927,7 +927,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -968,7 +968,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -980,7 +980,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1021,7 +1021,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1033,7 +1033,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1074,7 +1074,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1086,7 +1086,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1127,7 +1127,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1139,7 +1139,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1180,7 +1180,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1192,7 +1192,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1233,7 +1233,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1245,7 +1245,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1286,7 +1286,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1298,7 +1298,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1339,7 +1339,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1351,7 +1351,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1392,7 +1392,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1404,7 +1404,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_blue/meshes/cone.dae</uri>
+              <uri>model://comp_cone_blue/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1445,7 +1445,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1457,7 +1457,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1498,7 +1498,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1510,7 +1510,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1551,7 +1551,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1563,7 +1563,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1604,7 +1604,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1616,7 +1616,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1657,7 +1657,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1669,7 +1669,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1710,7 +1710,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1722,7 +1722,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1763,7 +1763,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1775,7 +1775,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1816,7 +1816,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1828,7 +1828,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1869,7 +1869,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1881,7 +1881,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1922,7 +1922,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1934,7 +1934,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -1975,7 +1975,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1987,7 +1987,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2028,7 +2028,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2040,7 +2040,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2081,7 +2081,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2093,7 +2093,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2134,7 +2134,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2146,7 +2146,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2187,7 +2187,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2199,7 +2199,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2240,7 +2240,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2252,7 +2252,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2293,7 +2293,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2305,7 +2305,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2346,7 +2346,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2358,7 +2358,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2399,7 +2399,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2411,7 +2411,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2452,7 +2452,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2464,7 +2464,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2505,7 +2505,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2517,7 +2517,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2558,7 +2558,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2570,7 +2570,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2611,7 +2611,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2623,7 +2623,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2664,7 +2664,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2676,7 +2676,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2717,7 +2717,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2729,7 +2729,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>
@@ -2770,7 +2770,7 @@
         <visual name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -2782,7 +2782,7 @@
         <collision name="cone">
           <geometry>
             <mesh>
-              <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_red/models/comp_cone_yellow/meshes/cone.dae</uri>
+              <uri>model://comp_cone_yellow/meshes/cone.dae</uri>
             </mesh>
           </geometry>
           <surface>

@@ -1,4 +1,5 @@
-workspace: /home/jamiek/remote5g_ws
+# null uses the track data installed with remote5g_sim; an explicit path overrides it.
+workspace: null
 start_side: left
 track_color: red
 lane: 3

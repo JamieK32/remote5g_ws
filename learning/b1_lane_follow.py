@@ -4,7 +4,7 @@
 Preview (no vehicle commands): python3 learning/b1_lane_follow.py --show
 Filter straight markings:    python3 learning/b1_lane_follow.py --filter-straight --show
 Drive (low speed, bounded):   python3 learning/b1_lane_follow.py --drive --show
-Continuous drive:            python3 learning/b1_lane_follow.py --drive --speed 0.7 --continuous --filter-straight --show
+Continuous drive:            python3 learning/b1_lane_follow.py --drive --speed 2.1 --continuous --filter-straight --show
 """
 import argparse
 import math
@@ -275,7 +275,7 @@ def parse_args(argv=None):
     parser.add_argument('--vehicle-entity', default='xtnetrc',
                         help='Gazebo vehicle model name for --reset-on-exit (default: xtnetrc)')
     parser.add_argument('--save-dir', default='', help='save periodic debug screenshots')
-    parser.add_argument('--speed', type=float, default=0.10, help='target speed in m/s, 0 < speed <= 0.7')
+    parser.add_argument('--speed', type=float, default=0.10, help='target speed in m/s, 0 < speed <= 2.1')
     parser.add_argument('--kp', type=float, default=0.35, help='pixel-mode gain; used without --filter-straight')
     parser.add_argument('--max-steer', type=float, default=0.22)
     parser.add_argument('--seconds', type=float, default=15.0, help='time limit; ignored with --continuous')
@@ -285,14 +285,14 @@ def parse_args(argv=None):
         parser.error('--reset-on-exit requires --drive; preview never resets the vehicle')
     if not args.vehicle_entity.strip():
         parser.error('--vehicle-entity must not be empty')
-    if not (0.0 < args.speed <= 0.70 and
+    if not (0.0 < args.speed <= 2.1 and
             0.0 < args.kp <= 2.0 and
             0.0 < args.max_steer <= 0.40 and
             0.8 <= args.lookahead <= 6.0 and
             0.5 <= args.lane_width <= 3.0 and
             0.0 < args.seconds <= 160.0 and
             0.0 < args.max_distance <= 180.0):
-        parser.error('Require 0 < speed <= 0.7, 0 < kp <= 2, 0 < max-steer <= 0.4, '
+        parser.error('Require 0 < speed <= 2.1, 0 < kp <= 2, 0 < max-steer <= 0.4, '
                      '0.8 <= lookahead <= 6, 0.5 <= lane-width <= 3, '
                      '0 < seconds <= 160 and 0 < max-distance <= 180')
     return args

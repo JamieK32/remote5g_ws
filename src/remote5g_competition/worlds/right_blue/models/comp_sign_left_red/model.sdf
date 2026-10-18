@@ -18,13 +18,13 @@
         <pose>0 0 0.0015999999999999999 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/meshes/comp_sign_left_red_sign.dae</uri>
+            <uri>model://comp_sign_left_red/meshes/comp_sign_left_red_sign.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/materials/scripts</uri>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/right_blue/models/comp_sign_left_red/materials/textures</uri>
+            <uri>model://comp_sign_left_red/materials/scripts</uri>
+            <uri>model://comp_sign_left_red/materials/textures</uri>
             <name>competition/comp_sign_left_red/sign</name>
           </script>
         </material>

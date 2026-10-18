@@ -18,13 +18,13 @@
         <pose>0 0 0.0021999999999999997 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae</uri>
+            <uri>model://comp_qr_parking_A/meshes/comp_qr_parking_A_qr.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/materials/scripts</uri>
-            <uri>file:///home/jamiek/remote5g_ws/src/remote5g_competition/worlds/left_blue/models/comp_qr_parking_A/materials/textures</uri>
+            <uri>model://comp_qr_parking_A/materials/scripts</uri>
+            <uri>model://comp_qr_parking_A/materials/textures</uri>
             <name>competition/comp_qr_parking_A/qr</name>
           </script>
         </material>

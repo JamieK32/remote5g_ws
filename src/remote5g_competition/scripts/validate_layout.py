@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import math
 import xml.etree.ElementTree as ET
+from urllib.parse import unquote, urlsplit
 import cv2
 import numpy as np
 from scene_core import Route,change_path,decode_qr
@@ -11,6 +12,11 @@ from scene_core import Route,change_path,decode_qr
 
 def validate(path):
  p=Path(path);data=json.loads(p.read_text());cfg=data['config'];route=Route(cfg['workspace'],cfg['start_side'],cfg['lane']);coords=data['coordinates'];lookup={x['model_name']:x for x in coords};assert len(lookup)==len(coords)
+ def resource_path(uri):
+  parsed=urlsplit(uri)
+  if parsed.scheme=='file':return Path(unquote(parsed.path))
+  if parsed.scheme=='model':return p.parent/'models'/parsed.netloc/unquote(parsed.path.lstrip('/'))
+  raise ValueError('Unsupported resource URI: '+uri)
  assert abs(route.width-data['route']['clear_lane_width'])<1e-10
  assert abs(data['spawn_pose']['s']+data['vehicle_config']['chassis_center_x']+data['vehicle_config']['chassis_length']/2-(cfg['zone_length_ratio']*route.width-cfg['tape_width']-.02))<1e-9
  assert data['region2']['crosswalk_s']<data['region2']['sign_s']<data['region2']['qr_s']
@@ -34,12 +40,12 @@ def validate(path):
   else:assert not m.findall('.//collision')
   for mass in m.findall('.//mass'):assert float(mass.text)>0
   for uri in m.findall('.//uri'):
-   if uri.text.startswith('file://'):assert Path(uri.text[7:]).exists(),uri.text
+   if uri.text.startswith(('file://','model://')):assert resource_path(uri.text).exists(),uri.text
   for box in m.findall('.//visual/geometry/box/size'):
    v=list(map(float,box.text.split()));sizes.setdefault(row['model_type'],[]).append(v)
   for mesh in m.findall('.//mesh/uri'):
    if mesh.text in seen_mesh:continue
-   seen_mesh.add(mesh.text);mp=Path(mesh.text[7:]);root=ET.parse(mp).getroot();ns={'c':'http://www.collada.org/2005/11/COLLADASchema'}
+   seen_mesh.add(mesh.text);mp=resource_path(mesh.text);root=ET.parse(mp).getroot();ns={'c':'http://www.collada.org/2005/11/COLLADASchema'}
    vertices=np.array(list(map(float,root.find('.//c:source[@id="positions"]/c:float_array',ns).text.split()))).reshape(-1,3)
    extent=np.ptp(vertices,axis=0)
    if mp.name=='cone.dae':assert np.allclose(extent,[cfg['cone_diameter'],cfg['cone_diameter'],cfg['cone_height']],atol=1e-8)

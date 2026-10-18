@@ -222,7 +222,7 @@ class Regression:
 
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--output',default='/home/jamiek/remote5g_ws/reports/xtnetrc/latest'); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--output',default=str(Path.home()/'.ros/remote5g/reports/xtnetrc/latest')); a=p.parse_args()
     rclpy.init(); test=Regression(Path(a.output))
     try: test.execute()
     finally: test.save(); test.n.destroy_node(); rclpy.shutdown()

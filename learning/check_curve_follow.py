@@ -24,8 +24,8 @@ def main():
     parser.add_argument('--distance', type=float, default=25.0)
     parser.add_argument('--speed', type=float, default=0.7)
     parser.add_argument('--timeout', type=float, default=90.0)
-    parser.add_argument('--output', default='/home/jamiek/remote5g_ws/reports/curve_follow_v2/drive')
-    parser.add_argument('--layout', default='/home/jamiek/remote5g_ws/reports/competition/current/layout.json')
+    parser.add_argument('--output', default=str(Path.home()/'.ros/remote5g/reports/curve_follow_v2/drive'))
+    parser.add_argument('--layout', default=str(Path.home()/'.ros/remote5g/reports/competition/current/layout.json'))
     options = parser.parse_args()
     layout = json.loads(Path(options.layout).read_text())
     assert layout['config']['start_side'] == 'left', 'This measurement fixture is for the left start'

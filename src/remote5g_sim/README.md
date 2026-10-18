@@ -1,7 +1,7 @@
 # XT-NetRC 阿克曼 Gazebo Classic 仿真
 
-独立工作区 `/home/jamiek/remote5g_ws`，ROS 2 Humble / ament_cmake / colcon，Ubuntu 22.04 WSL2，Gazebo Classic 11.10.2。
-新包 `remote5g_sim` 集中维护模型、C++ 物理控制和测试，不复用 `/home/jamiek/autocar_ws` 的源码或 install 环境，不修改现有 400m 跑道。
+独立工作区（可放在任意目录），ROS 2 Humble / ament_cmake / colcon，Ubuntu 22.04 WSL2，Gazebo Classic 11.10.2。
+新包 `remote5g_sim` 集中维护模型、C++ 物理控制和测试，不复用 `autocar_ws` 的源码或 install 环境，不修改现有 400m 跑道。
 验收数据、限制与故障修复见工作区 `docs/GAZEBO_TEST_REPORT.md`。
 
 ## 环境与文件
@@ -96,7 +96,7 @@ Ackermann 和 Twist 共用同一最新有效命令租约，后收到的命令生
 
 ```bash
 source /opt/ros/humble/setup.bash
-cd /home/jamiek/remote5g_ws
+cd ~/remote5g_ws  # 换成实际项目目录
 colcon build --packages-select remote5g_sim --symlink-install
 source install/setup.bash
 export ROS_DOMAIN_ID=75
@@ -118,7 +118,7 @@ ros2 launch remote5g_sim sim.launch.py scene:=blue gui:=false
 高分辨率和原生 GUI 截图的已测配置：
 
 ```bash
-ros2 launch remote5g_sim sim.launch.py gui:=true front_width:=1280 front_height:=720 gimbal_width:=1280 gimbal_height:=720 capture_dir:=/home/jamiek/remote5g_ws/reports/xtnetrc/manual_gui
+ros2 launch remote5g_sim sim.launch.py gui:=true front_width:=1280 front_height:=720 gimbal_width:=1280 gimbal_height:=720 capture_dir:=$HOME/.ros/remote5g/reports/xtnetrc/manual_gui
 ```
 
 capture_dir 是可选验收辅助：让 gzclient 相机跟随车辆斜前侧视角并最多保存8张实际视口图像；不改变机器人位姿，不是生成式图片。
@@ -136,7 +136,7 @@ ros2 run remote5g_sim drive.py 0 0 --seconds 1
 ros2 topic pub --once /gimbal/pan_cmd std_msgs/msg/Float64 '{data: 0.6}'
 ros2 topic pub --once /gimbal/tilt_cmd std_msgs/msg/Float64 '{data: 0.3}'
 ros2 service call /gimbal/center std_srvs/srv/Trigger '{}'
-ros2 run remote5g_sim inspect_cameras.py --output /home/jamiek/remote5g_ws/reports/xtnetrc/cameras
+ros2 run remote5g_sim inspect_cameras.py --output $HOME/.ros/remote5g/reports/xtnetrc/cameras
 ```
 
 inspect_cameras 保存 front.png/gimbal.png，可直接打开查看同时输出尺寸/帧名/CameraInfo 检查。Gazebo 内部 ROS 图像是 RGB；保存 PNG 会转 BGR，不改变图像像素。
@@ -157,9 +157,9 @@ colcon test-result --verbose
 额外场景/高分辨率 smoke：
 
 ```bash
-ros2 run remote5g_sim smoke.py --scene flat --gui --output /home/jamiek/remote5g_ws/reports/xtnetrc/gui_highres
-ros2 run remote5g_sim smoke.py --scene red --output /home/jamiek/remote5g_ws/reports/xtnetrc/track_red
-ros2 run remote5g_sim smoke.py --scene blue --output /home/jamiek/remote5g_ws/reports/xtnetrc/track_blue
+ros2 run remote5g_sim smoke.py --scene flat --gui --output $HOME/.ros/remote5g/reports/xtnetrc/gui_highres
+ros2 run remote5g_sim smoke.py --scene red --output $HOME/.ros/remote5g/reports/xtnetrc/track_red
+ros2 run remote5g_sim smoke.py --scene blue --output $HOME/.ros/remote5g/reports/xtnetrc/track_blue
 ```
 
 smoke 使用域76/端口11376并清理其launch进程组；建议外加 `timeout --signal=INT --kill-after=10s 150s`。截图只证明已展示的形状和帧；数值物理验收以 CSV/JSON 为准。

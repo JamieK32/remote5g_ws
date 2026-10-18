@@ -1,7 +1,7 @@
 workspace:
-  value: /home/jamiek/remote5g_ws
+  value: null
   category: simulation_assumption
-  source: Configurable simulation choice; not a rule measurement
+  source: Automatically resolved from the remote5g_sim package share; an explicit workspace overrides it
 start_side:
   value: left
   category: simulation_assumption

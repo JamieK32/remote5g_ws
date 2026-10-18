@@ -11,11 +11,13 @@
 
 ```bash
 source /opt/ros/humble/setup.bash
-cd /home/jamiek/remote5g_ws
-colcon build --packages-select remote5g_competition --symlink-install
+cd ~/remote5g_ws  # 换成实际项目目录
+colcon build --packages-select remote5g_sim remote5g_competition --symlink-install
 source install/setup.bash
 export ROS_DOMAIN_ID=85
 ros2 launch remote5g_competition competition.launch.py track_color:=red start_side:=left lane_change:=left gui:=true
 ```
 
 本机已具备qrcode/zxing-cpp用户缓存，无需sudo。新机器可用scripts/bootstrap_deps.sh准备默认用户缓存，不替换ROS的OpenCV/NumPy。没有Git仓库，未初始化、提交或推送。完整自主驾驶尚未实施。
+
+路径说明：默认从 `remote5g_sim` 安装目录读取跑道；比赛输出为当前用户的 `~/.ros/remote5g/reports/competition/current/`。换目录或用户后重新编译、加载 `install/setup.bash` 即可。需要自定义跑道时传 `workspace:=/实际工作区路径`，自定义输出时传 `output:=/可写目录`。

@@ -2,7 +2,7 @@
 """Summarize recorded results; never substitute for actually running tests."""
 import json,hashlib
 from pathlib import Path
-root=Path('/home/jamiek/remote5g_ws');package=root/'src/remote5g_competition';reports=root/'reports/competition';revision=reports/'revised'
+root=Path(__file__).resolve().parents[3];package=root/'src/remote5g_competition';reports=root/'reports/competition';revision=reports/'revised'
 matrix=json.loads((revision/'matrix_results.json').read_text())
 assert set(matrix)=={'left_red','left_blue','right_red','right_blue','props_only'}
 assert all(r['status']=='PASS' for r in matrix.values())

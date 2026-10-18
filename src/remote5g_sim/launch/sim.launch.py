@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 
 def setup(context):
     share = Path(get_package_share_directory('remote5g_sim'))
-    workspace = Path(LaunchConfiguration('workspace').perform(context))
+    workspace = Path(LaunchConfiguration('workspace').perform(context)).expanduser().resolve()
     scene = LaunchConfiguration('scene').perform(context)
     if scene not in ('flat', 'red', 'blue'):
         raise ValueError('scene must be flat, red or blue')
@@ -54,6 +54,6 @@ def setup(context):
 def generate_launch_description():
     share = Path(get_package_share_directory('remote5g_sim'))
     return LaunchDescription([DeclareLaunchArgument(k, default_value=v) for k,v in {
-        'scene':'flat','gui':'true','capture_dir':'','port':'11375','workspace':'/home/jamiek/remote5g_ws',
+        'scene':'flat','gui':'true','capture_dir':'','port':'11375','workspace':str(share/'track'),
         'config':str(share/'config/vehicle.yaml'),'front_width':'','front_height':'',
         'gimbal_width':'','gimbal_height':'','x':'','y':'','yaw':''}.items()] + [OpaqueFunction(function=setup)])

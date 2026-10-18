@@ -2,7 +2,7 @@
 
 基于现有 **ROS 2 Humble + Gazebo Classic 11** 的四轮阿克曼车仿真平台，用于学习机器人调试工具、视觉与控制，并逐步准备全国大学生智能汽车竞赛室外5G远程驾驶无人车赛。
 
-当前工程位于 `/home/jamiek/remote5g_ws`。这是独立仿真工程；`stupid_car`仅是已有文档记录的几何/参数参考，不是本仓库的实车运行后端。
+工程可以放在任意工作区目录。这是独立仿真工程；`stupid_car`仅是已有文档记录的几何/参数参考，不是本仓库的实车运行后端。
 
 ## 当前能力
 
@@ -34,7 +34,7 @@ docs/official/          用户提供的比赛规则与轨道参考PDF
 已有ROS2 Humble/Gazebo Classic11依赖的WSL Ubuntu终端中：
 
 ```bash
-cd /home/jamiek/remote5g_ws
+cd ~/remote5g_ws  # 换成你实际克隆的项目目录
 source /opt/ros/humble/setup.bash
 colcon build --packages-select remote5g_sim remote5g_competition --symlink-install
 source install/setup.bash
@@ -64,9 +64,11 @@ ros2 launch remote5g_competition competition.launch.py track_color:=red start_si
 
 ## 克隆与依赖注意
 
-当前launch、比赛YAML和部分工具中保留本机 `/home/jamiek/remote5g_ws` 默认路径。本仓库尚未完成任意路径的全局移植：换用户/路径时先核对workspace参数与配置，再由生成器重新生成派生资源，不能认为旧absolute file URI自动可用。
+启动入口通过 ROS 包索引查找资源，跑道几何和 `simulation/` 随 `remote5g_sim` 一起安装。普通 `colcon build` 和 `--symlink-install` 均可；换用户名或工作区目录后，在新位置重新编译并 `source install/setup.bash` 即可，无需修改源码中的用户名。请分享源码，让接收方自行编译；不要复制另一台机器的 `build/`、`install/`、`log/`。
 
-源树中的部分模型/派生场景包含本机绝对URI。比赛launch会在输出目录重新生成道具资源；原跑道使用model://引用。未上传的 `reports/`历史图片/大日志链接只在原工作区有效，交接目录保留便携的小型文本证据。
+比赛场景默认输出到当前用户的 `~/.ros/remote5g/reports/competition/current/`，辅助工具的默认报告也位于 `~/.ros/remote5g/reports/`。可用 `output:=绝对路径` 自定义比赛输出目录。`workspace` 默认自动定位安装的跑道资源；如需使用另一个源码工作区的跑道，可传 `workspace:=/实际工作区路径`，或在比赛 YAML 中设置该值（相对路径以 YAML 所在目录为基准）。
+
+模型的网格和材质使用 `model://` 引用。比赛 launch 每次在输出目录重新生成道具及布局；不要复用另一台机器生成的 `layout.json` 或历史报告。未上传的历史图片/大日志链接只在原工作区有效。
 
 比赛布局用qrcode8.2、zxing-cpp2.3.0；本机使用用户缓存 `.cache/remote5g_scene_libs`。新环境需先审阅 `src/remote5g_competition/scripts/bootstrap_deps.sh`及依赖说明；本仓库不包含用户缓存、密码、Token或实体车凭据。
 

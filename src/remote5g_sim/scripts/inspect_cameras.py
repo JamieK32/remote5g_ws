@@ -11,7 +11,7 @@ from sensor_msgs.msg import Image, CameraInfo
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--output', default='/home/jamiek/remote5g_ws/reports/xtnetrc/cameras')
+    parser.add_argument('--output', default=str(Path.home()/'.ros/remote5g/reports/xtnetrc/cameras'))
     parser.add_argument('--timeout', type=float, default=15)
     args=parser.parse_args(); out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
     rclpy.init(); n=rclpy.create_node('xtnetrc_camera_check'); images={}; infos={}; subscriptions=[]

@@ -139,8 +139,8 @@ def textured(link,root,name,length,width,texture,pose=(0,0,0,0,0,0),upright=Fals
     mesh_file(dest/f'meshes/{dest.name}_{name}.dae',verts,[(0,1,2),(0,2,3)],[(0,1),(1,1),(1,0),(0,0)])
     matname='competition/'+dest.name+'/'+name
     (dest/f'materials/scripts/{name}.material').write_text(f'material {matname}\n{{\n technique {{ pass {{ lighting off\n cull_hardware none\n cull_software none\n texture_unit {{ texture {texture_name}\n filtering none\n }} }} }}\n}}\n')
-    visual=element(link,'visual',name=name);element(visual,'pose',' '.join(map(str,pose)));geometry=element(visual,'geometry');element(element(geometry,'mesh'),'uri',(dest/f'meshes/{dest.name}_{name}.dae').as_uri())
-    mat=element(visual,'material');script=element(mat,'script');element(script,'uri',(dest/'materials/scripts').as_uri());element(script,'uri',(dest/'materials/textures').as_uri());element(script,'name',matname);element(visual,'cast_shadows','false')
+    visual=element(link,'visual',name=name);element(visual,'pose',' '.join(map(str,pose)));geometry=element(visual,'geometry');element(element(geometry,'mesh'),'uri',f'model://{dest.name}/meshes/{dest.name}_{name}.dae')
+    mat=element(visual,'material');script=element(mat,'script');element(script,'uri',f'model://{dest.name}/materials/scripts');element(script,'uri',f'model://{dest.name}/materials/textures');element(script,'name',matname);element(visual,'cast_shadows','false')
 
 def assets(cfg,width,root,source):
     root=Path(root);source=Path(source);root.mkdir(parents=True,exist_ok=True);templates={}
@@ -174,7 +174,7 @@ def assets(cfg,width,root,source):
         mass=cfg['cone_mass'];inertia=(mass*(3*radius**2+h*h)/12,)*2+(mass*radius**2/2,)
         sdf,m,l=model(name,cfg['cone_static'],mass,(0,0,0.025),inertia)
         for typ in ('visual','collision'):
-            shape=element(l,typ,name='cone');geometry=element(shape,'geometry');element(element(geometry,'mesh'),'uri',(dest/'meshes/cone.dae').as_uri())
+            shape=element(l,typ,name='cone');geometry=element(shape,'geometry');element(element(geometry,'mesh'),'uri',f'model://{dest.name}/meshes/cone.dae')
             if typ=='visual':material(shape,rgb)
             else:
                 surface=element(shape,'surface');ode=element(element(surface,'friction'),'ode');element(ode,'mu',cfg['cone_mu']);element(ode,'mu2',cfg['cone_mu']);ode=element(element(surface,'contact'),'ode');element(ode,'kp',100000);element(ode,'kd',2);element(ode,'max_vel',0.1);element(ode,'min_depth',0.00005)
@@ -209,8 +209,35 @@ def assets(cfg,width,root,source):
         save(name,sdf)
     return templates
 
+def default_workspace():
+    """Locate installed track data, with a fallback for source-only geometry tests."""
+    try:
+        from ament_index_python.packages import get_package_share_directory
+        installed=Path(get_package_share_directory('remote5g_sim'))/'track'
+        if (installed/'config/athletics_track.json').is_file():return installed
+    except (ImportError, KeyError):
+        pass
+    for candidate in Path(__file__).resolve().parents:
+        if (candidate/'config/athletics_track.json').is_file() and (candidate/'simulation/worlds').is_dir():return candidate
+    raise FileNotFoundError('Track data unavailable. Build remote5g_sim and source install/setup.bash.')
+
 def load_config(path,override=None):
-    cfg=yaml.safe_load(Path(path).read_text());cfg.update(override or {});return cfg
+    path=Path(path).expanduser().resolve()
+    cfg=yaml.safe_load(path.read_text());cfg.update(override or {})
+    if cfg.get('workspace'):
+        workspace=Path(cfg['workspace']).expanduser()
+        if not workspace.is_absolute():workspace=path.parent/workspace
+    else:
+        workspace=default_workspace()
+    cfg['workspace']=str(workspace.resolve())
+    return cfg
+
+def vehicle_config_path(workspace):
+    # Explicit source workspaces retain their own vehicle parameters.
+    source=Path(workspace)/'src/remote5g_sim/config/vehicle.yaml'
+    if source.is_file():return source
+    from ament_index_python.packages import get_package_share_directory
+    return Path(get_package_share_directory('remote5g_sim'))/'config/vehicle.yaml'
 
 def generate(cfg,package,output):
     rules={'tape_width':.10,'zone_length_ratio':1.5,'barrier_width':.80,'barrier_height':.50,'barrier_gap':.10,'qr_size':.10,'paper_long':.297,'paper_short':.105,'paper_gap':.105,'cone_height':.080,'cone_diameter':.078,'guide_spacing':.50,'sign_width':.210,'sign_length':.297}
@@ -284,7 +311,7 @@ def generate(cfg,package,output):
         for i,(x,lateral) in enumerate(zip(xx,dd)):
             s=start+float(x);add(f'comp_guide_{side}_{i:03}',f'comp_cone_{"yellow" if yellow else colored}',s,float(lateral),z=0.001,reason='PDF Fig11 and user four-row image; local boundary topology, adjustable longitudinal extent')
         guide.append({'side':side,'color':'yellow' if yellow else colored,'start_s':start,'end_s':start+row_length,'s':[start+float(x) for x in xx],'d':dd.tolist(),'arc_distances':samples.tolist()})
-    veh=yaml.safe_load((Path(cfg['workspace'])/'src/remote5g_sim/config/vehicle.yaml').read_text());nose=veh['chassis_center_x']+veh['chassis_length']/2
+    veh=yaml.safe_load(vehicle_config_path(cfg['workspace']).read_text());nose=veh['chassis_center_x']+veh['chassis_length']/2
     spawn_s=length-cfg['tape_width']-0.02-nose;spawn=route.pose(spawn_s);spawn[2]+=0.006
     parkpose=route.pose(parking_s)
     region={'x':parkpose[0],'y':parkpose[1],'yaw':parkpose[3],'length':length-2*cfg['tape_width'],'width':w,'slots':{'A':[cfg['tape_width']/2,w/2],'B':[-w/2,-cfg['tape_width']/2]}}

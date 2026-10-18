@@ -20,6 +20,8 @@ ament_target_dependencies(remote5g_vehicle gazebo_ros rclcpp ackermann_msgs geom
 target_compile_options(remote5g_vehicle PRIVATE -Wall -Wextra -Wpedantic)
 install(TARGETS remote5g_vehicle LIBRARY DESTINATION lib)
 install(DIRECTORY urdf config launch worlds docs DESTINATION share/${PROJECT_NAME})
+# Both launchers use installed track data, independent of the source checkout.
+install(DIRECTORY ../../config ../../simulation DESTINATION share/${PROJECT_NAME}/track)
 install(FILES README.md LICENSE DESTINATION share/${PROJECT_NAME})
 install(PROGRAMS scripts/drive.py scripts/inspect_cameras.py test/regression.py test/model_check.py test/smoke.py DESTINATION lib/${PROJECT_NAME})
 if(BUILD_TESTING)

@@ -12,7 +12,7 @@ def setup(context):
  package=Path(get_package_share_directory('remote5g_competition'));sys.path.insert(0,str(package/'scripts'))
  from scene_core import load_config,generate
  def get(k):return LaunchConfiguration(k).perform(context)
- cfg=load_config(get('config'))
+ cfg=load_config(get('config'),{'workspace':get('workspace')} if get('workspace') else None)
  for k in ('start_side','track_color','lane_change','parking_target','obstacle_mode'):
   if get(k):cfg[k]=get(k)
  for k in ('obstacle_seed','sign_seed'):
@@ -39,5 +39,5 @@ def setup(context):
 
 def generate_launch_description():
  package=Path(get_package_share_directory('remote5g_competition'))
- args={'config':str(package/'config/competition.yaml'),'output':'/home/jamiek/remote5g_ws/reports/competition/current','start_side':'','track_color':'','lane_change':'','parking_target':'','obstacle_mode':'','obstacle_seed':'','sign_seed':'','barrier_present':'true','cone_static':'false','spawn_vehicle':'true','gui':'true','port':'11385','camera_width':'1280','camera_height':'720','capture_dir':'','vehicle_x':'','vehicle_y':'','vehicle_z':'','vehicle_yaw':''}
+ args={'config':str(package/'config/competition.yaml'),'workspace':'','output':str(Path.home()/'.ros/remote5g/reports/competition/current'),'start_side':'','track_color':'','lane_change':'','parking_target':'','obstacle_mode':'','obstacle_seed':'','sign_seed':'','barrier_present':'true','cone_static':'false','spawn_vehicle':'true','gui':'true','port':'11385','camera_width':'1280','camera_height':'720','capture_dir':'','vehicle_x':'','vehicle_y':'','vehicle_z':'','vehicle_yaw':''}
  return LaunchDescription([DeclareLaunchArgument(k,default_value=v) for k,v in args.items()]+[OpaqueFunction(function=setup)])

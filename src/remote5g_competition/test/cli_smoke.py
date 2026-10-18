@@ -6,7 +6,7 @@ sys.path.insert(0,str(Path(get_package_share_directory('remote5g_competition'))/
 import rclpy
 from gazebo_msgs.srv import GetEntityState
 from manage_props import call
-out=Path('/home/jamiek/remote5g_ws/reports/competition/commands_final');out.mkdir(parents=True,exist_ok=True);env=os.environ.copy();env['ROS_DOMAIN_ID']='86'
+out=(Path.home()/'.ros/remote5g/reports/competition/commands_final');out.mkdir(parents=True,exist_ok=True);env=os.environ.copy();env['ROS_DOMAIN_ID']='86'
 with socket.socket() as sock:
  sock.settimeout(.5)
  if sock.connect_ex(('127.0.0.1',11386))==0:raise SystemExit('CLI test port 11386 occupied; refusing to touch an existing scene')
@@ -20,7 +20,7 @@ try:
   if response.success:break
   assert time.monotonic()<end;time.sleep(.1)
  start=response.state.pose.position;assert abs(start.x)<.03 and abs(start.y+39.525)<.03
- commands=[['ros2','run','remote5g_competition','manage_props.py','remove','--layout',str(out/'layout/layout.json'),'--name','comp_start_barrier'],['ros2','run','remote5g_competition','manage_props.py','restore','--layout',str(out/'layout/layout.json'),'--name','comp_start_barrier'],['ros2','run','remote5g_competition','manage_props.py','reset','--layout',str(out/'layout/layout.json'),'--name','comp_guide_inner_000'],['ros2','run','remote5g_competition','parking_check.py','--layout',str(out/'layout/layout.json')],['ros2','run','gazebo_ros','spawn_entity.py','-entity','comp_demo_cone','-file','/home/jamiek/remote5g_ws/src/remote5g_competition/models/comp_cone_red/model.sdf','-x','0','-y','0','-z','0.001','-timeout','15']]
+ commands=[['ros2','run','remote5g_competition','manage_props.py','remove','--layout',str(out/'layout/layout.json'),'--name','comp_start_barrier'],['ros2','run','remote5g_competition','manage_props.py','restore','--layout',str(out/'layout/layout.json'),'--name','comp_start_barrier'],['ros2','run','remote5g_competition','manage_props.py','reset','--layout',str(out/'layout/layout.json'),'--name','comp_guide_inner_000'],['ros2','run','remote5g_competition','parking_check.py','--layout',str(out/'layout/layout.json')],['ros2','run','gazebo_ros','spawn_entity.py','-entity','comp_demo_cone','-file',str(Path(get_package_share_directory('remote5g_competition'))/'models/comp_cone_red/model.sdf'),'-x','0','-y','0','-z','0.001','-timeout','15']]
  with (out/'commands.log').open('w') as f:
   for cmd in commands:
    f.write('COMMAND '+' '.join(cmd)+'\n');r=subprocess.Popen(cmd,env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)

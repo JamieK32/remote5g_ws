@@ -28,8 +28,8 @@
 
 ```bash
 source /opt/ros/humble/setup.bash
-cd /home/jamiek/remote5g_ws
-colcon build --packages-select remote5g_competition --symlink-install
+cd ~/remote5g_ws  # 换成实际项目目录
+colcon build --packages-select remote5g_sim remote5g_competition --symlink-install
 source install/setup.bash
 export ROS_DOMAIN_ID=85
 ros2 launch remote5g_competition competition.launch.py track_color:=red start_side:=left lane_change:=left gui:=true
@@ -42,14 +42,14 @@ ros2 launch remote5g_competition competition.launch.py track_color:=blue start_s
 ros2 launch remote5g_competition competition.launch.py track_color:=blue start_side:=right spawn_vehicle:=false cone_static:=true barrier_present:=false gui:=false
 ```
 
-场景依次启动；并存要用不同port和ROS域。无gzclient测试仍借助WSLg渲染，完全无DISPLAY部署未验收。默认输出reports/competition/current，可用output参数更换。原world不改。
+场景依次启动；并存要用不同port和ROS域。无gzclient测试仍借助WSLg渲染，完全无DISPLAY部署未验收。默认输出 `~/.ros/remote5g/reports/competition/current`，可用output参数更换。原world不改。
 
 ## 生成和单独加载
 
 ```bash
-ros2 run remote5g_competition generate_layout.py --output /home/jamiek/remote5g_ws/reports/competition/custom_seed --track-color blue --start-side right --lane-change right --obstacle-seed 42 --qr-content REMOTE5G_SIM_CUSTOM
-ros2 run remote5g_competition validate_layout.py /home/jamiek/remote5g_ws/reports/competition/custom_seed/layout.json
-ros2 run gazebo_ros spawn_entity.py -entity comp_demo_cone -file /home/jamiek/remote5g_ws/src/remote5g_competition/models/comp_cone_red/model.sdf -x 0 -y 0 -z 0.001 -timeout 15
+ros2 run remote5g_competition generate_layout.py --output $HOME/.ros/remote5g/reports/competition/custom_seed --track-color blue --start-side right --lane-change right --obstacle-seed 42 --qr-content REMOTE5G_SIM_CUSTOM
+ros2 run remote5g_competition validate_layout.py $HOME/.ros/remote5g/reports/competition/custom_seed/layout.json
+ros2 run gazebo_ros spawn_entity.py -entity comp_demo_cone -file "$(ros2 pkg prefix --share remote5g_competition)/models/comp_cone_red/model.sdf" -x 0 -y 0 -z 0.001 -timeout 15
 ```
 
 以上入口已执行。输出world、模型资源、每实例SDF、解析YAML、JSON/CSV。包models目录有19种可重用资产，worlds/{left,right}_{red,blue}含四种场景；只include原跑道。运行时重新生成资源可解决移动工作区后的绝对URI变化。资源/插件路径由launch设置，重新source后也可加载。
@@ -59,10 +59,10 @@ ros2 run gazebo_ros spawn_entity.py -entity comp_demo_cone -file /home/jamiek/re
 layout路径应指向当前输出；本机对相同入口的测试输出目录实际执行了以下操作。
 
 ```bash
-ros2 run remote5g_competition manage_props.py remove --layout /home/jamiek/remote5g_ws/reports/competition/current/layout.json --name comp_start_barrier
-ros2 run remote5g_competition manage_props.py restore --layout /home/jamiek/remote5g_ws/reports/competition/current/layout.json --name comp_start_barrier
-ros2 run remote5g_competition manage_props.py reset --layout /home/jamiek/remote5g_ws/reports/competition/current/layout.json --name comp_guide_inner_000
-ros2 run remote5g_competition parking_check.py --layout /home/jamiek/remote5g_ws/reports/competition/current/layout.json
+ros2 run remote5g_competition manage_props.py remove --layout $HOME/.ros/remote5g/reports/competition/current/layout.json --name comp_start_barrier
+ros2 run remote5g_competition manage_props.py restore --layout $HOME/.ros/remote5g/reports/competition/current/layout.json --name comp_start_barrier
+ros2 run remote5g_competition manage_props.py reset --layout $HOME/.ros/remote5g/reports/competition/current/layout.json --name comp_guide_inner_000
+ros2 run remote5g_competition parking_check.py --layout $HOME/.ros/remote5g/reports/competition/current/layout.json
 ```
 
 remove/restore提供barrier_removed/barrier_present状态，不改变车辆位姿。name=all仅管理清单中的comp道具，不操作轨道或车辆；restore/reset返回保存的初始实例位置，包含可恢复的挡板模板。材质有Gazebo缓存，修改内容后重启场景。
@@ -82,7 +82,7 @@ materials/source_signs保存PDF内嵌原始位图和哈希，不宣称取得可�
 ```bash
 colcon test --packages-select remote5g_competition --event-handlers console_direct+
 colcon test-result --verbose
-ros2 run remote5g_competition run_matrix.py --gui --output /home/jamiek/remote5g_ws/reports/competition/regression
+ros2 run remote5g_competition run_matrix.py --gui --output $HOME/.ros/remote5g/reports/competition/regression
 ```
 
 几何CTest覆盖红蓝×左右起点×左右变道8组合、seed复现、尺寸/资源、真实QR解码与停车反例。矩阵覆盖四个颜色/起点及无车固定道具模式；左红、右蓝执行物理接触和实际相机扫码，其余验证加载/稳定性。各等待有超时，每场270秒总限制，建议整次外加750秒timeout；只清理自己启动的进程组，不用killall/pkill，已占用端口拒绝启动。
@@ -92,3 +92,5 @@ COMPETITION_TEST_PORT/COMPETITION_TEST_DOMAIN可改隔离实例。run_matrix.py 
 ## 未验收范围
 
 自动起跑、避障、视觉等待、Pure Pursuit和完整约200m通关均AUTONOMOUS_DRIVING_NOT_TESTED。PDF p5写停3s，p2/p7写10s，存在冲突；本阶段不实现等待状态机，不宣称规则统一。质量、摩擦、支架细节、路线绝对站位、通道曲线和接触斑均是可调仿真假设。
+
+路径说明：默认从 `remote5g_sim` 安装目录读取跑道；比赛输出为当前用户的 `~/.ros/remote5g/reports/competition/current/`。换目录或用户后重新编译、加载 `install/setup.bash` 即可。需要自定义跑道时传 `workspace:=/实际工作区路径`，自定义输出时传 `output:=/可写目录`。
