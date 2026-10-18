@@ -8,9 +8,10 @@
 
 - `remote5g_sim`：`xtnetrc`车辆、真实物理转向/轮胎接触、双RGB摄像头、两轴云台、里程计/关节状态/TF、有限时长驾驶工具与测试。
 - `remote5g_competition`：红蓝400m跑道的独立比赛道具布局；蓝色发车挡板、单个随机弯道障碍、横道、左右标志、四排引导锥桶、A/B停车区和非支付测试二维码。
+- `remote5g_autonomy`：自动驾驶实战算法包；白线/地面车道识别、Pure Pursuit、停车恢复策略、ROS适配与调试复位分别独立。
 - 前置采集目标 **30fps**，速度/转角目标及反馈 **50Hz目标**，`drive.py`以 **50Hz墙钟定时发布**。云台RGB仍15fps。仿真时间频率与墙钟接收频率取决于RTF和负载，不保证硬实时。
-- 本地实际验证过场景启动、双相机/CameraInfo/TF、有限低速驾驶、键盘控制、停车和短bag录放；当前路径跟踪、视觉巡线、避障与比赛状态机尚未实现。
-- `learning/`是用户的阶段性练习草稿，不作为已验收的比赛算法；其中参数与行为应在运行前自行核对。
+- 本地实际验证过场景启动、双相机/CameraInfo/TF、有限低速驾驶、键盘控制、停车和短bag录放；视觉巡线曾完成当前重叠弯道25m验证，完整避障、变道、停车任务与比赛状态机尚未实现。
+- `learning/`保留单模块练习；完整巡线应用及依赖、测试已迁移到 `remote5g_autonomy`。
 
 ## 环境与目录
 
@@ -19,6 +20,7 @@
 ```text
 src/remote5g_sim/          车辆、插件、参数、启动与测试
 src/remote5g_competition/  比赛模型、布局生成、管理与测试
+src/remote5g_autonomy/     自动驾驶实战：感知、控制、ROS节点与应用
 simulation/              原红蓝跑道模型、world、参考线CSV
 config/                  原跑道几何参数
 scripts/                 跑道与回归辅助脚本
@@ -36,7 +38,7 @@ docs/official/          用户提供的比赛规则与轨道参考PDF
 ```bash
 cd ~/remote5g_ws  # 换成你实际克隆的项目目录
 source /opt/ros/humble/setup.bash
-colcon build --packages-select remote5g_sim remote5g_competition --symlink-install
+colcon build --packages-select remote5g_sim remote5g_competition remote5g_autonomy --symlink-install
 source install/setup.bash
 export ROS_DOMAIN_ID=75
 ros2 launch remote5g_sim sim.launch.py scene:=flat gui:=true
@@ -60,6 +62,17 @@ export ROS_DOMAIN_ID=85
 ros2 launch remote5g_competition competition.launch.py track_color:=red start_side:=left gui:=true
 ```
 
+启动比赛场景后，在同一 ROS 域的新终端运行巡线应用：
+
+```bash
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+export ROS_DOMAIN_ID=85  # 与上面的比赛场景相同
+ros2 run remote5g_autonomy lane_follow --drive --speed 0.7 --continuous --filter-straight --show --reset-on-exit
+```
+
+Ctrl+C 会停车，`--reset-on-exit` 额外将 Gazebo 车辆复位到启动位置。完整参数、源码分层与 Launch 入口见 [自动驾驶实战包](src/remote5g_autonomy/README.md)。
+
 车辆与比赛入口默认Gazebo端口11375/11385。并行实例还需不同ROS域、端口和输出目录。比赛入口生成独立overlay，不覆盖原轨道world。
 
 ## 克隆与依赖注意
@@ -80,6 +93,7 @@ ros2 launch remote5g_competition competition.launch.py track_color:=red start_si
 - [30fps / 50Hz修订与实测](docs/chatgpt_handoff/FREQUENCY_UPDATE_20261015.md)
 - [车辆说明](src/remote5g_sim/README.md)
 - [比赛场景说明](src/remote5g_competition/README.md)
+- [自动驾驶实战与源码结构](src/remote5g_autonomy/README.md)
 
 从启动、Node/Topic/Message、键盘、RViz/rqt、TF和ros2 bag开始，再逐步实现算法。交接目录的COLCON_IGNORE用于防止源码副本被当成重复ROS包，必须保留。旧调查与旧测试有明确历史标签，不应混作当前配置。
 
@@ -88,10 +102,10 @@ ros2 launch remote5g_competition competition.launch.py track_color:=red start_si
 ## 测试与资料权利
 
 ```bash
-colcon test --packages-select remote5g_sim remote5g_competition --event-handlers console_direct+
+colcon test --packages-select remote5g_sim remote5g_competition remote5g_autonomy --event-handlers console_direct+
 colcon test-result --verbose
 ```
 
 集成测试会启动仿真、发控制并操作夹具，先读各包README，使用空闲隔离实例。不要在正在驾驶的场景盲目运行回归。
 
-两个新增ROS包的代码许可见各包LICENSE。用户提供PDF、PDF内嵌标志和第三方参考资料保留其各自权利，不因代码许可而重新授权。
+各ROS包的代码许可见各包LICENSE。用户提供PDF、PDF内嵌标志和第三方参考资料保留其各自权利，不因代码许可而重新授权。

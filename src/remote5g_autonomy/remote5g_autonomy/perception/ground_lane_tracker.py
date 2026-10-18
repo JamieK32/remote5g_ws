@@ -1,4 +1,4 @@
-"""Calibrated ground-plane lane fitting and pure pursuit; no track map input.
+"""Calibrated ground-plane lane fitting; no track map input.
 
 Coordinates are metres: x forward from the rear axle, y to the vehicle's left.
 Odometry is used only for attitude compensation and inter-frame continuity.
@@ -27,7 +27,6 @@ class LaneEstimate:
     center: np.ndarray
     left: Boundary
     right: Boundary
-    steering: float
     target: tuple
     width: float
 
@@ -38,9 +37,8 @@ def rotation_y(angle):
 
 
 class GroundLaneTracker:
-    def __init__(self, wheelbase=0.23861, camera_x=0.3, camera_height=0.235315,
+    def __init__(self, camera_x=0.3, camera_height=0.235315,
                  camera_pitch=0.45, lane_width=1.22, lookahead=2.5):
-        self.wheelbase = wheelbase
         self.camera_origin = np.array([camera_x, 0.0, camera_height])
         self.camera_pitch = camera_pitch
         self.lane_width = lane_width
@@ -209,9 +207,8 @@ class GroundLaneTracker:
             center = 0.65*center + 0.35*prediction
         x = min(self.lookahead, left.end, right.end)
         y = float(np.polyval(center, x))
-        steering = math.atan(self.wheelbase * 2*y/(x*x+y*y))
         self.previous, self.previous_pose = center.copy(), pose
-        return LaneEstimate(center, left, right, steering, (x,y), width)
+        return LaneEstimate(center, left, right, (x,y), width)
 
     def detect(self, mask, pose=None):
         if self.k is None:
@@ -221,48 +218,3 @@ class GroundLaneTracker:
         boundaries = self.boundaries(points, self.predicted_center(pose))
         return self.choose(boundaries, pose), birdseye, boundaries, points
 
-    def draw(self, bgr, estimate, birdseye, boundaries):
-        debug = bgr.copy()
-        h, w = bgr.shape[:2]
-        if birdseye is None:
-            cv2.putText(debug, 'WAITING FOR /camera/front/camera_info', (12, 40),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-            return debug
-        ground = cv2.cvtColor(birdseye, cv2.COLOR_GRAY2BGR)
-
-        def draw_model(coefficient, start, end, color, thickness):
-            x = np.linspace(start, end, 160)
-            y = np.polyval(coefficient, x)
-            u, v = self.project(np.column_stack([x, y, np.zeros_like(x)]))
-            pixels = np.column_stack([u, v]).astype(np.int32)
-            cv2.polylines(debug, [pixels], False, color, thickness)
-            pixels = np.column_stack([(4-y)/0.025, (x-0.65)/0.05]).astype(np.int32)
-            cv2.polylines(ground, [pixels], False, color, thickness)
-
-        # Only reliable straight hypotheses are displayed as rejected lines.
-        for b in boundaries:
-            if abs(b.coefficients[0]) < 0.003 and b.support >= 50:
-                draw_model(b.coefficients, b.start, b.end, (0, 0, 255), 2)
-        if estimate is not None:
-            for b in (estimate.left, estimate.right):
-                draw_model(b.coefficients, b.start, b.end, (0, 255, 0), 3)
-            draw_model(estimate.center, 0.65, min(estimate.left.end, estimate.right.end),
-                       (255, 255, 0), 2)
-            x, y = estimate.target
-            u, v = self.project(np.array([[x, y, 0.0]]))
-            cv2.circle(debug, (round(float(u[0])), round(float(v[0]))), 8, (0, 255, 255), -1)
-            mode = 'CURVE' if abs(estimate.center[0]) > 0.0045 else 'STRAIGHT'
-            status = (f'{mode}  width={estimate.width:.2f}m  '
-                      f'target=({x:.1f},{y:+.2f})m  steer={math.degrees(estimate.steering):+.2f}deg')
-        else:
-            status = 'NO CONSISTENT GROUND LANE PAIR - STOP'
-        cv2.putText(debug, status, (12, h-22), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.65, (0, 255, 0) if estimate else (0, 0, 255), 2)
-        cv2.putText(debug, 'GREEN: SELECTED BORDERS / CYAN: CENTER / RED: STRAIGHT CANDIDATES',
-                    (12, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.58, (0, 220, 255), 2)
-        panel = cv2.flip(ground, 0)
-        panel = cv2.resize(panel, (round(h*8/9.35), h), interpolation=cv2.INTER_NEAREST)
-        cv2.putText(panel, 'GROUND VIEW / FAR: 10m', (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 255), 2)
-        cv2.putText(panel, 'NEAR: 0.65m', (10, h-20), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 255), 2)
-        return cv2.hconcat([debug, panel])

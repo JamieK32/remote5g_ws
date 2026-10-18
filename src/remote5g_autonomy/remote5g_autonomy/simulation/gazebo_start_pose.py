@@ -8,8 +8,7 @@ from gazebo_msgs.msg import EntityState
 from gazebo_msgs.srv import GetEntityState, SetEntityState
 
 
-class SimulationResetError(RuntimeError):
-    pass
+from remote5g_autonomy.errors import SimulationResetError
 
 
 class GazeboStartPose:

@@ -15,8 +15,10 @@ import numpy as np
 import rclpy
 from rclpy.signals import SignalHandlerOptions
 
-from b1_lane_follow import LaneFollower, parse_args, stop_vehicle
-from gazebo_start_pose import GazeboStartPose
+from remote5g_autonomy.ros.lane_follower import LaneFollower
+from remote5g_autonomy.options import parse_args
+from remote5g_autonomy.ros.commands import stop_vehicle
+from remote5g_autonomy.simulation.gazebo_start_pose import GazeboStartPose
 
 
 def main():
@@ -45,30 +47,30 @@ def main():
     started = time.monotonic()
     try:
         returner.capture()
-        node.good_frames = 0
+        node.controller.good_frames = 0
         node.timer.reset()
         while time.monotonic()-started < options.timeout:
             rclpy.spin_once(node, timeout_sec=0.02)
-            if node.world_pose is None:
+            if node.perception.pose is None:
                 continue
-            x, y, yaw = node.world_pose
+            x, y, yaw = node.perception.pose
             if previous is not None:
                 traveled += math.hypot(x-previous[0], y-previous[1])
             previous = (x, y)
             cross_track = abs(math.hypot(x+half, y)-radius) if x < -half else abs(y+radius)
             samples.append([time.monotonic()-started, traveled, x, y, yaw, cross_track,
-                            node.steering, node.error if node.error is not None else float('nan'),
-                            node.good_frames])
+                            node.controller.steering, node.controller.error if node.controller.error is not None else float('nan'),
+                            node.controller.good_frames])
             if node.debug is not None and traveled >= next_image:
                 cv2.imwrite(str(output/f'frame_{round(traveled):03d}m.png'), node.debug)
-                if node.last_bgr is not None:
+                if node.last_bgr is not None and node.perception.tracker.k is not None:
                     cv2.imwrite(str(output/f'raw_{round(traveled):03d}m.png'), node.last_bgr)
-                    metadata = {'pose':node.world_pose, 'camera_k':node.ground_tracker.k.tolist(),
-                                'camera_origin':node.ground_tracker.origin.tolist(),
-                                'camera_rotation':node.ground_tracker.rotation.tolist(),
+                    metadata = {'pose':node.perception.pose, 'camera_k':node.perception.tracker.k.tolist(),
+                                'camera_origin':node.perception.tracker.origin.tolist(),
+                                'camera_rotation':node.perception.tracker.rotation.tolist(),
                                 'boundaries':[{'coefficients':b.coefficients.tolist(), 'support':b.support,
-                                               'start':b.start, 'end':b.end} for b in node.last_boundaries],
-                                'selected':node.last_estimate.center.tolist() if node.last_estimate else None}
+                                               'start':b.start, 'end':b.end} for b in node.last_observation.boundaries],
+                                'selected':node.last_observation.estimate.center.tolist() if node.last_observation.estimate else None}
                     (output/f'frame_{round(traveled):03d}m.json').write_text(json.dumps(metadata,indent=2))
                 next_image += 1.0
             if cross_track > 0.45:
@@ -80,7 +82,7 @@ def main():
     except Exception as exc:
         error = str(exc)
     finally:
-        node.done = True
+        node.controller.done = True
         node.timer.cancel()
         try:
             stop_vehicle(node, 0.6)

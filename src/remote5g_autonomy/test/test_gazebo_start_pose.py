@@ -6,7 +6,7 @@ import unittest
 from unittest.mock import Mock, patch
 
 from gazebo_msgs.msg import EntityState
-import gazebo_start_pose as reset
+import remote5g_autonomy.simulation.gazebo_start_pose as reset
 
 
 class GazeboStartPoseTests(unittest.TestCase):

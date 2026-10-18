@@ -4,7 +4,8 @@ import unittest
 
 import numpy as np
 
-from ground_lane_tracker import Boundary, GroundLaneTracker
+from remote5g_autonomy.perception.ground_lane_tracker import Boundary, GroundLaneTracker
+from remote5g_autonomy.control import pure_pursuit_steering
 
 
 class GroundLaneTrackerTests(unittest.TestCase):
@@ -40,15 +41,15 @@ class GroundLaneTrackerTests(unittest.TestCase):
                 expected = np.array([direction*0.013, 0.0, 0.0])
                 estimate = tracker.choose(tracker.boundaries(self.markings(expected)))
                 self.assertIsNotNone(estimate)
-                self.assertGreater(direction*estimate.steering, 0)
-                self.assertLess(abs(estimate.steering), 0.05)
+                self.assertGreater(direction*pure_pursuit_steering(estimate.target, 0.23861), 0)
+                self.assertLess(abs(pure_pursuit_steering(estimate.target, 0.23861)), 0.05)
 
     def test_ordinary_straight_lane_is_retained(self):
         expected = np.array([0.0, 0.02, 0.0])
         estimate = self.tracker.choose(self.tracker.boundaries(self.markings(expected)))
         self.assertIsNotNone(estimate)
         self.assertAlmostEqual(estimate.target[1], 0.05, delta=0.02)
-        self.assertGreater(estimate.steering, 0)
+        self.assertGreater(pure_pursuit_steering(estimate.target, 0.23861), 0)
 
     def test_wrong_width_and_mixed_boundaries_are_rejected(self):
         for left_coeff, right_coeff in [([0, 0, 0.2], [0, 0, -0.2]),
@@ -76,7 +77,7 @@ class GroundLaneTrackerTests(unittest.TestCase):
         estimate = self.tracker.choose(boundaries, pose)
         self.assertIsNotNone(estimate)
         self.assertLess(estimate.center[0], -0.009)
-        self.assertLess(estimate.steering, 0)
+        self.assertLess(pure_pursuit_steering(estimate.target, 0.23861), 0)
 
     def test_missing_calibration_and_blank_images_do_not_guess(self):
         mask = np.zeros((720, 1280), np.uint8)

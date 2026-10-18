@@ -1,0 +1,23 @@
+# Application defaults; command-line flags override these values.
+drive: false
+show: false
+filter_straight: false
+continuous: false
+reset_on_exit: false
+speed: 0.10
+kp: 0.35
+max_steer: 0.22
+seconds: 15.0
+max_distance: 2.0
+lookahead: 2.5
+lane_width: 1.22
+# Empty selects remote5g_sim/config/vehicle.yaml through the ROS package index.
+vehicle_config: ''
+vehicle_entity: xtnetrc
+save_dir: ''
+image_timeout: 0.6
+odom_timeout: 1.0
+required_good_frames: 3
+acquisition_timeout: 12.0
+loss_timeout: 0.5
+control_period: 0.02
