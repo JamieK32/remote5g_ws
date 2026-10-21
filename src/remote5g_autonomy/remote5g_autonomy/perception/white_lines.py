@@ -28,8 +28,8 @@ def detect_pixel_lane(bgr):
     mask = white_mask(bgr, close=True)
     matches = []
     for row in SCAN_ROWS:
-        y = round(h*row)
-        band = mask[max(0, y-5):min(h, y+6)]
+        y = round(h*row) #图像下方选择一个ROW
+        band = mask[max(0, y-5):min(h, y+6)] #以 y 为中心，向上取 5 行，向下取 5 行，总共 11 行。
         profile = np.convolve((band > 0).mean(axis=0), np.ones(7)/7, mode='same')
         flags = profile > 0.12
         edges = np.diff(np.r_[False, flags, False].astype(np.int8))

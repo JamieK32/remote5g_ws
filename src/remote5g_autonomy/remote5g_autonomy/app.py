@@ -1,19 +1,19 @@
 """Application lifecycle: CLI, optional preview, startup snapshot and cleanup."""
-from pathlib import Path
-import sys
-import time
+from pathlib import Path # 构造配置文件路径
+import sys # 获取终端运行参数
+import time # 获取单调时钟时间
 
 from ament_index_python.packages import get_package_share_directory
-import rclpy
+import rclpy # ROS2 Python客户端库
 from rclpy.signals import SignalHandlerOptions
-from rclpy.utilities import remove_ros_args
+from rclpy.utilities import remove_ros_args #将ROS专用参数与应用参数分开
 
 from .errors import SimulationResetError
-from .exit_signals import ExitSignals
+from .exit_signals import ExitSignals #捕获推出请求
 from .options import parse_args
 from .ros.commands import stop_vehicle
-from .ros.lane_follower import LaneFollower
-from .visualization.display import DebugDisplay
+from .ros.lane_follower import LaneFollower #我的巡线ROS2节点
+from .visualization.display import DebugDisplay #显示保存调试图像
 
 
 def create_returner(node, entity):
